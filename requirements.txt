@@ -1,0 +1,26 @@
+# graphs
+git+https://github.com/bohuizhang/pyshexc.git
+git+https://github.com/bohuizhang/pyshex.git
+jsonasobj==1.3.1
+networkx==3.1
+pyjsg==0.11.10
+rdflib==7.0.0
+shexer==2.5.9
+shexjsg==0.8.2
+sparqlwrapper==2.0.0
+# data science
+numpy==1.26.4
+pandas==2.1.4
+scipy==1.12.0
+scikit-learn==1.5.2
+# language models
+openai==1.59.9
+ollama==0.3.3
+anthropic==0.50.0
+# structured outputs
+instructor==1.7.2
+pydantic==2.10.5
+# metrics
+zss==1.2.0
+# utils
+tqdm==4.66.3
