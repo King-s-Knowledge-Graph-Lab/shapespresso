@@ -1,0 +1,126 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<ComputerModel>
+
+<ComputerModel> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q55990535 ] ;          # instance of
+  wdt:P176  @<Manufacturer> ? ;         # manufacturer
+  wdt:P880  @<CPU> * ;                  # CPU
+  wdt:P306  @<OperatingSystem> * ;      # operating system
+  wdt:P155  @<ComputerModel> ? ;        # follows
+  wdt:P156  @<ComputerModel> * ;        # followed by
+  wdt:P179  @<ComputerModelSeries> ? ;  # part of the series
+  wdt:P178  @<Developer> ? ;            # developer
+  wdt:P1343 @<Source> * ;               # described by source
+  wdt:P1716 @<Brand> ? ;                # brand
+  wdt:P144  @<ComputerModel> ? ;        # based on
+  wdt:P495  @<Country> ? ;              # country of origin
+  wdt:P793  @<SignificantEvent> * ;     # significant event
+  wdt:P527  IRI * ;                     # has part(s)
+  wdt:P287  @<Designer> ? ;             # designed by
+  wdt:P2560 @<GPU> ? ;                  # GPU
+  wdt:P910  @<WikimediaCategory> ? ;    # topic's main category
+  wdt:P361  IRI ? ;                     # part of
+  wdt:P138  IRI * ;                     # named after
+  wdt:P1889 IRI ? ;                     # different from
+  wdt:P2283 IRI * ;                     # uses
+  wdt:P5307 @<DisplayTechnology> ? ;    # display technology
+  wdt:P2935 @<Connector> * ;            # connector
+  wdt:P5009 @<Standard> ? ;             # complies with
+  wdt:P1068 @<InstructionSet> ? ;       # instruction set
+  wdt:P618  @<SourceOfEnergy> ? ;       # source of energy
+
+  # URL, String, Quantity, Time property
+  wdt:P373  xsd:string ? ;    # Commons category
+  wdt:P5204 xsd:dateTime ? ;  # date of commercialization
+  wdt:P577  xsd:dateTime ? ;  # publication date
+  wdt:P2669 xsd:dateTime ? ;  # discontinued date
+  wdt:P2928 xsd:decimal * ;   # storage capacity
+  wdt:P2078 IRI * ;           # user manual URL
+  wdt:P856  IRI ? ;           # official website
+  wdt:P973  IRI * ;           # described at URL
+  wdt:P2067 xsd:decimal ? ;   # mass
+  wdt:P2284 xsd:decimal * ;   # price
+  wdt:P2048 xsd:decimal ? ;   # height
+  wdt:P2049 xsd:decimal ? ;   # width
+  wdt:P729  xsd:dateTime ? ;  # service entry
+  wdt:P6949 xsd:dateTime ? ;  # announcement date
+  wdt:P2043 xsd:decimal ? ;   # length
+  wdt:P2664 xsd:decimal * ;   # units sold
+  wdt:P935  xsd:string ? ;    # Commons gallery
+  wdt:P2791 xsd:decimal ? ;   # power consumed
+  wdt:P1092 xsd:decimal ?     # total produced
+}
+
+<Brand> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q431289 ]  # brand
+}
+
+<ComputerModelSeries> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q60484681 ]  # computer model series
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<CPU> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q115722011 wd:Q122967152 ]  # integrated circuit model, CPU model
+}
+
+<Designer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q4830453 ]  # human, business
+}
+
+<Developer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 ]  # business
+}
+
+<DisplayTechnology> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q54006339 ]  # display technology
+}
+
+<Connector> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q2119531 ]  # electrical connector
+}
+
+<GPU> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q183484 wd:Q122760330 ]  # graphics processing unit, graphics processing unit model
+}
+
+<InstructionSet> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q272683 ]  # instruction set architecture
+}
+
+<Manufacturer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 ]  # business
+}
+
+<OperatingSystem> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q9135 ]  # operating system
+}
+
+<SignificantEvent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1914636 ]  # activity
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q35127 ]  # website
+}
+
+<SourceOfEnergy> EXTRA wdt:P279 {
+  wdt:P279 [ wd:Q187510 ]  # rechargeable battery
+}
+
+<Standard> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q317623 ]  #  technical standard
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}

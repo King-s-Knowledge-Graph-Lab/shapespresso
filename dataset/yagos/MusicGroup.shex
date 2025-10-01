@@ -1,0 +1,72 @@
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX yago: <http://yago-knowledge.org/resource/>
+
+start = @<MusicGroup>
+
+<MusicGroup> EXTRA rdf:type {
+  # schema:Thing property
+  rdf:type [ schema:MusicGroup ] ;
+  rdfs:comment rdf:langString * ;
+  rdfs:label rdf:langString + ;
+  schema:alternateName rdf:langString * ;
+  schema:image xsd:anyURI * ;
+  schema:mainEntityOfPage xsd:anyURI + ;
+  schema:sameAs xsd:anyURI * ;
+  schema:url xsd:anyURI * ;
+
+  # schema.org property
+  schema:recordLabel @<Organization> ? ;   # From YAGO Schema design document
+  schema:knowsLanguage @<Language> * ;     # From YAGO Schema design document, inherit from @<PerformingGroup>
+  schema:award @<Award> * ;                # From YAGO Schema design document, inherit from @<Organization>
+  schema:dateCreated xsd:dateTime ? ;      # dateCreated is used on CreativeWork, DataFeedItem types, foundingDate is recommended
+  schema:dissolutionDate xsd:dateTime ? ;  # From YAGO Schema design document, inherit from @<Organization>
+  schema:founder @<Person> * ;             # From YAGO Schema design document, inherit from @<Organization>
+  schema:location @<Place> * ;             # From YAGO Schema design document, inherit from @<Organization>
+  schema:locationCreated @<Place> * ;      # locationCreated is used on CreativeWork types, foundingLocation is recommended
+  schema:logo xsd:anyURI ? ;               # From YAGO Schema design document, inherit from @<Organization>
+
+  # yago property
+  yago:influencedBy IRI ? ;             # From YAGO Schema design document
+  yago:director @<Person> ? ;           # From YAGO Schema design document, inherit from @<PerformingGroup>
+  yago:notableWork @<CreativeWork> * ;  # From YAGO Schema design document, inherit from @<PerformingGroup>
+  yago:ownedBy @<OwnedBy> * ;  # From YAGO Schema design document, inherit from @<Organization>
+
+  # owl:sameAs
+  owl:sameAs [ <http://www.wikidata.org/entity>~ ]
+}
+
+<Award> EXTRA rdf:type {
+  rdf:type [ yago:Award ]
+}
+
+<CreativeWork> EXTRA rdf:type {
+  rdf:type [ schema:CreativeWork ]
+}
+
+<Language> EXTRA rdf:type {
+  rdf:type [ yago:Human_Language_Q20162172 ]
+}
+
+<Organization> EXTRA rdf:type {
+  rdf:type [ schema:Organization ]
+}
+
+<OwnedBy> EXTRA rdf:type {
+  rdf:type [ schema:Organization schema:Person ]
+}
+
+<Person> EXTRA rdf:type {
+  rdf:type [ schema:Person ]
+}
+
+<Place> EXTRA rdf:type {
+  rdf:type [ schema:Place ]
+}

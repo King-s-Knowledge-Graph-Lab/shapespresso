@@ -1,0 +1,84 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<AcademicConference>
+
+<AcademicConference> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31    [ wd:Q2020153 ] ;                # instance of
+  wdt:P276   @<Location> ? ;                  # location
+  wdt:P17    @<Country> ? ;                   # country
+  wdt:P179   @<AcademicConferenceSeries> ? ;  # part of the series
+  wdt:P664   @<Organizer> * ;                 # organizer
+  wdt:P823   @<Human> * ;                     # speaker
+  wdt:P921   @<MainSubject> * ;               # main subject
+  wdt:P710   @<Human> * ;                     # participant
+  wdt:P5804  @<Human> * ;                     # has program committee member
+  wdt:P859   @<Sponsor> * ;                   # sponsor
+  wdt:P2936  @<Language> * ;                  # language used
+  wdt:P155   @<AcademicConference> ? ;        # follows
+  wdt:P156   @<AcademicConference> ? ;        # followed by
+  wdt:P488   @<Human> * ;                     # chairperson
+  wdt:P101   @<MainSubject> * ;               # field of work
+  wdt:P138   @<Human> ? ;                     # named after
+  wdt:P123   @<Publisher> ? ;                 # publisher
+  wdt:P11633 @<AcademicConference> * ;        # colocated with
+
+  # URL, String, Quantity, Time property
+  wdt:P580  xsd:dateTime ? ;    # start time
+  wdt:P582  xsd:dateTime ? ;    # end time
+  wdt:P1476 rdf:langString ? ;  # title
+  wdt:P1813 rdf:langString ? ;  # short name
+  wdt:P973  IRI ? ;             # described at URL
+  wdt:P856  IRI ? ;             # official website
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P393  xsd:string ? ;      # edition number
+  wdt:P1132 xsd:decimal ? ;     # number of participants
+  wdt:P8687 xsd:decimal ? ;     # social media followers
+  wdt:P2257 xsd:decimal ? ;     # event interval
+  wdt:P2888 IRI ? ;             # exact match
+  wdt:P5822 xsd:decimal *       # admission rate
+}
+
+<AcademicConferenceSeries> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q47258130 wd:Q15900647 ]  # academic conference series, convention series
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 wd:Q56061 ]  # city, administrative territorial entity
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Human> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<Language> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q34770 ]  # language
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 ]  # city
+}
+
+<MainSubject> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q11862829 wd:Q2267705 wd:Q4671286 ]  # academic discipline, field of study, academic major
+}
+
+<Organizer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q2085381 wd:Q45400320 wd:Q43229 ]  # publishing company, open-access publisher, organization
+}
+
+<Publisher> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q2085381 wd:Q4202064 ]  # publishing company, publishing platform
+}
+
+<Sponsor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}

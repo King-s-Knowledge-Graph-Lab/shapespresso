@@ -1,0 +1,47 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Tornado>
+
+<Tornado> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q8081 ] ;                          # instance of
+  wdt:P17   @<Country> ? ;                          # country
+  wdt:P131  @<AdministrativeTerritorialEntity> * ;  # located in the administrative territorial entity
+  wdt:P276  @<Location> * ;                         # location
+  wdt:P361  @<TornadoOutbreak> ? ;                  # part of
+  wdt:P155  @<Tornado> ? ;                          # follows
+  wdt:P1542 IRI * ;                                 # has effect
+  wdt:P156  @<Tornado> ? ;                          # followed by
+
+  # URL, String, Quantity, Time property
+  wdt:P585  xsd:dateTime ? ;  # point in time
+  wdt:P373  xsd:string ? ;    # Commons category
+  wdt:P1120 xsd:decimal ? ;   # number of deaths
+  wdt:P1339 xsd:decimal ? ;   # number of injured
+  wdt:P2630 xsd:decimal ? ;   # cost of damage
+  wdt:P580  xsd:dateTime ? ;  # start time
+  wdt:P973  IRI ? ;           # described at URL
+  wdt:P2895 xsd:decimal ? ;   # maximum sustained winds
+  wdt:P2047 xsd:decimal ? ;   # duration
+  wdt:P582  xsd:dateTime ?    # end time
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56061 ]  # administrative territorial entity
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 ]  # city
+}
+
+<TornadoOutbreak> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q2696963 ]  # tornado outbreak
+}

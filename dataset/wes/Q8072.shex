@@ -1,0 +1,122 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Volcano>
+
+<Volcano> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q8072 ] + ;                        # instance of
+  wdt:P17   @<Country> ? ;                          # country
+  wdt:P131  @<AdministrativeTerritorialEntity> * ;  # located in the administrative territorial entity
+  wdt:P4552 @<MountainRange> ? ;                    # mountain range
+  wdt:P706  @<PhysicalFeature> * ;                  # located in/on physical feature
+  wdt:P30   @<Continent> * ;                        # continent
+  wdt:P361  IRI * ;                                 # part of
+  wdt:P3815 @<VolcanoObservatory> ? ;               # volcano observatory
+  wdt:P186  @<Material> * ;                         # made from material
+  wdt:P3018 @<ProtectedArea> ? ;                    # located in protected area
+  wdt:P138  IRI ? ;                                 # named after
+  wdt:P1343 @<Source> * ;                           # described by source
+  wdt:P8933 @<WikimediaCategory> ? ;                # category for the view from the item
+  wdt:P206  @<BodyOfWater> ? ;                      # located in or next to body of water
+  wdt:P793  @<SignificantEvent> * ;                 # significant event
+  wdt:P1889 IRI ? ;                                 # different from
+  wdt:P910  @<WikimediaCategory> ? ;                # topic's main category
+  wdt:P276  @<Location> ? ;                         # location
+  wdt:P376  @<AstronomicalBody> ? ;                 # located on astronomical body
+  wdt:P421  @<TimeZone> ? ;                         # located in time zone
+  wdt:P2348 @<TimePeriod> ? ;                       # time period
+  wdt:P8989 @<WikimediaCategory> ? ;                # category for the view of the item
+  wdt:P1435 @<HeritageDesignation> ? ;              # heritage designation
+  wdt:P527  IRI * ;                                 # has part(s)
+  wdt:P7867 @<WikimediaCategory> ? ;                # category for maps
+  wdt:P3137 @<ParentPeak> ? ;                       # parent peak
+
+  # URL, String, Quantity, Time property
+  wdt:P2044 xsd:decimal ? ;     # elevation above sea level
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P2660 xsd:decimal ? ;     # topographic prominence
+  wdt:P2046 xsd:decimal ? ;     # area
+  wdt:P1705 rdf:langString ? ;  # native label
+  wdt:P935  xsd:string ? ;      # Commons gallery
+  wdt:P2049 xsd:decimal ? ;     # width
+  wdt:P2659 xsd:decimal ? ;     # topographic isolation
+  wdt:P2386 xsd:decimal ? ;     # diameter
+  wdt:P1448 rdf:langString ? ;  # official name
+  wdt:P571  xsd:dateTime ?      # inception
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56061 ]  # administrative territorial entity
+}
+
+<AstronomicalBody> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6999 ]  # astronomical object
+}
+
+<BodyOfWater> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q15324 ]  # body of water
+}
+
+<Continent> {
+  wdt:P31 [ wd:Q5107 ]  # continent
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<HeritageDesignation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q30634609 ]  # heritage designation
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q82794 wd:Q56061 ]  # geographic region, administrative territorial entity
+}
+
+<Material> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q11871901 ]  # rock type
+}
+
+<MountainRange> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q46831 wd:Q740445 ]  # mountain system, ridge
+}
+
+<ParentPeak> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q8502 wd:Q54050 wd:Q207326 ]  # mountain, hill, summit
+}
+
+<PhysicalFeature> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q82794 wd:Q2221906 ]  # geographic region, geographic location
+}
+
+<ProtectedArea> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q46169 wd:Q473972 ]  # national park, protected area
+}
+
+<SignificantEvent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7692360 wd:Q7944 wd:Q744913 ]  # volcanic eruption, earthquake, aviation accident
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3331189 wd:Q7725634 ]  # version, edition or translation, literary work
+}
+
+<TimePeriod> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q312468 wd:Q754897 ]  # series, epoch
+}
+
+<TimeZone> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q17272482 ]  # time zone named for a UTC offset
+}
+
+<VolcanoObservatory> {
+  wdt:P31 [ wd:Q1778118 ]  # volcano observatory
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}

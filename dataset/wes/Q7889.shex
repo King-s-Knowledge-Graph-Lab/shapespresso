@@ -1,0 +1,345 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<VideoGame>
+
+<VideoGame> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q7889 ] ;                   # instance of
+  wdt:P400  @<Platform> * ;                  # platform
+  wdt:P404  @<GameMode> * ;                  # game mode
+  wdt:P437  @<DistributionFormat> * ;        # distribution format
+  wdt:P750  @<DistributionPlatform> * ;      # distributed by
+  wdt:P407  @<LanguageOfWorkOrName> * ;      # language of work or name
+  wdt:P136  @<VideoGameGenre> * ;            # genre
+  wdt:P123  @<VideoGamePublisher> ? ;        # publisher
+  wdt:P178  @<VideoGameDeveloper> ? ;        # developer
+  wdt:P495  @<Country> ? ;                   # country of origin
+  wdt:P408  @<SoftwareEngine> ? ;            # software engine
+  wdt:P479  @<InputDevice> * ;               # input device
+  wdt:P852  @<ESRBRating> ? ;                # ESRB rating
+  wdt:P179  @<VideoGameSeries> ? ;           # part of the series
+  wdt:P908  @<PEGIRating> ? ;                # PEGI rating
+  wdt:P840  @<NarrativeLocation> * ;         # narrative location
+  wdt:P86   @<Composer> ? ;                  # composer
+  wdt:P914  @<USKRating> ? ;                 # USK rating
+  wdt:P306  @<OperatingSystem> * ;           # operating system
+  wdt:P287  @<Designer> * ;                  # designed by
+  wdt:P156  @<VideoGame> ? ;                 # followed by
+  wdt:P1434 @<FictionalUniverse> ? ;         # takes place in fictional universe
+  wdt:P853  @<CERORating> ? ;                # CERO rating
+  wdt:P155  @<VideoGame> ? ;                 # follows
+  wdt:P641  @<Sport> ? ;                     # sport
+  wdt:P1889 IRI * ;                          # different from
+  wdt:P6216 @<CopyrightStatus> ? ;           # copyright status
+  wdt:P8411 @<Environment> * ;               # set in environment
+  wdt:P144  @<BasedOn> ? ;                   # based on
+  wdt:P275  @<CopyrightLicense> ? ;          # copyright license
+  wdt:P674  @<Characters> * ;                # characters
+  wdt:P8345 @<MediaFranchise> ? ;            # media franchise
+  wdt:P7936 @<BusinessModel> * ;             # business model
+  wdt:P162  @<Producer> * ;                  # producer
+  wdt:P57   @<Human> * ;                     # director
+  wdt:P8956 @<ElectronicDeviceModel> ? ;     # compatible with
+  wdt:P166  @<Award> * ;                     # award received
+  wdt:P921  IRI * ;                          # main subject
+  wdt:P725  @<Human> * ;                     # voice actor
+  wdt:P2408 @<SetInPeriod> * ;               # set in period
+  wdt:P1411 @<Award> * ;                     # nominated for
+  wdt:P910  @<WikimediaCategory> ? ;         # topic's main category
+  wdt:P4969 @<DerivativeWork> * ;            # derivative work
+  wdt:P361  IRI * ;                          # part of
+  wdt:P3156 @<AustralianClassification> * ;  # Australian Classification
+  wdt:P943  @<Human> * ;                     # programmer
+  wdt:P2283 IRI * ;                          # uses
+  wdt:P4151 @<GameMechanics> * ;             # game mechanics
+  wdt:P406  @<SoundtrackRelease> * ;         # soundtrack release
+  wdt:P941  IRI * ;                          # inspired by
+  wdt:P138  IRI * ;                          # named after
+  wdt:P50   @<Human> * ;                     # author
+  wdt:P277  @<ProgrammingLanguage> * ;       # programmed in
+  wdt:P9215 @<SetDuringRecurringEvent> * ;   # set during recurring event
+  wdt:P175  @<Performer> ? ;                 # performer
+  wdt:P58   @<Human> * ;                     # screenwriter
+  wdt:P9897 @<AppStoreAgeRating> ? ;         # App Store age rating
+  wdt:P527  IRI * ;                          # has part(s)
+  wdt:P1343 @<Source> * ;                    # described by source
+  wdt:P3080 @<Human> * ;                     # game artist
+  wdt:P3931 @<CopyrightHolder> * ;           # copyright holder
+  wdt:P161  @<Human> * ;                     # cast member
+  wdt:P195  @<Collection> ? ;                # collection
+  wdt:P2629 @<BBFCRating> ? ;                # BBFC rating
+  wdt:P8670 @<Human> * ;                     # character designer
+  wdt:P655  @<Translator> * ;                # translator
+  wdt:P9866 @<GRACRating> ? ;                # GRAC rating
+  wdt:P747  @<EditionOrTranslation> * ;      # has edition or translation
+  wdt:P629  @<VideoGame> ? ;                 # edition or translation of
+  wdt:P8901 @<ELSPARating> ? ;               # ELSPA rating
+  wdt:P608  @<ExhibitionHistory> ? ;         # exhibition history
+  wdt:P5196 @<OutputDevice> * ;              # output device
+  wdt:P7327 @<OFLCClassification> ? ;        # OFLC classification
+  wdt:P1552 IRI * ;                          # has characteristic
+  wdt:P2360 @<IntendedPublic> * ;            # intended public
+  wdt:P1071 @<LocationOfCreation> ? ;        # location of creation
+  wdt:P5059 @<VideoGame> ? ;                 # modified version of
+  wdt:P916  @<GSRRRating> ? ;                # GSRR rating
+  wdt:P291  @<PlaceOfPublication> * ;        # place of publication
+
+  # URL, String, Quantity, Time property
+  wdt:P577  xsd:dateTime * ;    # publication date
+  wdt:P856  IRI ? ;             # official website
+  wdt:P7294 IRI ? ;             # itch.io URL
+  wdt:P1476 rdf:langString * ;  # title
+  wdt:P444  xsd:string * ;      # review score
+  wdt:P348  xsd:string * ;      # software version identifier
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P8687 xsd:decimal * ;     # social media followers
+  wdt:P973  IRI * ;             # described at URL
+  wdt:P2664 xsd:decimal ? ;     # units sold
+  wdt:P7707 IRI * ;             # PlayStation DataCenter URL
+  wdt:P6949 xsd:dateTime ? ;    # announcement date
+  wdt:P3575 xsd:decimal * ;     # data size
+  wdt:P1872 xsd:decimal ? ;     # minimum number of players
+  wdt:P1873 xsd:decimal ? ;     # maximum number of players
+  wdt:P7705 IRI ? ;             # superfamicom.org URL
+  wdt:P1324 IRI * ;             # source code repository URL
+  wdt:P1813 rdf:langString * ;  # short name
+  wdt:P2572 xsd:string * ;      # hashtag
+  wdt:P1680 rdf:langString ? ;  # subtitle
+  wdt:P2888 IRI *               # exact match
+}
+
+<AppStoreAgeRating> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q110910264 ]  # Apple App Store rating category
+}
+
+<AustralianClassification> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q26708074 ]  # Australian Classification category
+}
+
+<Award> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q18328126 wd:Q618779 ]  # video game award, award
+}
+
+<BasedOn> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q17537576 wd:Q31629 wd:Q386724 ]  # creative work, type of sport
+}
+
+<BBFCRating> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q23790218 ]  # BBFC classification category
+}
+
+<BusinessModel> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q815823 ]  # business model
+}
+
+<CERORating> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q23683472 ]  # CERO rating category
+}
+
+<Characters> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1569167 wd:Q15632617 wd:Q95074 ]  # video game character, fictional human, character
+}
+
+<Collection> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q33506 ]  # museum
+}
+
+<Composer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q215380 ]  # human, musical group
+}
+
+<CopyrightHolder> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q210167 wd:Q1137109 wd:Q4830453 wd:Q5 ]  # video game developer, video game publisher, business, human
+}
+
+<CopyrightLicense> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q77205602 ]  # copyright license
+}
+
+<CopyrightStatus> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q50424085 ]  # copyright status
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<DerivativeWork> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q17537576 ]  # creative work
+}
+
+<Designer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q210167 wd:Q4830453 ]  # human, video game developer, business
+}
+
+<DistributionFormat> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q81941037 wd:Q82036085 wd:Q108037652 ]  # product distribution method, physical media format, audio release format
+}
+
+<DistributionPlatform> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q81989119 wd:Q3814081 wd:Q19307174 ]  # video game distribution platform, app marketplace, digital distribution platform
+}
+
+<EditionOrTranslation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3331189 wd:Q60997816 wd:Q7889 ]  # version, edition or translation, video game edition, video game
+}
+
+<ElectronicDeviceModel> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q62008942 ]  # electronic device model
+}
+
+<ELSPARating> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q102109876 ]  # ELSPA classification category
+}
+
+<Environment> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q82794 wd:Q3238337 wd:Q3895768 ]  # geographic region, mythical location, fictional location
+}
+
+<ESRBRating> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q23683568 ]  # ESRB rating category
+}
+
+<ExhibitionHistory> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q464980 ]  # exhibition
+}
+
+<FictionalUniverse> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q559618 ]  # fictional universe
+}
+
+<GameMechanics> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1751513 ]  # game mechanic
+}
+
+<GameMode> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1971694 ]  # game mode
+}
+
+<GRACRating> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q26694303 ]  # GRAC rating category
+}
+
+<GSRRRating> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q23687265 ]  # GSRR rating category
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]
+}
+
+<InputDevice> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q864114 ]  # input device
+}
+
+<IntendedPublic> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q16334295 wd:Q2604680 ]  # group of humans, target audience
+}
+
+<LanguageOfWorkOrName> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1288568 ]  # modern language
+}
+
+<LocationOfCreation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q82794 ]  # geographic region
+}
+
+<MediaFranchise> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q196600 ]  # media franchise
+}
+
+<NarrativeLocation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q82794 wd:Q3895768 ]  # geographic region, fictional location
+}
+
+<OFLCClassification> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q98381389 wd:Q57737074 ]  # OCCF classification category, OFLC classification category
+}
+
+<OperatingSystem> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q9135 ]  # operating system
+}
+
+<OutputDevice> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q778637 ]  # output device
+}
+
+<PEGIRating> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q23686802 ]  # PEGI rating category
+}
+
+<Performer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q215380 ]  # human, musical group
+}
+
+<PlaceOfPublication> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 wd:Q6256 ]  # city, country
+}
+
+<Platform> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q9135 wd:Q8076 wd:Q241317 ]  # operating system, video game console, computing platform
+}
+
+<Producer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<ProgrammingLanguage> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q9143 ]  # programming language
+}
+
+<SetDuringRecurringEvent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q105721984 wd:Q18032959 wd:Q15275719 ]  # fictional day, fictional holiday, recurring event
+}
+
+<SetInPeriod> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q11514315 ]  # historical period
+}
+
+<SoftwareEngine> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q63533016 wd:Q193564 ]  # game engine version, game engine
+}
+
+<SoundtrackRelease> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q482994 wd:Q134556 wd:Q169930 ]  # album, single, extended play
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3331189 wd:Q386724 ]  # version, edition or translation, work
+}
+
+<Sport> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q31629 wd:Q20037067 wd:Q349 ]  # type of sport, fictional sport, sport
+}
+
+<Translator> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q43229 ]  # human, organization
+}
+
+<USKRating> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q24561417 ]  # USK rating category
+}
+
+<VideoGameDeveloper> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q210167 wd:Q1137109 wd:Q4830453 wd:Q5 ]  # video game developer, video game publisher, business, human
+}
+
+<VideoGameGenre> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q659563 ]  # video game genre
+}
+
+<VideoGamePublisher> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q210167 wd:Q1137109 wd:Q4830453 ]  # video game developer, video game publisher, business
+}
+
+<VideoGameSeries> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7058673 ]  # video game series
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}

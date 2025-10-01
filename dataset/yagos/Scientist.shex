@@ -1,0 +1,93 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX yago: <http://yago-knowledge.org/resource/>
+
+start = @<Scientist>
+
+<Scientist> EXTRA rdf:type {
+  # schema:Thing property
+  rdf:type                [ yago:Scientist ] ;
+  rdfs:comment            rdf:langString + ;
+  rdfs:label              rdf:langString + ;
+  schema:alternateName    rdf:langString * ;
+  schema:image            xsd:anyURI * ;
+  schema:mainEntityOfPage xsd:anyURI + ;
+  schema:sameAs           xsd:anyURI ? ;
+
+  # schema.org property
+  schema:affiliation   @<Organization> * ;             # Inherit from @<Person>
+  schema:alumniOf      @<EducationalOrganization> * ;  # Inherit from @<Person>
+  schema:award         @<Award> * ;                    # Inherit from @<Person>
+  schema:birthDate     xsd:dateTime ? ;                # Inherit from @<Person>
+  schema:birthPlace    @<Place> ? ;                    # Inherit from @<Person>
+  schema:deathDate     xsd:dateTime ? ;                # Inherit from @<Person>
+  schema:deathPlace    @<Place> ? ;                    # Inherit from @<Person>
+  schema:gender        @<Gender> ? ;                   # Inherit from @<Person>
+  schema:homeLocation  @<Place> ? ;                    # Inherit from @<Person>
+  schema:knowsLanguage @<Language> * ;                 # Inherit from @<Person>
+  schema:memberOf      @<Organization> * ;             # Inherit from @<Person>
+  schema:nationality   @<Country> * ;                  # Inherit from @<Person>
+  schema:spouse        @<Person> * ;                   # Inherit from @<Person>
+  schema:worksFor      @<Organization> * ;             # Inherit from @<Person>
+  schema:children      @<Person> * ;
+  schema:url           xsd:anyURI * ;
+
+  # yago property
+  yago:academicDegree  @<AcademicDegree> * ;  # Inherit from @<Person>
+  yago:beliefSystem    @<BeliefSystem> * ;    # Inherit from @<Person>
+  yago:appearsIn       @<CreativeWork> * ;
+  yago:doctoralAdvisor @<Person> * ;
+  yago:studentOf       @<Person> * ;
+
+  # owl:sameAs
+  owl:sameAs [ <http://www.wikidata.org/entity>~ ]
+}
+
+<AcademicDegree> EXTRA rdf:type {
+  rdf:type [ yago:Academic_degree ]
+}
+
+<Award> EXTRA rdf:type {
+  rdf:type [ yago:Award ]
+}
+
+<BeliefSystem> EXTRA rdf:type {
+  rdf:type [ yago:BeliefSystem ]
+}
+
+<Country> EXTRA rdf:type {
+  rdf:type [ schema:Country ]
+}
+
+<CreativeWork> EXTRA rdf:type {
+  rdf:type [ schema:CreativeWork ]
+}
+
+<EducationalOrganization> EXTRA rdf:type {
+  rdf:type [ schema:EducationalOrganization ]
+}
+
+<Gender> EXTRA rdf:type {
+  rdf:type [ yago:Gender ]
+}
+
+<Language> EXTRA rdf:type {
+  rdf:type [ schema:Language ]
+}
+
+<Organization> EXTRA rdf:type {
+  rdf:type [ schema:Organization ]
+}
+
+<Person> EXTRA rdf:type {
+  rdf:type [ schema:Person ]
+}
+
+<Place> EXTRA rdf:type {
+  rdf:type [ schema:Place ]
+}

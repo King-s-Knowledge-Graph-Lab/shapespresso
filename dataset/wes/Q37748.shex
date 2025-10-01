@@ -1,0 +1,30 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Chromosome>
+
+<Chromosome> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31 [ wd:Q37748 ] ;            # instance of
+  wdt:P703 @<Taxon> ;                # found in taxon
+  wdt:P156 @<Chromosome> ? ;         # followed by
+  wdt:P155 @<Chromosome> ? ;         # follows
+  wdt:P361 IRI * ;                   # part of
+  wdt:P910 @<WikimediaCategory> ? ;  # topic's main category
+
+  # URL, String, Quantity, Time property
+  wdt:P2043 xsd:decimal ? ;     # length
+  wdt:P1813 rdf:langString ? ;  # short name
+  wdt:P373  xsd:string ?        # Commons category
+}
+
+<Taxon> {
+  wdt:P31 [ wd:Q16521 ]  # taxon
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}

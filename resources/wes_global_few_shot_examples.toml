@@ -1,0 +1,433 @@
+example_0.class_uri = "http://www.wikidata.org/entity/Q4220917"
+example_0.class_label = "film award"
+example_0.class_description = "recognition for cinematic achievements"
+example_0.predicate_uri = "http://www.wikidata.org/prop/direct/P31"
+example_0.predicate_label = "instance of"
+example_0.predicate_description = """\
+  that class of which this subject is a particular example and member; different from P279 (subclass of); \
+  for example: K2 is an instance of mountain; volcano is a subclass of mountain (and an instance of volcanic landform)\
+  """
+example_0.triple_examples = [
+  "{\"s\": \"wd:Q908858 (Donostia Award)\", \"p\": \"wdt:P31 (instance of)\", \"o\": [\"wd:Q4220917 (film award)\"]}",
+  "{\"s\": \"wd:Q86469496\", \"p\": \"wdt:P31 (instance of)\", \"o\": [\"wd:Q4220917 (film award)\"]}",
+  "{\"s\": \"wd:Q86740029 (Le\\u00e3o Lobo Trophy)\", \"p\": \"wdt:P31 (instance of)\", \"o\": [\"wd:Q1364556 (music award)\", \"wd:Q1407225 (television award)\", \"wd:Q1709894 (journalism prize)\", \"wd:Q4220917 (film award)\"]}",
+  "{\"s\": \"wd:Q87750123\", \"p\": \"wdt:P31 (instance of)\", \"o\": [\"wd:Q4220917 (film award)\"]}",
+  "{\"s\": \"wd:Q88385391 (SportFilm Award)\", \"p\": \"wdt:P31 (instance of)\", \"o\": [\"wd:Q4220917 (film award)\"]}"
+]
+example_0.frequency = "100.00% instance(s) in the class use the predicate"
+example_0.cardinality_distribution = """\
+  74.24% instances in the class have 1 object(s) when using the property, \
+  20.35% instances in the class have 2 object(s) when using the property, \
+  4.11% instances in the class have 3 object(s) when using the property, \
+  0.65% instances in the class have 4 object(s) when using the property, \
+  0.43% instances in the class have 5 object(s) when using the property, \
+  0.22% instances in the class have 6 object(s) when using the property\
+  """
+example_0.datatype_of_objects = "IRI"
+example_0.object_class_distribution = """\
+  87.28% of subjects have objects in class wd:Q107467117 (type of award), \
+  4.36% of subjects have objects in class wd:Q19361238 (Wikidata metaclass), \
+  2.61% of subjects have objects in class wd:Q107655869 (group of awards)\
+  """
+answer_0.shexj = """
+{
+  "triple_constraint": {
+    "type": "TripleConstraint",
+    "predicate": "http://www.wikidata.org/prop/direct/P31",
+    "valueExpr": {
+      "type": "NodeConstraint",
+      "values": [
+        "http://www.wikidata.org/entity/Q4220917"
+      ]
+    }
+  }
+}
+"""
+example_1.class_uri = "http://www.wikidata.org/entity/Q4220917"
+example_1.class_label = "film award"
+example_1.class_description = "recognition for cinematic achievements"
+example_1.predicate_uri = "http://www.wikidata.org/prop/direct/P571"
+example_1.predicate_label = "inception"
+example_1.predicate_description = "time when an entity begins to exist; for date of official opening use P1619"
+example_1.triple_examples = [
+  "{\"s\": \"wd:Q908858 (Donostia Award)\", \"p\": \"wdt:P571 (inception)\", \"o\": [\"1986-01-01T00:00:00Z\"]}",
+  "{\"s\": \"wd:Q84766531 (Montblanc Screenplay Award)\", \"p\": \"wdt:P571 (inception)\", \"o\": [\"2006-01-01T00:00:00Z\"]}",
+  "{\"s\": \"wd:Q85807019 (The EDDYS)\", \"p\": \"wdt:P571 (inception)\", \"o\": [\"2017-07-08T00:00:00Z\"]}",
+  "{\"s\": \"wd:Q86740029 (Leão Lobo Trophy)\", \"p\": \"wdt:P571 (inception)\", \"o\": [\"2003-01-01T00:00:00Z\"]}",
+  "{\"s\": \"wd:Q87750123\", \"p\": \"wdt:P571 (inception)\", \"o\": [\"2016-01-01T00:00:00Z\"]}"
+]
+example_1.frequency = "40.26% instance(s) in the class use the predicate"
+example_1.cardinality_distribution = """\
+  40.26% instances in the class have 1 object(s) when using the property\
+  """
+example_1.datatype_of_objects = "xsd:dateTime"
+answer_1.shexj = """
+{
+  "triple_constraint": {
+    "type": "TripleConstraint",
+    "predicate": "http://www.wikidata.org/prop/direct/P571",
+    "valueExpr": {
+      "type": "NodeConstraint",
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "min": 0,
+    "max": 1
+  }
+}
+"""
+example_2.class_uri = "http://www.wikidata.org/entity/Q4220917"
+example_2.class_label = "film award"
+example_2.class_description = "recognition for cinematic achievements"
+example_2.predicate_uri = "http://www.wikidata.org/prop/direct/P2121"
+example_2.predicate_label = "prize money"
+example_2.predicate_description = "amount in a specific currency"
+example_2.triple_examples = [
+  "{\"s\": \"wd:Q824667 (Bernhard Wicki Award)\", \"p\": \"wdt:P2121 (prize money)\", \"o\": [\"+10000\"]}",
+  "{\"s\": \"wd:Q12305387 (The Carl Theodor Dreyer Prize)\", \"p\": \"wdt:P2121 (prize money)\", \"o\": [\"+50000\"]}",
+  "{\"s\": \"wd:Q12324070 (Lauritzen Award)\", \"p\": \"wdt:P2121 (prize money)\", \"o\": [\"+250000\"]}",
+  "{\"s\": \"wd:Q84766531 (Montblanc Screenplay Award)\", \"p\": \"wdt:P2121 (prize money)\", \"o\": [\"+10000\"]}",
+  "{\"s\": \"wd:Q117832751\", \"p\": \"wdt:P2121 (prize money)\", \"o\": [\"+1000\"]}"
+]
+example_2.frequency = "4.76% instance(s) in the class use the predicate"
+example_2.cardinality_distribution = """\
+  4.11% instances in the class have 1 object(s) when using the property, \
+  0.65% instances in the class have 2 object(s) when using the property\
+  """
+example_2.datatype_of_objects = "xsd:decimal"
+answer_2.shexj = """
+{
+  "triple_constraint": {
+    "type": "TripleConstraint",
+    "predicate": "http://www.wikidata.org/prop/direct/P2121",
+    "valueExpr": {
+      "type": "NodeConstraint",
+      "datatype": "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "min": 0,
+    "max": -1
+  }
+}
+"""
+example_3.class_uri = "http://www.wikidata.org/entity/Q4220917"
+example_3.class_label = "film award"
+example_3.class_description = "recognition for cinematic achievements"
+example_3.predicate_uri = "http://www.wikidata.org/prop/direct/P136"
+example_3.predicate_label = "genre"
+example_3.predicate_description = "creative work's genre or an artist's field of work (P101). Use main subject (P921) to relate creative works to their topic"
+example_3.triple_examples = [
+  "{\"s\": \"wd:Q1524205 (Gilde Film Price)\", \"p\": \"wdt:P136 (genre)\", \"o\": [\"wd:Q13209138 (auteur film)\", \"wd:Q2112202 (revival house)\"]}",
+  "{\"s\": \"wd:Q2488705 (IDFA Award)\", \"p\": \"wdt:P136 (genre)\", \"o\": [\"wd:Q93204 (documentary film)\"]}",
+  "{\"s\": \"wd:Q5608702 (Grierson Awards)\", \"p\": \"wdt:P136 (genre)\", \"o\": [\"wd:Q93204 (documentary film)\"]}",
+  "{\"s\": \"wd:Q12314572\", \"p\": \"wdt:P136 (genre)\", \"o\": [\"wd:Q93204 (documentary film)\"]}",
+  "{\"s\": \"wd:Q28799939 (Glashütte Original Dokumentary Film Award)\", \"p\": \"wdt:P136 (genre)\", \"o\": [\"wd:Q93204 (documentary film)\"]}"
+]
+example_3.frequency = "1.08% instance(s) in the class use the predicate"
+example_3.cardinality_distribution = """\
+  0.87% instances in the class have 1 object(s) when using the property, \
+  0.22% instances in the class have 2 object(s) when using the property\
+  """
+example_3.datatype_of_objects = "IRI"
+example_3.object_class_distribution = "100.00% of subjects have objects in class wd:Q201658 (film genre)"
+example_3.subject_type_constraint = """\
+  Based on the subject type constraint of Wikidata, the item described by such properties should be a subclass or \
+  instance of ['wd:Q5 (human)', 'wd:Q571 (book)', 'wd:Q11410 (game)', 'wd:Q11424 (film)', 'wd:Q15416 (television program)', \
+  'wd:Q18127 (record label)', 'wd:Q28640 (profession)', 'wd:Q41207 (coin)', 'wd:Q47433 (banknote)', 'wd:Q215380 (musical group)', \
+  'wd:Q223393 (literary genre)', 'wd:Q378427 (literary award)', 'wd:Q386724 (work)', 'wd:Q476300 (competition)', 'wd:Q483394 (genre)', \
+  'wd:Q589183 (radio format)', 'wd:Q634509 (netlabel)', 'wd:Q667276 (art exhibition)', 'wd:Q742421 (theatre company)', \
+  'wd:Q855973 (commemorative coin)', 'wd:Q868557 (music festival)', 'wd:Q1047299 (original net animation)', 'wd:Q1141470 (double act)', \
+  'wd:Q1364556 (music award)', 'wd:Q1631107 (bibliography)', 'wd:Q1991869 (diwan)', 'wd:Q2088357 (musical ensemble)', \
+  'wd:Q2936887 (cantus)', 'wd:Q4801521 (arts festival)', 'wd:Q5519943 (game jam)', 'wd:Q6806507 (medical dictionary)', \
+  'wd:Q7191193 (picture dictionary)', 'wd:Q7523718 (single-field dictionary)', 'wd:Q7725634 (literary work)', \
+  'wd:Q10648343 (duo)', 'wd:Q10688145 (season)', 'wd:Q12737077 (occupation)', 'wd:Q15116915 (show)', \
+  'wd:Q16334295 (group of humans)', 'wd:Q16686448 (artificial object)', 'wd:Q17489659 (group of works)', \
+  'wd:Q20203727 (mythical object)', 'wd:Q24634210 (podcast)', 'wd:Q55594385 (dictionary of a specific language)', \
+  'wd:Q60550455 (special dictionary)', 'wd:Q110912290 (anatomical atlas)'].\
+  """
+example_3.value_type_constraint = """\
+  Based on the value type constraint of Wikidata, the value item should be a subclass or instance of \
+  ['wd:Q735 (art)', 'wd:Q17955 (criticism)', 'wd:Q37930 (postage stamp)', 'wd:Q41207 (coin)', 'wd:Q47433 (banknote)', \
+  'wd:Q82753 (computer file)', 'wd:Q128093 (ebook)', 'wd:Q188451 (music genre)', 'wd:Q223393 (literary genre)', \
+  'wd:Q317623 (technical standard)', 'wd:Q483394 (genre)', 'wd:Q855973 (commemorative coin)', 'wd:Q862597 (musical form)', \
+  'wd:Q1078597 (artistic language)', 'wd:Q1406161 (artistic theme)', 'wd:Q1499017 (Geistesgeschichte)', \
+  'wd:Q1792644 (art style)', 'wd:Q1991869 (diwan)', 'wd:Q3030248 (discussion)', 'wd:Q3153714 (64k intro)', \
+  'wd:Q4263830 (literary form)', 'wd:Q6806507 (medical dictionary)', 'wd:Q10428845 (narrative technique)', \
+  'wd:Q11921029 (musical style)', 'wd:Q17155032 (software category)', 'wd:Q25679497 (art of an area)', \
+  'wd:Q53001749 (subject of depiction)', 'wd:Q56055944 (type of arts)', 'wd:Q64138195 (religious song)', \
+  'wd:Q104624828 (book form)', 'wd:Q104822033 (podcast genre)', 'wd:Q107356781 (song type)', \
+  'wd:Q108676140 (audio content genre)', 'wd:Q109551565 (sub-set of literature)', 'wd:Q110562117 (form of television program)', \
+  'wd:Q126125231 (dictionary genre)'].\
+  """
+answer_3.shexj = """
+{
+  "triple_constraint": {
+    "type": "TripleConstraint",
+    "predicate": "http://www.wikidata.org/prop/direct/P136",
+    "valueExpr": "FilmGenre",
+    "min": 0,
+    "max": -1
+  },
+  "value_shape": {
+    "type": "Shape",
+    "id": "FilmGenre",
+    "extra": [
+      "http://www.wikidata.org/prop/direct/P31"
+    ],
+    "predicate": "http://www.wikidata.org/prop/direct/P31",
+    "values": [
+      "http://www.wikidata.org/entity/Q201658"
+    ]
+  }
+}
+"""
+example_4.class_uri = "http://www.wikidata.org/entity/Q4220917"
+example_4.class_label = "film award"
+example_4.class_description = "recognition for cinematic achievements"
+example_4.predicate_uri = "http://www.wikidata.org/prop/direct/P112"
+example_4.predicate_label = "founded by"
+example_4.predicate_description = "founder or co-founder of this organization, religion, place or entity"
+example_4.triple_examples = [
+  "{\"s\": \"wd:Q1685299 (Prix Jean Vigo)\", \"p\": \"wdt:P112 (founded by)\", \"o\": [\"wd:Q745528 (Claude Aveline)\"]}",
+  "{\"s\": \"wd:Q3910489 (Premio Vittorio De Sica)\", \"p\": \"wdt:P112 (founded by)\", \"o\": [\"wd:Q3762693 (Gian Luigi Rondi)\"]}",
+  "{\"s\": \"wd:Q11624249 (Fujimoto Prize)\", \"p\": \"wdt:P112 (founded by)\", \"o\": [\"wd:Q875920 (Toho)\"]}",
+  "{\"s\": \"wd:Q19952250 (Courteline Prize)\", \"p\": \"wdt:P112 (founded by)\", \"o\": [\"wd:Q1393036 (Roland Dorgelès)\"]}",
+  "{\"s\": \"wd:Q115462255 (Humanismin käsi)\", \"p\": \"wdt:P112 (founded by)\", \"o\": [\"wd:Q935847 (Viitasaari)\"]}"
+]
+example_4.frequency = "1.30% instance(s) in the class use the predicate"
+example_4.cardinality_distribution = """\
+  1.30% instances in the class have 1 object(s) when using the property
+  """
+example_4.datatype_of_objects = "IRI"
+example_4.object_class_distribution = """\
+  50.00% of subjects have objects in class wd:Q5 (human), \
+  12.50% of subjects have objects in class wd:Q3957 (town), \
+  12.50% of subjects have objects in class wd:Q4830453 (business)
+  """
+example_4.subject_type_constraint = """\
+  Based on the subject type constraint of Wikidata, the item described by such properties should be a subclass or instance of \
+  ['wd:Q5 (human)', 'wd:Q571 (book)', 'wd:Q11410 (game)', 'wd:Q11424 (film)', 'wd:Q15416 (television program)', 'wd:Q18127 (record label)', \
+  'wd:Q28640 (profession)', 'wd:Q41207 (coin)', 'wd:Q47433 (banknote)', 'wd:Q215380 (musical group)', 'wd:Q223393 (literary genre)', \
+  'wd:Q378427 (literary award)', 'wd:Q386724 (work)', 'wd:Q476300 (competition)', 'wd:Q483394 (genre)', 'wd:Q589183 (radio format)', \
+  'wd:Q634509 (netlabel)', 'wd:Q667276 (art exhibition)', 'wd:Q742421 (theatre company)', 'wd:Q855973 (commemorative coin)', \
+  'wd:Q868557 (music festival)', 'wd:Q1047299 (original net animation)', 'wd:Q1141470 (double act)', 'wd:Q1364556 (music award)', \
+  'wd:Q1631107 (bibliography)', 'wd:Q1991869 (diwan)', 'wd:Q2088357 (musical ensemble)', 'wd:Q2936887 (cantus)', \
+  'wd:Q4801521 (arts festival)', 'wd:Q5519943 (game jam)', 'wd:Q6806507 (medical dictionary)', 'wd:Q7191193 (picture dictionary)', \
+  'wd:Q7523718 (single-field dictionary)', 'wd:Q7725634 (literary work)', 'wd:Q10648343 (duo)', 'wd:Q10688145 (season)', \
+  'wd:Q12737077 (occupation)', 'wd:Q15116915 (show)', 'wd:Q16334295 (group of humans)', 'wd:Q16686448 (artificial object)', \
+  'wd:Q17489659 (group of works)', 'wd:Q20203727 (mythical object)', 'wd:Q24634210 (podcast)', \
+  'wd:Q55594385 (dictionary of a specific language)', 'wd:Q60550455 (special dictionary)', 'wd:Q110912290 (anatomical atlas)'].\
+  """
+example_4.value_type_constraint = """\
+  Based on the value type constraint of Wikidata, the value item should be a subclass or instance of \
+  ['wd:Q735 (art)', 'wd:Q17955 (criticism)', 'wd:Q37930 (postage stamp)', 'wd:Q41207 (coin)', 'wd:Q47433 (banknote)', \
+  'wd:Q82753 (computer file)', 'wd:Q128093 (ebook)', 'wd:Q188451 (music genre)', 'wd:Q223393 (literary genre)', \
+  'wd:Q317623 (technical standard)', 'wd:Q483394 (genre)', 'wd:Q855973 (commemorative coin)', 'wd:Q862597 (musical form)', \
+  'wd:Q1078597 (artistic language)', 'wd:Q1406161 (artistic theme)', 'wd:Q1499017 (Geistesgeschichte)', \
+  'wd:Q1792644 (art style)', 'wd:Q1991869 (diwan)', 'wd:Q3030248 (discussion)', 'wd:Q3153714 (64k intro)', \
+  'wd:Q4263830 (literary form)', 'wd:Q6806507 (medical dictionary)', 'wd:Q10428845 (narrative technique)', \
+  'wd:Q11921029 (musical style)', 'wd:Q17155032 (software category)', 'wd:Q25679497 (art of an area)', \
+  'wd:Q53001749 (subject of depiction)', 'wd:Q56055944 (type of arts)', 'wd:Q64138195 (religious song)', \
+  'wd:Q104624828 (book form)', 'wd:Q104822033 (podcast genre)', 'wd:Q107356781 (song type)', \
+  'wd:Q108676140 (audio content genre)', 'wd:Q109551565 (sub-set of literature)', 'wd:Q110562117 (form of television program)', \
+  'wd:Q126125231 (dictionary genre)'].\
+  """
+answer_4.shexj = """
+{
+  "triple_constraint": {
+    "type": "TripleConstraint",
+    "predicate": "http://www.wikidata.org/prop/direct/P112",
+    "valueExpr": "Founder",
+    "min": 0,
+    "max": -1
+  },
+  "value_shape": {
+    "type": "Shape",
+    "id": "Founder",
+    "extra": [
+      "http://www.wikidata.org/prop/direct/P31"
+    ],
+    "predicate": "http://www.wikidata.org/prop/direct/P31",
+    "values": [
+      "http://www.wikidata.org/entity/Q5",
+      "http://www.wikidata.org/entity/Q43229"
+    ]
+  }
+}
+"""
+example_5.class_uri = "http://www.wikidata.org/entity/Q4220917"
+example_5.class_label = "film award"
+example_5.class_description = "recognition for cinematic achievements"
+example_5.predicate_uri = "http://www.wikidata.org/prop/direct/P664"
+example_5.predicate_label = "organizer"
+example_5.predicate_description = "person or institution organizing an event"
+example_5.triple_examples = [
+  "{\"s\": \"wd:Q3910523\", \"p\": \"wdt:P664 (organizer)\", \"o\": [\"wd:Q2288813 (Italian National Syndicate of Film Journalists)\"]}",
+  "{\"s\": \"wd:Q11624249 (Fujimoto Prize)\", \"p\": \"wdt:P664 (organizer)\", \"o\": [\"wd:Q114256803\"]}",
+  "{\"s\": \"wd:Q18640780 (Florida Film Critics Circle Awards)\", \"p\": \"wdt:P664 (organizer)\", \"o\": [\"wd:Q3074282 (Florida Film Critics Circle)\"]}",
+  "{\"s\": \"wd:Q106867277 (NBR Freedom of Expression)\", \"p\": \"wdt:P664 (organizer)\", \"o\": [\"wd:Q1133614 (National Board of Review of Motion Pictures)\"]}",
+  "{\"s\": \"wd:Q109259295 (Gotham Independent Film Award for Breakthrough Nonfiction Series)\", \"p\": \"wdt:P664 (organizer)\", \"o\": [\"wd:Q892112 (Independent Feature Project)\"]}"
+]
+example_5.frequency = "1.73% instance(s) in the class use the predicate"
+example_5.cardinality_distribution = """\
+  1.73% instances in the class have 1 object(s) when using the property
+  """
+example_5.datatype_of_objects = "IRI"
+example_5.object_class_distribution = """\
+  13.33% of subjects have objects in class wd:Q43229 (organization), \
+  6.67% of subjects have objects in class wd:Q101007233 (film critics association), \
+  6.67% of subjects have objects in class wd:Q10689397 (television production company)\
+  """
+example_5.subject_type_constraint = """\
+  Based on the subject type constraint of Wikidata, the item described by such properties should be a subclass or instance of \
+  ['wd:Q170584 (project)', 'wd:Q288514 (fair)', 'wd:Q464980 (exhibition)', 'wd:Q1190554 (occurrence)', \
+  'wd:Q14136353 (fictional occurrence)', 'wd:Q15275719 (recurring event)', 'wd:Q15900616 (event sequence)', \
+  'wd:Q107736918 (series of concerts)'].\
+  """
+example_5.value_type_constraint = """\
+  Based on the value type constraint of Wikidata, the value item should be a subclass or instance of \
+  ['wd:Q5 (human)', 'wd:Q43229 (organization)', 'wd:Q49773 (social movement)', 'wd:Q4164871 (position)', \
+  'wd:Q14623646 (fictional organization)', 'wd:Q15275719 (recurring event)', 'wd:Q16334295 (group of humans)', \
+  'wd:Q30017383 (fictional organism)'].\
+  """
+answer_5.shexj = """
+{}
+"""
+example_6.class_uri = "http://www.wikidata.org/entity/Q4220917"
+example_6.class_label = "film award"
+example_6.class_description = "recognition for cinematic achievements"
+example_6.predicate_uri = "http://www.wikidata.org/prop/direct/P585"
+example_6.predicate_label = "point in time"
+example_6.predicate_description = "date something took place, existed or a statement was true; for providing time use the \"refine date\" property (P4241)"
+example_6.triple_examples = [
+  "{\"s\": \"wd:Q105447 (Saturn Award)\", \"p\": \"wdt:P585 (point in time)\", \"o\": [\"1972-01-01T00:00:00Z\"]}",
+  "{\"s\": \"wd:Q15964720 (Filmfare Awards East)\", \"p\": \"wdt:P585 (point in time)\", \"o\": [\"2014-03-29T00:00:00Z\"]}",
+  "{\"s\": \"wd:Q18163663 (Score! A Concert Celebrating Music Composed for Television)\", \"p\": \"wdt:P585 (point in time)\", \"o\": [\"2014-05-21T00:00:00Z\"]}",
+  "{\"s\": \"wd:Q19881577 (21st Screen Awards)\", \"p\": \"wdt:P585 (point in time)\", \"o\": [\"2015-01-14T00:00:00Z\"]}",
+  "{\"s\": \"wd:Q113372175 (67th Filmfare Awards)\", \"p\": \"wdt:P585 (point in time)\", \"o\": [\"2022-08-30T00:00:00Z\"]}"
+]
+example_6.frequency = "1.73% instance(s) in the class use the predicate"
+example_6.cardinality_distribution = """\
+  1.73% instances in the class have 1 object(s) when using the property
+  """
+example_6.datatype_of_objects = "xsd:dateTime"
+answer_6.shexj = """
+{}
+"""
+example_7.class_uri = "http://www.wikidata.org/entity/Q4220917"
+example_7.class_label = "film award"
+example_7.class_description = "recognition for cinematic achievements"
+example_7.predicate_uri = "http://www.wikidata.org/prop/direct/P17"
+example_7.predicate_label = "country"
+example_7.predicate_description = "sovereign state that this item is in (not to be used for human beings)"
+example_7.triple_examples = [
+  "{\"s\": \"wd:Q908858 (Donostia Award)\", \"p\": \"wdt:P17 (country)\", \"o\": [\"wd:Q29 (Spain)\"]}",
+  "{\"s\": \"wd:Q86469496\", \"p\": \"wdt:P17 (country)\", \"o\": [\"wd:Q183 (Germany)\"]}",
+  "{\"s\": \"wd:Q86740029 (Leão Lobo Trophy)\", \"p\": \"wdt:P17 (country)\", \"o\": [\"wd:Q155 (Brazil)\"]}",
+  "{\"s\": \"wd:Q87750123\", \"p\": \"wdt:P17 (country)\", \"o\": [\"wd:Q183 (Germany)\"]}",
+  "{\"s\": \"wd:Q88385391 (SportFilm Award)\", \"p\": \"wdt:P17 (country)\", \"o\": [\"wd:Q55 (Netherlands)\"]}"
+]
+example_7.frequency = "66.67% instance(s) in the class use the predicate"
+example_7.cardinality_distribution = """\
+  66.23% instances in the class have 1 object(s) when using the property, \
+  0.22% instances in the class have 2 object(s) when using the property, \
+  0.22% instances in the class have 3 object(s) when using the property
+  """
+example_7.datatype_of_objects = "IRI"
+example_7.object_class_distribution = """\
+  29.42% of subjects have objects in class wd:Q3624078 (sovereign state), \
+  25.28% of subjects have objects in class wd:Q6256 (country), \
+  9.71% of subjects have objects in class wd:Q7270 (republic)\
+  """
+example_7.value_type_constraint = """\
+  Based on the value type constraint of Wikidata, the value item should be a subclass or instance of \
+  ['wd:Q6256 (country)', 'wd:Q7275 (state)', 'wd:Q43702 (federation)', 'wd:Q48349 (empire)', \
+  'wd:Q59281 (transitional government)', 'wd:Q148837 (polis)', 'wd:Q161243 (dependent territory)', \
+  'wd:Q170156 (confederation)', 'wd:Q182547 (Roman province)', 'wd:Q253836 (judicial district)', \
+  'wd:Q1145276 (fictional country)', 'wd:Q1151405 (client state)', 'wd:Q1250464 (realm)', \
+  'wd:Q1620908 (historical region)', 'wd:Q1896989 (subject of international law)', 'wd:Q2577883 (occupied territory)', \
+  'wd:Q3024240 (historical country)', 'wd:Q3238337 (mythical location)', 'wd:Q3624078 (sovereign state)', \
+  'wd:Q3895768 (fictional location)', 'wd:Q5982983 (jurisdiction)', 'wd:Q10711424 (state with limited recognition)', \
+  'wd:Q15239622 (disputed territory)', 'wd:Q15304003 (country of the Kingdom of the Netherlands)', \
+  'wd:Q28171280 (ancient civilization)'].\
+  """
+answer_7.shexj = """
+{
+  "triple_constraint": {
+    "type": "TripleConstraint",
+    "predicate": "http://www.wikidata.org/prop/direct/P17",
+    "valueExpr": "Country",
+    "min": 0,
+    "max": 1
+  },
+  "value_shape": {
+    "type": "Shape",
+    "id": "Country",
+    "extra": [
+      "http://www.wikidata.org/prop/direct/P31"
+    ],
+    "predicate": "http://www.wikidata.org/prop/direct/P31",
+    "values": [
+      "http://www.wikidata.org/entity/Q6256"
+    ]
+  }
+}
+"""
+example_8.class_uri = "http://www.wikidata.org/entity/Q4220917"
+example_8.class_label = "film award"
+example_8.class_description = "recognition for cinematic achievements"
+example_8.predicate_uri = "http://www.wikidata.org/prop/direct/P276"
+example_8.predicate_label = "location"
+example_8.predicate_description = """\
+  location of the object, structure or event. In the case of an administrative entity as containing item use P131. \
+  For statistical entities use P8138. In the case of a geographic entity use P706. Use P7153 for locations associated with the object\
+  """
+example_8.triple_examples = [
+  "{\"s\": \"wd:Q11687494 (L'Alternativa)\", \"p\": \"wdt:P276 (location)\", \"o\": [\"wd:Q1492 (Barcelona)\"]}",
+  "{\"s\": \"wd:Q85807019 (The EDDYS)\", \"p\": \"wdt:P276 (location)\", \"o\": [\"wd:Q23808197 (New Frontier Theater)\"]}",
+  "{\"s\": \"wd:Q117467528 (2003 Kite Awards (2th))\", \"p\": \"wdt:P276 (location)\", \"o\": [\"wd:Q1858 (Hanoi)\"]}",
+  "{\"s\": \"wd:Q117832751\", \"p\": \"wdt:P276 (location)\", \"o\": [\"wd:Q38380 (Angers)\"]}",
+  "{\"s\": \"wd:Q118078894 (Gene Moskowitz Prize)\", \"p\": \"wdt:P276 (location)\", \"o\": [\"wd:Q1781 (Budapest)\"]}"
+]
+example_8.frequency = "8.01% instance(s) in the class use the predicate"
+example_8.cardinality_distribution = """\
+  8.01% instances in the class have 1 object(s) when using the property
+  """
+example_8.datatype_of_objects = "IRI"
+example_8.object_class_distribution = """\
+  14.60% of subjects have objects in class wd:Q1549591 (big city), \
+  10.95% of subjects have objects in class wd:Q515 (city), \
+  8.03% of subjects have objects in class wd:Q484170 (commune of France)\
+  """
+example_8.value_type_constraint = """\
+  Based on the value type constraint of Wikidata, the value item should be a subclass or instance of \
+  ['wd:Q4130 (orbit)', 'wd:Q6999 (astronomical object)', 'wd:Q7075 (library)', 'wd:Q11033 (mass media)', \
+  'wd:Q36133 (soil)', 'wd:Q41176 (building)', 'wd:Q43229 (organization)', 'wd:Q82794 (geographic region)', \
+  'wd:Q166118 (archive)', 'wd:Q190463 (Lagrangian point)', 'wd:Q204606 (cyberspace)', 'wd:Q618123 (geographical feature)', \
+  'wd:Q988108 (club)', 'wd:Q1656682 (event)', 'wd:Q2133296 (space)', 'wd:Q2221906 (geographic location)', \
+  'wd:Q2385804 (educational institution)', 'wd:Q3238337 (mythical location)', 'wd:Q3895768 (fictional location)', \
+  'wd:Q4936952 (anatomical structure)', 'wd:Q9158768 (storage)', 'wd:Q13226383 (facility)', 'wd:Q15989253 (part)', \
+  'wd:Q17334923 (physical location)', 'wd:Q18670171 (fictional vessel)', 'wd:Q20203388 (extremity)', \
+  'wd:Q47495022 (shell of an astronomical object)', 'wd:Q118547484 (namespace on MediaWiki)', \
+  'wd:Q121141099 (shelving location)'].\
+  """
+answer_8.shexj = """
+{
+  "triple_constraint": {
+    "type": "TripleConstraint",
+    "predicate": "http://www.wikidata.org/prop/direct/P276",
+    "valueExpr": "City",
+    "min": 0,
+    "max": 1
+  },
+  "value_shape": {
+    "type": "Shape",
+    "id": "City",
+    "extra": [
+      "http://www.wikidata.org/prop/direct/P31"
+    ],
+    "predicate": "http://www.wikidata.org/prop/direct/P31",
+    "values": [
+      "http://www.wikidata.org/entity/Q515"
+    ]
+  }
+}
+"""

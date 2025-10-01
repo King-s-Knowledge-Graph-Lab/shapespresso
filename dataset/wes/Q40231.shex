@@ -1,0 +1,93 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<PublicElection>
+
+<PublicElection> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q40231 ] ;                         # instance of
+  wdt:P17   @<Country> ? ;                          # country
+  wdt:P726  @<Human> * ;                            # candidate
+  wdt:P155  @<PublicElection> ? ;                   # follows
+  wdt:P156  @<PublicElection> ? ;                   # followed by
+  wdt:P541  @<OfficeContested> ? ;                  # office contested
+  wdt:P1001 @<AdministrativeTerritorialEntity> ? ;  # applies to jurisdiction
+  wdt:P361  @<PublicElection> ? ;                   # part of
+  wdt:P991  @<Human> ? ;                            # successful candidate
+  wdt:P910  @<WikimediaCategory> ? ;                # topic's main category
+  wdt:P131  @<AdministrativeTerritorialEntity> ? ;  # located in the administrative territorial entity
+  wdt:P276  @<Location> ? ;                         # location
+  wdt:P5008 @<WikiProject> ? ;                      # on focus list of Wikimedia project
+  wdt:P8196 @<VotingSystem> * ;                     # voting system
+  wdt:P921  IRI ? ;                                 # main subject
+  wdt:P1269 IRI ? ;                                 # facet of
+  wdt:P1424 @<WikimediaTemplate> ? ;                # topic's main template
+  wdt:P664  @<Organizer> ? ;                        # organizer
+  wdt:P2354 @<HasList> * ;                          # has list
+  wdt:P6104 @<WikiProject> ? ;                      # maintained by WikiProject
+  wdt:P2319 @<Elector> * ;                          # elector
+
+  # URL, String, Quantity, Time property
+  wdt:P585  xsd:dateTime ? ;  # point in time
+  wdt:P1831 xsd:decimal ? ;   # electorate
+  wdt:P1868 xsd:decimal ? ;   # ballots cast
+  wdt:P5044 xsd:decimal ? ;   # number of spoilt votes
+  wdt:P373  xsd:string ? ;    # Commons category
+  wdt:P1697 xsd:decimal ? ;   # total valid votes
+  wdt:P973  IRI ? ;           # described at URL
+  wdt:P1867 xsd:decimal ? ;   # eligible voters
+  wdt:P5045 xsd:decimal ? ;   # number of blank votes
+  wdt:P856  IRI ? ;           # official website
+  wdt:P5043 xsd:decimal ?     # number of abstentions
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56061 ]  # administrative territorial entity
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Elector> {
+  wdt:P31 [ wd:Q4164871 ]  # position
+}
+
+<HasList> {
+  wdt:P31 [ wd:Q13406463 ]  # Wikimedia list article
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 ]  # city
+}
+
+<OfficeContested> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4164871 ]  # position
+}
+
+<Organizer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7278 ]  # political party
+}
+
+<VotingSystem> {
+  wdt:P31 [ wd:Q182985 ]  # electoral system
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikimediaTemplate> {
+  wdt:P31 [ wd:Q11266439 ]  # Wikimedia template
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

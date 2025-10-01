@@ -1,0 +1,160 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<ProgrammingLanguage>
+
+<ProgrammingLanguage> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q9143 ] ;                # instance of
+  wdt:P3966 @<ProgrammingParadigm> * ;    # programming paradigm
+  wdt:P737  @<ProgrammingLanguage> * ;    # influenced by
+  wdt:P7078 @<TypingDiscipline> * ;       # typing discipline
+  wdt:P178  @<Developer> * ;              # developer
+  wdt:P306  @<OperatingSystem> * ;        # operating system
+  wdt:P275  @<CopyrightLicense> * ;       # copyright license
+  wdt:P6216 @<CopyrightStatus> ? ;        # copyright status
+  wdt:P1072 @<FileFormat> * ;             # readable file format
+  wdt:P287  @<Designer> * ;               # designed by
+  wdt:P277  @<ProgrammingLanguage> * ;    # programmed in
+  wdt:P1073 @<FileFormat> * ;             # writable file format
+  wdt:P1889 IRI * ;                       # different from
+  wdt:P366  IRI * ;                       # has use
+  wdt:P400  @<Platform> + ;               # platform
+  wdt:P144  @<ProgrammingLanguage> * ;    # based on
+  wdt:P8131 @<ProgrammingLanguage> ? ;    # dialect of computer language
+  wdt:P910  @<WikimediaCategory> ? ;      # topic's main category
+  wdt:P1343 @<Source> ? ;                 # described by source
+  wdt:P138  IRI ? ;                       # named after
+  wdt:P4969 @<ProgrammingLanguage> * ;    # derivative work
+  wdt:P4810 @<EnvironmentVariable> * ;    # reads environment variable
+  wdt:P4428 @<ProgrammingLanguage> ? ;    # implementation of
+  wdt:P1535 @<Software> * ;               # used by
+  wdt:P155  @<ProgrammingLanguage> ? ;    # follows
+  wdt:P156  @<ProgrammingLanguage> ? ;    # followed by
+  wdt:P747  @<Edition> * ;                # has edition or translation
+  wdt:P126  @<Human> * ;                  # maintained by
+  wdt:P1557 IRI * ;                       # manifestation of
+  wdt:P1365 @<ProgrammingLanguage> ? ;    # replaces
+  wdt:P1366 @<ProgrammingLanguage> ? ;    # replaced by
+  wdt:P1414 @<WidgetToolkit> ? ;          # GUI toolkit or framework
+  wdt:P941  @<ProgrammingLanguage> ? ;    # inspired by
+  wdt:P1462 @<StandardsOrganization> ? ;  # standards body
+  wdt:P407  @<Language> * ;               # language of work or name
+  wdt:P5008 @<WikiProject> ? ;            # on focus list of Wikimedia project
+  wdt:P629  @<ProgrammingLanguage> ? ;    # edition or translation of
+  wdt:P1424 @<WikimediaTemplate> ? ;      # topic's main template
+  wdt:P3931 @<Organization> ? ;           # copyright holder
+  wdt:P112  @<Organization> ? ;           # founded by
+  wdt:P1547 @<Software> ? ;               # depends on software
+  wdt:P495  @<Country> ? ;                # country of origin
+
+  # URL, String, Quantity, Time property
+  wdt:P571   xsd:dateTime ? ;  # inception
+  wdt:P856   IRI ? ;           # official website
+  wdt:P348   xsd:string * ;    # software version identifier
+  wdt:P1195  xsd:string * ;    # file extension
+  wdt:P1324  IRI ? ;           # source code repository URL
+  wdt:P1482  IRI ? ;           # Stack Exchange tag
+  wdt:P373   xsd:string ? ;    # Commons category
+  wdt:P577   xsd:dateTime ? ;  # publication date
+  wdt:P973   IRI ? ;           # described at URL
+  wdt:P1163  xsd:string * ;    # media type
+  wdt:P2078  IRI ? ;           # user manual URL
+  wdt:P8934  IRI ? ;           # mailing list archive URL
+  wdt:P1401  IRI ? ;           # issue tracker URL
+  wdt:P4837  xsd:string * ;    # has command line option
+  wdt:P1613  IRI ? ;           # IRC channel URL
+  wdt:P1581  IRI ? ;           # official blog URL
+  wdt:P11201 IRI ?             # official demo URL
+}
+
+<CopyrightLicense> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q77205602 ]  # copyright license
+}
+
+<CopyrightStatus> {
+  wdt:P31 [ wd:Q50424085 ]  # copyright status
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Designer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q4830453 ]  # human, business
+}
+
+<Developer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q43229 wd:Q177634 ]  # human, organization, community
+}
+
+<Edition> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3331189 ]  # version, edition or translation
+}
+
+<EnvironmentVariable> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q400857 ]  # environment variable
+}
+
+<FileFormat> {
+  wdt:P31 [ wd:Q235557 ]  # file format
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<Language> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1288568 ]  # modern language
+}
+
+<Organization> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<OperatingSystem> {
+  wdt:P31 [ wd:Q9135 ]  # operating system
+}
+
+<Platform> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q241317 ]  # computing platform
+}
+
+<ProgrammingParadigm> {
+  wdt:P31 [ wd:Q188267 ]  # programming paradigm
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q15633582 wd:Q13442814 ]  # MediaWiki wiki, scholarly article
+}
+
+<Software> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7397 ]  # software
+}
+
+<StandardsOrganization> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1328899 ]  # standards organization
+}
+
+<TypingDiscipline> {
+  wdt:P279 [ wd:Q122624423 ]  # typing discipline
+}
+
+<WidgetToolkit> {
+  wdt:P31 [ wd:Q1193246 ]  # widget toolkit
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikimediaTemplate> {
+  wdt:P31 [ wd:Q11266439 ]  # Wikimedia template
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

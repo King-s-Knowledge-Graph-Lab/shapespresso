@@ -1,0 +1,105 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<SearchEngine>
+
+<SearchEngine> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q4182287 ] ;                # instance of
+  wdt:P17   @<Country> ? ;                   # country
+  wdt:P127  @<Owner> * ;                     # owned by
+  wdt:P407  @<LanguageOfWorkOrName> * ;      # language of work or name
+  wdt:P277  @<ProgrammingLanguage> * ;       # programmed in
+  wdt:P1056 @<ProductMaterialOrService> * ;  # product, material, or service produced or provided
+  wdt:P112  @<Founder> * ;                   # founded by
+  wdt:P275  @<CopyrightLicense> * ;          # copyright license
+  wdt:P6216 @<CopyrightStatus> ? ;           # copyright status
+  wdt:P178  @<Developer> * ;                 # developer
+  wdt:P137  @<Operator> * ;                  # operator
+  wdt:P910  @<WikimediaCategory> ? ;         # topic's main category
+  wdt:P366  IRI ? ;                          # has use
+  wdt:P1889 IRI * ;                          # different from
+  wdt:P306  @<OperatingSystem> * ;           # operating system
+  wdt:P1343 @<Source> * ;                    # described by source
+  wdt:P750  @<Distributor> * ;               # distributed by
+  wdt:P2283 IRI * ;                          # uses
+  wdt:P495  @<Country> ? ;                   # country of origin
+  wdt:P126  @<Maintainer> ? ;                # maintained by
+
+  # URL, String, Quantity, Time property
+  wdt:P856  IRI * ;             # official website
+  wdt:P571  xsd:dateTime ? ;    # inception
+  wdt:P1661 xsd:decimal ? ;     # Alexa rank
+  wdt:P4354 xsd:string ? ;      # search formatter URL
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P8687 xsd:decimal * ;     # social media followers
+  wdt:P1581 IRI * ;             # official blog URL
+  wdt:P1324 IRI ? ;             # source code repository URL
+  wdt:P7101 IRI ? ;             # privacy policy URL
+  wdt:P576  xsd:dateTime ? ;    # dissolved, abolished or demolished date
+  wdt:P348  xsd:string ? ;      # software version identifier
+  wdt:P1451 rdf:langString *    # motto text
+}
+
+<CopyrightLicense> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q77205602 ]  # copyright license
+}
+
+<CopyrightStatus> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q50424085 ]  # copyright status
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Developer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q43229 wd:Q18388277 ]  # human, organization, technology company
+}
+
+<Distributor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3814081 wd:Q35127 ]  # app marketplace, website
+}
+
+<Founder> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q4830453 wd:Q43229 ]  # human, business, organization
+}
+
+<LanguageOfWorkOrName> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1288568 ]  # modern language
+}
+
+<Maintainer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 wd:Q43229 ]  # business, organization
+}
+
+<OperatingSystem> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q9135 ]  # operating system
+}
+
+<Operator> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 ]  # business
+}
+
+<Owner> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 ]  # business
+}
+
+<ProductMaterialOrService> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7406919 ]  # service
+}
+
+<ProgrammingLanguage> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q9143 ]  # programming language
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q386724 wd:Q13442814 ]  # work, scholarly article
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}

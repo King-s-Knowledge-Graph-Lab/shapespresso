@@ -1,0 +1,116 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Glacier>
+
+<Glacier> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q35666 ] ;                         # instance of
+  wdt:P17   @<Country> ? ;                          # country
+  wdt:P131  @<AdministrativeTerritorialEntity> ? ;  # located in the administrative territorial entity
+  wdt:P30   @<Continent> ? ;                        # continent
+  wdt:P4552 @<MountainRange> ? ;                    # mountain range
+  wdt:P138  IRI ? ;                                 # named after
+  wdt:P3018 @<ProtectedArea> ? ;                    # located in protected area
+  wdt:P706  @<PhysicalFeature> ? ;                  # located in/on physical feature
+  wdt:P4614 @<DrainageBasin> ? ;                    # drainage basin
+  wdt:P1343 @<Source> * ;                           # described by source
+  wdt:P559  @<Terminus> ? ;                         # terminus
+  wdt:P1889 IRI * ;                                 # different from
+  wdt:P201  @<BodyOfWater> * ;                      # lake outflow
+  wdt:P403  @<BodyOfWater> ? ;                      # mouth of the watercourse
+  wdt:P361  IRI ? ;                                 # part of
+  wdt:P421  @<TimeZone> ? ;                         # located in time zone
+  wdt:P910  @<WikimediaCategory> ? ;                # topic's main category
+  wdt:P2789 @<Glacier> * ;                          # connects with
+  wdt:P276  @<Location> ? ;                         # location
+  wdt:P1336 @<Country> * ;                          # territory claimed by
+  wdt:P7867 @<WikimediaCategory> ? ;                # category for maps
+  wdt:P3938 IRI ? ;                                 # named by
+  wdt:P1435 @<HeritageDesignation> ? ;              # heritage designation
+  wdt:P61   @<Discoverer> * ;                       # discoverer or inventor
+  wdt:P7442 @<GlacierStatus> ? ;                    # glacier status
+  wdt:P206  @<BodyOfWater> ? ;                      # located in or next to body of water
+
+  # URL, String, Quantity, Time property
+  wdt:P2044 xsd:decimal ? ;     # elevation above sea level
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P2043 xsd:decimal ? ;     # length
+  wdt:P2046 xsd:decimal ? ;     # area
+  wdt:P1705 rdf:langString * ;  # native label
+  wdt:P973  IRI ? ;             # described at URL
+  wdt:P2049 xsd:decimal ? ;     # width
+  wdt:P935  xsd:string ? ;      # Commons gallery
+  wdt:P1448 rdf:langString ? ;  # official name
+  wdt:P1249 xsd:dateTime ? ;    # time of earliest written record
+  wdt:P2660 xsd:decimal ? ;     # topographic prominence
+  wdt:P2659 xsd:decimal ? ;     # topographic isolation
+  wdt:P576  xsd:dateTime ?      # dissolved, abolished or demolished date
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56061 ]  # administrative territorial entity
+}
+
+<BodyOfWater> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q15324 ]  # body of water
+}
+
+<Continent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5107 ]  # continent
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Discoverer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<DrainageBasin> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q166620 ]  # drainage basin
+}
+
+<GlacierStatus> EXTRA wdt:P279 {
+  wdt:P279 [ wd:Q3866635 ]  # glacial motion
+}
+
+<HeritageDesignation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q210272 wd:Q386426 ]  # cultural heritage, natural heritage
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q82794 ]  # geographic region
+}
+
+<MountainRange> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q46831 ]  # mountain system
+}
+
+<PhysicalFeature> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q2221906 wd:Q618123 ]  # geographic location, geographical feature
+}
+
+<ProtectedArea> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q46169 wd:Q473972 ]  # national park, protected area
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q8513 wd:Q3331189 ]  # database, version, edition or translation
+}
+
+<Terminus> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q2221906 wd:Q15324 ]  # geographic location, body of water
+}
+
+<TimeZone> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q12143 ]  # time zone
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}

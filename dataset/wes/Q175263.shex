@@ -1,0 +1,36 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<DataStructure>
+
+<DataStructure> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q175263 ] ;      # instance of
+  wdt:P2579 [ wd:Q13636890 ] ? ;  # studied in
+  wdt:P61   @<Human> * ;          # discoverer or inventor
+  wdt:P1889 IRI ? ;               # different from
+  wdt:P6104 @<WikiProject> ? ;    # maintained by WikiProject
+  wdt:P2283 @<Uses> ? ;           # uses
+  wdt:P366  IRI * ;               # has use
+
+  # URL, String, Quantity, Time property
+  wdt:P575  xsd:dateTime ? ;  # time of discovery or invention
+  wdt:P373  xsd:string ? ;    # Commons category
+  wdt:P973  IRI ? ;           # described at URL
+  wdt:P1482 IRI ?             # Stack Exchange tag
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]
+}
+
+<Uses> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q827335 ]  # abstract data type
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

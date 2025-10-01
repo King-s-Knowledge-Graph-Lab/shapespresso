@@ -1,0 +1,120 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Ballet>
+
+<Ballet> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31    [ wd:Q15079786 ] ;                 # instance of
+  wdt:P86    @<Human> * ;                       # composer
+  wdt:P1809  @<Human> ? ;                       # choreographer
+  wdt:P144   @<Work> * ;                        # based on
+  wdt:P87    @<Human> * ;                       # librettist
+  wdt:P4647  @<LocationOfFirstPerformance> ? ;  # location of first performance
+  wdt:P136   @<Genre> ? ;                       # genre
+  wdt:P495   @<Country> ? ;                     # country of origin
+  wdt:P272   @<ProductionCompany> * ;           # production company
+  wdt:P1889  IRI * ;                            # different from
+  wdt:P2515  @<Human> * ;                       # costume designer
+  wdt:P4608  @<Human> * ;                       # scenographer
+  wdt:P161   @<Human> * ;                       # cast member
+  wdt:P6216  @<CopyrightStatus> ? ;             # copyright status
+  wdt:P88    @<Commissioner> * ;                # commissioned by
+  wdt:P407   @<LanguageOfWorkOrName> ? ;        # language of work or name
+  wdt:P7937  @<FormOfCreativeWork> * ;          # form of creative work
+  wdt:P170   @<Human> * ;                       # creator
+  wdt:P1625  @<HasMelody> ? ;                   # has melody
+  wdt:P50    @<Human> ? ;                       # author
+  wdt:P674   @<Characters> * ;                  # characters
+  wdt:P361   IRI * ;                            # part of
+  wdt:P840   @<NarrativeLocation> * ;           # narrative location
+  wdt:P57    @<Human> ? ;                       # director
+  wdt:P1877  @<Human> ? ;                       # after a work by
+  wdt:P921   IRI ? ;                            # main subject
+  wdt:P175   @<Human> * ;                       # performer
+  wdt:P166   @<AwardReceived> ? ;               # award received
+  wdt:P2554  @<Human> ? ;                       # production designer
+  wdt:P138   IRI ? ;                            # named after
+  wdt:P941   IRI ? ;                            # inspired by
+  wdt:P870   @<Instrumentation> * ;             # instrumentation
+  wdt:P910   @<WikimediaCategory> ? ;           # topic's main category
+  wdt:P10806 @<Human> ? ;                       # orchestrator
+
+  # URL, String, Quantity, Time property
+  wdt:P1191  xsd:dateTime ? ;    # date of first performance
+  wdt:P373   xsd:string ? ;      # Commons category
+  wdt:P1476  rdf:langString * ;  # title
+  wdt:P973   IRI ? ;             # described at URL
+  wdt:P1705  rdf:langString ? ;  # native label
+  wdt:P2635  xsd:decimal * ;     # number of parts of this work
+  wdt:P2047  xsd:decimal * ;     # duration
+  wdt:P10855 xsd:string ? ;      # opus number
+  wdt:P953   IRI *               # full work available at URL
+}
+
+<AwardReceived> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q38033430 wd:Q618779 ]  # class of award, award
+}
+
+<Characters> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q95074 ]  # character
+}
+
+<Commissioner> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q805233 wd:Q5 ]  # ballet company, human
+}
+
+<CopyrightStatus> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q50424085 ]  # copyright status
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<FormOfCreativeWork> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q107487333 wd:Q862597 ]  # type of musical work/composition, musical form
+}
+
+<Genre> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q45971958 wd:Q107357104 ]  # performing arts genre, type of dance
+}
+
+<HasMelody> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q105543609 ]  # musical work/composition
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<Instrumentation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q34379 wd:Q617028 wd:Q1254773 wd:Q2088357 ]  # musical instrument, instrumentation, family of musical instruments, musical ensemble
+}
+
+<LanguageOfWorkOrName> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1288568 ]  # modern language
+}
+
+<LocationOfFirstPerformance> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q153562 wd:Q57660343 ]  # opera house, performing arts building
+}
+
+<NarrativeLocation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q82794 wd:Q17334923 wd:Q3895768 ]  # geographic region, physical location, fictional location
+}
+
+<ProductionCompany> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q805233 ]  # ballet company
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<Work> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7725634 wd:Q105543609 ]  # literary work, musical work/composition
+}

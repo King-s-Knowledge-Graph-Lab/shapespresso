@@ -1,0 +1,148 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Trail>
+
+<Trail> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q628179 ] ;                        # instance of
+  wdt:P17   @<Country> ;                            # country
+  wdt:P131  @<AdministrativeTerritorialEntity> ? ;  # located in the administrative territorial entity
+  wdt:P361  IRI ? ;                                 # part of
+  wdt:P1435 @<HeritageDesignation> ? ;              # heritage designation
+  wdt:P47   @<SharesBorderWith> * ;                 # shares border with
+  wdt:P30   @<Continent> ? ;                        # continent
+  wdt:P3018 @<ProtectedArea> ? ;                    # located in protected area
+  wdt:P138  IRI ? ;                                 # named after
+  wdt:P2817 @<WikimediaListArticle> * ;             # appears in the heritage monument list
+  wdt:P559  @<Terminus> * ;                         # terminus
+  wdt:P276  @<Location> * ;                         # location
+  wdt:P3173 @<OffersViewOn> * ;                     # offers view on
+  wdt:P7252 @<DegreeOfDifficulty> ? ;               # degree of difficulty
+  wdt:P2789 IRI * ;                                 # connects with
+  wdt:P1343 @<Source> ? ;                           # described by source
+  wdt:P206  @<BodyOfWater> * ;                      # located in or next to body of water
+  wdt:P1427 @<StartPoint> * ;                       # start point
+  wdt:P4552 @<MountainRange> ? ;                    # mountain range
+  wdt:P706  @<PhysicalFeature> * ;                  # located in/on physical feature
+  wdt:P1382 IRI * ;                                 # partially coincident with
+  wdt:P1444 @<DestinationPoint> * ;                 # destination point
+  wdt:P366  IRI * ;                                 # has use
+  wdt:P910  @<WikimediaCategory> ? ;                # topic's main category
+  wdt:P527  IRI * ;                                 # has part(s)
+  wdt:P1889 IRI * ;                                 # different from
+  wdt:P610  @<HighestPoint> ? ;                     # highest point
+  wdt:P7959 @<HistoricCounty> ? ;                   # historic county
+  wdt:P8933 @<WikimediaCategory> ? ;                # category for the view from the item
+  wdt:P5008 @<WikiProject> ? ;                      # on focus list of Wikimedia project
+  wdt:P7153 @<SignificantPlace> * ;                 # significant place
+  wdt:P137  @<Operator> * ;                         # operator
+
+  # URL, String, Quantity, Time property
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P2043 xsd:decimal ? ;     # length
+  wdt:P1705 rdf:langString ? ;  # native label
+  wdt:P856  IRI ? ;             # official website
+  wdt:P1448 rdf:langString * ;  # official name
+  wdt:P571  xsd:dateTime ? ;    # inception
+  wdt:P281  xsd:string ? ;      # postal code
+  wdt:P6375 rdf:langString ? ;  # street address
+  wdt:P2561 rdf:langString * ;  # name
+  wdt:P973  IRI * ;             # described at URL
+  wdt:P2049 xsd:decimal ?       # width
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7930989 wd:Q56061 ]  # city or town, administrative territorial entity
+}
+
+<BodyOfWater> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q15324 ]  # body of water
+}
+
+<Continent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5107 ]  # continent
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<DegreeOfDifficulty> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q11659512 ]  # degree of difficulty
+}
+
+<DestinationPoint> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q17334923 wd:Q27096213 ]  # physical location, geographic entity
+}
+
+<HeritageDesignation> EXTRA wdt:P279 {
+  wdt:P279 [ wd:Q210272 wd:Q386426 ]  # cultural heritage, natural heritage
+}
+
+<HighestPoint> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q207326 wd:Q8502 wd:Q54050 ]  # summit, mountain, hill
+}
+
+<HistoricCounty> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q67376938 ]  # historic county of the United Kingdom
+}
+
+<PhysicalFeature> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q82794 wd:Q618123 wd:Q2221906 ]  # geographic region, geographical feature, geographic location
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q17334923 wd:Q82794 wd:Q618123 wd:Q2221906 ]  # physical location, geographic region, geographical feature, geographic location
+}
+
+<MountainRange> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q46831 ]  # mountain system
+}
+
+<OffersViewOn> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q618123 ]  # geographical feature
+}
+
+<Operator> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 wd:Q327333 ]  # organization, government agency
+}
+
+<ProtectedArea> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q473972 ]  # protected area
+}
+
+<SharesBorderWith> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q123414165 wd:Q618123 ]  # road or street, geographical feature
+}
+
+<SignificantPlace> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q13226383 wd:Q41176 wd:Q618123 ]  # facility, building, geographical feature
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q571 wd:Q3331189 wd:Q386724 ]  # book, version, edition or translation, work
+}
+
+<StartPoint> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q17334923 wd:Q27096213 ]  # physical location, geographic entity
+}
+
+<Terminus> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q27096213 ]  # geographic entity
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikimediaListArticle> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q13406463 ]  # Wikimedia list article
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

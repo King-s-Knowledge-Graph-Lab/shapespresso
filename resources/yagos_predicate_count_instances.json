@@ -1,0 +1,2674 @@
+{
+  "http://schema.org/AdministrativeArea": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Saint_Helena",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Ascension_Island",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/La_Palma",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Meredith_College",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Thrakomakedones",
+      "count": "17"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/McBee_u002C__South_Carolina",
+      "count": "17"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Agios_Ioannis_Rentis",
+      "count": "17"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Pepperell_u002C__Massachusetts",
+      "count": "17"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Tristan_da_Cunha",
+      "count": "17"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Pageland_u002C__South_Carolina",
+      "count": "17"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Aigu\u00e1",
+      "count": "17"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/ENSTA_Paris",
+      "count": "17"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/New_Vrindaban",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Razkri\u017eje",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Tabarca",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Sredi\u0161\u010de_ob_Dravi",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Triandria",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Aspropyrgos",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Bosaso",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Coronel_Oviedo",
+      "count": "16"
+    }
+  ],
+  "http://schema.org/Airline": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Air_France",
+      "count": "21"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Southwest_Airlines",
+      "count": "21"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Lufthansa",
+      "count": "21"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Braathens",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/American_Airlines",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Air_India",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Alitalia",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Qatar_Airways",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Air_Berlin",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Cathay_Pacific",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Singapore_Airlines",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Turkish_Airlines",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Lauda_Air",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/US_Airways",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Air_Alg\u00e9rie",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Alaska_Airlines",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Aeroflot",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Trans_World_Airlines",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Czech_Airlines",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Norwegian_Air_UK",
+      "count": "19"
+    }
+  ],
+  "http://schema.org/Airport": [
+    {
+      "subject": "http://yago-knowledge.org/resource/March_Air_Reserve_Base",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Ronald_Reagan_Washington_National_Airport",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Clinton_National_Airport",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/College_Park_Airport",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Patrick_Space_Force_Base",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/V\u00e1gar_Airport",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Sveg_Airport",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Tipton_Airport",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Totegegie_Airport",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Shuttle_Landing_Facility",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Tri-State_Airport",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Visby_Airport",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/S\u00e4ve_Airport",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Spokane_International_Airport",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/William_P_u002E__Hobby_Airport",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Martin_State_Airport",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Kiruna_Airport",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Ronneby_Airport",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/MoD_Boscombe_Down",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Parafield_Airport",
+      "count": "14"
+    }
+  ],
+  "http://schema.org/BodyOfWater": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Kalhovdfjorden",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Yakhi_Lake",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/S\u00f6derstr\u00f6m__u0028_Stockholm_u0029_",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/San_Marco_basin",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Lago_di_Faetano",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Karag\u00f6l__u0028_Toros_u0029_",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Bassin_Bleu__u0028_Jacmel_u0029_",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Gulf_of_Drin",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Darss-Zingst_Bodden_Chain",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/North_Channel__u0028_Ontario_u0029_",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Yihun_Lhatso",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Oosterdok",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Porte_des_Morts",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Guarani_Aquifer",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Dakhlet_Nouadhibou",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Birchs_Inlet",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Ballinakill_u002C__County_Galway",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Lagoa_do_Negro",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Hokowhitu_Lagoon",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Lake_of_Ghosts",
+      "count": "10"
+    }
+  ],
+  "http://schema.org/Book": [
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Eternal_Zero__u0028_film_u0029_",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Orchid_Album",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Vers_Tombouctou__u003A__L_u0027_Afrique_des_explorateurs_II",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_California_Field_Atlas",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Strategos__u0028_game_u0029_",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Who_Must_Die_in_Rwanda_u0027_s_Genocide_u003F__u003A__The_State_of_Exception_Realized",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Skeptic_u0027_s_Dictionary",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Riddle_of_the_Labyrinth",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Open_Society_and_Its_Enemies",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Introduction_to_Algorithms",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Himalayan_Database",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Promises_to_Keep__u0028_memoir_u0029_",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Reasons_for_Not_Eating_Animal_Food",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Scouting_for_Boys",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Why_We_Can_u0027_t_Sleep",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Mirror_and_the_Light",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Secret__u0028_treasure_hunt_u0029_",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Bullshit_Jobs",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Liberal_Fascism",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Mr_u002E__Sampath__u2013__The_Printer_of_Malgudi",
+      "count": "13"
+    }
+  ],
+  "http://schema.org/City": [
+    {
+      "subject": "http://yago-knowledge.org/resource/City_of_Westminster",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Vladivostok",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Charlottetown",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Pau_u002C__Pyr\u00e9n\u00e9es-Atlantiques",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Odda",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Villarreal",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Amersfoort",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Bilbao",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Yellowknife",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Babahoyo",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Funes_u002C__Santa_Fe",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Jonava",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Moguer",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Sochi",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Bella_Vista_u002C__Corrientes",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Elche",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Macas__u0028_city_u0029_",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Pescara",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Merano",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Treviso",
+      "count": "18"
+    }
+  ],
+  "http://schema.org/Continent": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Antarctica",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/North_America",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Europe",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Asia",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Australia__u0028_continent_u0029_",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Africa",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Mainland_Australia",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/South_America",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Insular_Oceania",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Oceania",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Turtle_Island__u0028_Native_American_folklore_u0029_",
+      "count": "7"
+    }
+  ],
+  "http://schema.org/Corporation": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Wrigley_Company",
+      "count": "17"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Bear_Stearns",
+      "count": "17"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/DNV",
+      "count": "17"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Hanna-Barbera",
+      "count": "17"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Rolls-Royce_Holdings",
+      "count": "17"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Rheinmetall",
+      "count": "17"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/PIMCO",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Pori",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Pillsbury__u0028_brand_u0029_",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Alludo",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/SRI_International",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Trump_Entertainment_Resorts",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Keolis",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Talgo",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Dick_Clark_Productions",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Schott_AG",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Toho",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Wiener_B\u00f6rse",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Materfer",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/50Hertz_Transmission_GmbH",
+      "count": "16"
+    }
+  ],
+  "http://schema.org/Country": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Netherlands",
+      "count": "25"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Catalonia",
+      "count": "22"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Northern_Mariana_Islands",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Galicia__u0028_Spain_u0029_",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Wales",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Somaliland",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Republic_of_Artsakh",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/North_Borneo",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Hatay_State",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/United_States_of_the_Ionian_Islands",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Principality_of_Chernigov",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Zirid_dynasty",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/French_protectorate_in_Morocco",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Portuguese_Malacca",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Sikh_Misl",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Rus_u0027___u0028_region_u0029_",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Gar\u00f0ar\u00edki",
+      "count": "7"
+    }
+  ],
+  "http://schema.org/CreativeWork": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Al-Futuhat_al-Makkiyya",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Spiritual_Exercises",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Eloise__u0028_books_u0029_",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Aethiopis",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Anthology_of_Planudes",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Citizens_u003A__A_Chronicle_of_the_French_Revolution",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Tizio",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Historia_Regum_Britanniae",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Jade_Mirror_of_the_Four_Unknowns",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Ottaviani_Intervention",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Nomenclature_of_Organic_Chemistry",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Krechinsky_u0027_s_Wedding",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/I_u002C__Juan_de_Pareja",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Philosophy_of_Furniture",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Wu_Shuang_Pu",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Commanding_Heights",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Three_Principles_of_the_People",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Pratica_della_mercatura",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Three_Sources_and_Three_Component_Parts_of_Marxism",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/On_Marvellous_Things_Heard",
+      "count": "10"
+    }
+  ],
+  "http://schema.org/EducationalOrganization": [
+    {
+      "subject": "http://yago-knowledge.org/resource/German_Academic_Exchange_Service",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Yuri_Gagarin_Cosmonaut_Training_Center",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/University_of_Cervera",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Czech_Hydrometeorological_Institute",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Mainzed",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Institute_of_Technical_Education",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/UNESCO_International_Institute_for_Educational_Planning",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Web_u0040_cademie",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Alandica_Shipping_Academy",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Institute_of_Organic_Chemistry_and_Biochemistry",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Our_Lady_of_Mount_Zion_College",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Keio_Gijuku__u0028_Gakk\u014d_H\u014djin_u0029_",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/United_World_Colleges",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/ICivics",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/GLSEN",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Annapolis_Group",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Compostela_Group_of_Universities",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Teach_First",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Wakeijuku",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/VIPKid",
+      "count": "11"
+    }
+  ],
+  "http://schema.org/Event": [
+    {
+      "subject": "http://yago-knowledge.org/resource/6th_Congress_of_the_Workers_u0027__Party_of_Korea",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Mongol_invasion_of_Europe",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/6th_Congress_of_the_Communist_Party_of_Yugoslavia",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Tierra_del_Fuego_gold_rush",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Salmon_chaos",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Rape_of_Belgium",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Self-propelled_barge_T-36",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Queue",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Deng_Xiaoping_u0027_s_southern_tour",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Rehnquist_Court",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2nd_Congress_of_the_Workers_u0027__Party_of_North_Korea",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Fyre_Festival",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/13th_Congress_of_the_League_of_Communists_of_Yugoslavia",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/People_u0027_s_Liberation_Army_at_the_1989_Tiananmen_Square_protests_and_massacre",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Phoney_War",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/5th_Congress_of_the_Workers_u0027__Party_of_Korea",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Spanish_transition_to_democracy",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/14th_Congress_of_the_League_of_Communists_of_Yugoslavia",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/1939_royal_tour_of_Canada",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/1995_France_bombings",
+      "count": "11"
+    }
+  ],
+  "http://schema.org/Landform": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Surfside_u002C__California",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Collegiate_Peaks",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Fennoscandia",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Deliblatska_Pe\u0161\u010dara",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Moeraki_Boulders",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Plains_of_San_Agustin",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Rio_Grande_Gorge",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Westergasfabriek",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Verneukpan",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Selenean_summit",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Savage_Mountain",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Nu\u02bbuanu_Pali",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Black_Hills__u0028_Washington_u0029_",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Whittier_Narrows",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Adam_u0027_s_Bridge",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Osage_Hills",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Apuania",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Kaena_Point",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Sagres_Point",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Cirque_of_the_Towers",
+      "count": "11"
+    }
+  ],
+  "http://schema.org/Language": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Barranbinja_language",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Isotype__u0028_picture_language_u0029_",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Giimbiyu_language",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Indramayu_Sundanese",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Paleohispanic_languages",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Suansu_language",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Theen_language",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Sesayap_Tidung",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Tagu_language",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Nabit_language",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Southern_Kamchadal_language",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/\u0160umadija_u2013_Vojvodina_dialect",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Tai_Muong_Vat_language",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Pimpama_language",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Pennsylvania_Dutch_English",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Zhi-Yan_dialect",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Suobi_language",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Thanjavur_Marathi_dialect",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Sumayela_Ndebele_language",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Yamben_language",
+      "count": "7"
+    }
+  ],
+  "http://schema.org/Movie": [
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Others__u0028_2001_film_u0029_",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Picture_of_Dorian_Gray__u0028_1945_film_u0029_",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Life_and_Times_of_Grizzly_Adams",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Sea_Inside",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/W_u002E___u0028_film_u0029_",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Pi__u0028_film_u0029_",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Talladega_Nights_u003A__The_Ballad_of_Ricky_Bobby",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Departed",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Blind_Side__u0028_film_u0029_",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Skin_I_Live_In",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Interview",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_15_u003A_17_to_Paris",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Cameraman",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Night_Before__u0028_2015_film_u0029_",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Piano",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Silver_Linings_Playbook",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Sucker_Punch__u0028_2011_film_u0029_",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Sunset_Boulevard__u0028_film_u0029_",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Crying_Game",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Faculty",
+      "count": "18"
+    }
+  ],
+  "http://schema.org/MusicComposition": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Musica_Transalpina",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Homage_to_Paderewski",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Clement_Matchett_u0027_s_Virginal_Book",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Kurdish_melodies",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Messe_br\u00e8ve_no_u002E__7__u0028_Gounod_u0029_",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Parthenia__u0028_music_u0029_",
+      "count": "6"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Rondo_amoroso",
+      "count": "5"
+    }
+  ],
+  "http://schema.org/MusicGroup": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Taiz\u00e9_Community",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Ensemble__u0022_Grenada_u0022_",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Racionais_MC_u0027_s",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Veryovka_Ukrainian_Folk_Choir",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Tsvety",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Rebecca__u0026__Fiona",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Samotsvety",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Beryozka__u0028_Russian_dance_troupe_u0029_",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Common_Linnets",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Amatory",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Andy__u0026__Lucas",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Skryabin__u0028_band_u0029_",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Los_Chichos",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Redd",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Terem_Quartet",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Therr_Maitz",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Vesyolye_Rebyata",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Def_Con_Dos",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Il_Giardino_Armonico",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Sunn_O_u0029__u0029__u0029_",
+      "count": "12"
+    }
+  ],
+  "http://schema.org/Newspaper": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Novaya_Gazeta",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Chastny_Korrespondent",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Co-op_News",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Emerging_Infectious_Diseases__u0028_journal_u0029_",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Lexington_Herald-Leader",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Trud__u0028_Russian_newspaper_u0029_",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Russia_Beyond",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Hollywood_Reporter",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Village_Voice",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Under_the_Radar__u0028_magazine_u0029_",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Press_Democrat",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/T\u00e9l\u00e9_7_Jours",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Novy_Vzglyad",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/New_York_World",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Actualidad_Econ\u00f3mica",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/An_Phoblacht",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Bristol_Herald_Courier",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Chervoniy_G_u0456_rnik",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Courier_Journal",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Courrier_International",
+      "count": "12"
+    }
+  ],
+  "http://schema.org/Organization": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Tr\u00f8ndelag",
+      "count": "17"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/UNICEF",
+      "count": "17"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Sacramento_County_u002C__California",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/City_of_Gold_Coast",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/MBDA",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/John_F_u002E__Kennedy_Center_for_the_Performing_Arts",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Fritt_Ord__u0028_organization_u0029_",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/ICFOSS",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Winnipeg_Metropolitan_Region",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Tumucumaque_Mountains_National_Park",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Peace_Now",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Puy_du_Fou",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/SINTEF",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/FortWhyte_Alive",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/ONCE",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Th\u00e9\u00e2tre_de_Quat_u0027_Sous",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Food_Not_Bombs",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Peace_Research_Institute_Oslo",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Maly_Theatre__u0028_Moscow_u0029_",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/National_Theatre_Bucharest",
+      "count": "14"
+    }
+  ],
+  "http://schema.org/PerformingGroup": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Aarohan_Gurukul",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Theater_Basel",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Theater_am_Neumarkt",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Lausanne_Opera",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Bernhard-Theater_Z\u00fcrich",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Ballet_J\u00f6rgen_Canada",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Radio_Drama_Company",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Theater_am_Hechtplatz",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Ng\u0101ti_P\u014dneke",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Touch_Compass",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Adamseplene",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Kiwi_Concert_Party",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Monta\u017estroj",
+      "count": "6"
+    }
+  ],
+  "http://schema.org/Person": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Anton_Aloys_u002C__Prince_of_Hohenzollern-Sigmaringen",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Chakrabongse_Bhuvanath",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Maria_Amalia_u002C__Holy_Roman_Empress",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Queen_Sof\u00eda_of_Spain",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Ahmed_Khadr",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/David_Kaw\u0101nanakoa",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Anne_of_Romania",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Philip_C_u002E__Habib",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Wolfgang_Petritsch",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Yuri_Dubinin",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Prince_George_of_Denmark",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Swanee_Hunt",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Alfonso_u002C__Duke_of_Anjou_and_C\u00e1diz",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Princess_Jos\u00e9phine-Charlotte_of_Belgium",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Princess_Victoria_of_Saxe-Coburg_and_Gotha",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Grand_Duchess_Maria_Vladimirovna_of_Russia",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Prince_Emmanuel_u002C__Duke_of_Vend\u00f4me",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Archduchess_Elisabeth_Marie_of_Austria",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/\u00c1ngel_Sanz_Briz",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Vyacheslav_Kochemasov",
+      "count": "18"
+    }
+  ],
+  "http://schema.org/Product": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Perfecto_motorcycle_jacket",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/IMAX",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Samsung_Galaxy_S8",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Kool-Aid",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Kelly_bag",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Meta_Portal",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/TACLANE",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/GrassMaster",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/MagicBands",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/EMG_85",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/ND-500",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Smoking__u0028_rolling_paper_u0029_",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/I-Gami",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Meissen_porcelain",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Alstom_APS",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Nabaztag",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Armoire_de_fer",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/FLEPia",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/_u002E_pk",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/NakNak",
+      "count": "9"
+    }
+  ],
+  "http://schema.org/Taxon": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Sperm_whale",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Streaked_shearwater",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Stoat",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Suphalak",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Texola_elada",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Thapsia_villosa",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Thaumaleidae",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Thatcheria_mirabilis",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Texas_wolf",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Thaumatococcus_daniellii",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Textrix_denticulata",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Thaumatichthys_pagidostomus",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Thaumantis_diores",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Tinagma_perdicella",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Thaumatophyllum_bipinnatifidum",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Tinagma_ocnerostomellum",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Thaxterogaster_purpurascens",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Thaumetopoea_solitaria",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Thaumatomyia_notata",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Thayeria_obliqua",
+      "count": "9"
+    }
+  ],
+  "http://schema.org/TVSeries": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Lost__u0028_TV_series_u0029_",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Elite__u0028_TV_series_u0029_",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/24_u003A__Live_Another_Day",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Dr_u002E__Quinn_u002C__Medicine_Woman",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Life_and_Times_of_Grizzly_Adams",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Waltons",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Closer",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Tehran__u0028_TV_series_u0029_",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Sesame_Street",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Gilmore_Girls_u003A__A_Year_in_the_Life",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Fringe__u0028_TV_series_u0029_",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Last_of_Us__u0028_TV_series_u0029_",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Twin_Peaks",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Breaking_Bad",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_X-Files",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_West_Wing",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Wednesday__u0028_TV_series_u0029_",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Weeds__u0028_TV_series_u0029_",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Flash__u0028_2014_TV_series_u0029_",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Babylon_Berlin",
+      "count": "19"
+    }
+  ],
+  "http://yago-knowledge.org/resource/AstronomicalObject": [
+    {
+      "subject": "http://yago-knowledge.org/resource/RS_Sagittarii",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Phi_Pegasi",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/OU_Geminorum",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/GG_Lupi",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/GJ_1005",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/DG_Canum_Venaticorum",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Musket_Ball_Cluster",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/HD_200779",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/G_9-38",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Stein_2051",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Gliese_54",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Collinder_135",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Galactic_Center",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/II_Lupi",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/M82_X-1",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Markarian_u0027_s_Chain",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/M1-92",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Mystic_Mountain",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/LBQS_1429-008",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/WISE_J151721_u002E_13_u002B_052929_u002E_3",
+      "count": "7"
+    }
+  ],
+  "http://yago-knowledge.org/resource/Award": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Guinness_World_Records",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_500_Most_Influential_Muslims",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/FNS_Music_Festival",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Goethe-Plakette_des_Landes_Hessen",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/National_Humanities_Medal",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Perkin_Medal",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Reinhard_Mohn_Prize",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Padma_Vibhushan",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/German_Sports_Badge",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Joan_Mott_Prize_Lecture",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Padma_Bhushan",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/List_of_the_72_names_on_the_Eiffel_Tower",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/List_of_Nansen_Refugee_Award_laureates",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Bronze_Wolf_Award",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Pulitzer_Prize_Special_Citations_and_Awards",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Polish_Economy_Hall_of_Fame",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/American_Advertising_Awards",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Gold_Medal_of_the_Generalitat_of_Catalonia",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Oersted_Medal",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Runet_Prize",
+      "count": "10"
+    }
+  ],
+  "http://yago-knowledge.org/resource/BeliefSystem": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Anishinaabe_traditional_beliefs",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Buddhist_kingship",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/ATWA",
+      "count": "6"
+    }
+  ],
+  "http://yago-knowledge.org/resource/Creator": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Am\u00e9lie_of_Orl\u00e9ans",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Renanzinho__u0028_footballer_u002C__born_1997_u0029_",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Obelix",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Architect__u0028_The_Matrix_u0029_",
+      "count": "11"
+    }
+  ],
+  "http://yago-knowledge.org/resource/Election": [
+    {
+      "subject": "http://yago-knowledge.org/resource/1908_Western_Australian_state_election",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2014_Dublin_City_Council_election",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/January_2021_Christian_Democratic_Union_of_Germany_leadership_election",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2016_United_States_House_of_Representatives_election_in_Montana",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2016_United_States_House_of_Representatives_election_in_Delaware",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2018_United_States_House_of_Representatives_election_in_Vermont",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2016_United_States_House_of_Representatives_election_in_Wyoming",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2015_Venetian_regional_election",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2005_Apulian_regional_election",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2020_Ohio_elections",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2000_Emilia-Romagna_regional_election",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2020_u2013_21_United_States_Senate_election_in_Georgia",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2018_Ohio_elections",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2016_Czech_regional_elections",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2010_Campania_regional_election",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2003_Sai_Kung_District_Council_election",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2018_Russian_elections",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2016_Ohio_elections",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/1816_United_States_presidential_election_in_Ohio",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/2020_Czech_regional_elections",
+      "count": "10"
+    }
+  ],
+  "http://yago-knowledge.org/resource/FictionalEntity": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Saint_Gallicanus",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/The_Strangeloves",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/La_Calavera_Catrina",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Khamba_and_Thoibi",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Ames_trapezoid",
+      "count": "9"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Blood_purity__u0028_Harry_Potter_u0029_",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Enmannsche_Kaisergeschichte",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Moonshaft",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Court_jester_hypothesis",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Hypertime",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Erdgeist",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Deuteronomic_Code",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Polywater",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Chothe_Thangwai_Pakhangba",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Cr\u00f3nica_X",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Signs_Gospel",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Our_Lady_of_the_Candles",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Cardiff_Rift",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Seldon_Plan",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Oort_cloud",
+      "count": "7"
+    }
+  ],
+  "http://yago-knowledge.org/resource/Gender": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Male_gender",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Muxe",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Travesti__u0028_gender_identity_u0029_",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Female__u0028_gender_u0029_",
+      "count": "8"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Koekchuch",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Mudoko_dako",
+      "count": "7"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Gender_incongruence",
+      "count": "6"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Gendered",
+      "count": "6"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Winkte",
+      "count": "6"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Neurogender",
+      "count": "6"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Sekhyt",
+      "count": "6"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Autigender",
+      "count": "6"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Binabinaaine",
+      "count": "6"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Gender_spectrum",
+      "count": "5"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Vakasalewalewa",
+      "count": "5"
+    }
+  ],
+  "http://yago-knowledge.org/resource/HumanMadeGeographicalEntity": [
+    {
+      "subject": "http://yago-knowledge.org/resource/University_of_Klagenfurt",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Cooper_Hewitt_u002C__Smithsonian_Design_Museum",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/University_of_South_Carolina_Aiken",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/London_School_of_Hygiene_and_Tropical_Medicine",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Instituto_Superior_T\u00e9cnico",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Natural_History_Museum_u002C__Berlin",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Maharishi_International_University",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Warsaw_Rising_Museum",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Naturmuseum_Senckenberg",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/University_of_Macedonia",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Insole_Court",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/University_of_Science_and_Technology_Houari_Boumediene",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Federal_University_of_Rio_Grande_do_Norte",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Center_for_Advanced_Study_in_the_Behavioral_Sciences",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Salk_Institute_for_Biological_Studies",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Messe_Frankfurt",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Eurac_Research",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Indiana_University_u2013_Purdue_University_Columbus",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Hessisches_Landesmuseum_Darmstadt",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Jena_Phyletisches_Museum",
+      "count": "14"
+    }
+  ],
+  "http://yago-knowledge.org/resource/Politician": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Werner_Naumann",
+      "count": "23"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Prokopis_Pavlopoulos",
+      "count": "22"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Th\u00e9odore_Reinach",
+      "count": "22"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Zbigniew_Religa",
+      "count": "21"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Robert_Treat_Paine",
+      "count": "21"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Sam_Johnson",
+      "count": "21"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Timothy_Dwight_IV",
+      "count": "21"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/V\u00edctor_Andr\u00e9s_Bela\u00fande",
+      "count": "21"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/V\u00e1clav_Benda",
+      "count": "21"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Rossana_Rossanda",
+      "count": "21"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Stefan_Meller",
+      "count": "21"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Ruth_Cardoso",
+      "count": "21"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Tassos_Papadopoulos",
+      "count": "21"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Yasuhiro_Nakasone",
+      "count": "21"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Raphael_Warnock",
+      "count": "21"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Seewoosagur_Ramgoolam",
+      "count": "21"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/U_Thant",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Valentin_Falin",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Vito_Volterra",
+      "count": "20"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Yoshiro_Hayashi__u0028_politician_u0029_",
+      "count": "20"
+    }
+  ],
+  "http://yago-knowledge.org/resource/SportsPerson": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Erik_von_Frenckell",
+      "count": "19"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Michel_Cosson",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/He_Zhenliang",
+      "count": "16"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Manvel_Mamoyan",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Jean-Paul_Driot",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Harry_Lindblad",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Roger_Lodge",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Sergei_Anokhin__u0028_test_pilot_u0029_",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Joey_Moss",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Yury_Ponomaryov__u0028_pilot_u0029_",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Hill_Carrow",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Frederick_Ferguson__u0028_wrestler_u0029_",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Abe_Orpen",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Johannes_Kauba",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Barry_Sonshine",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Ray_Grant__u0028_curler_u0029_",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Lisa_Carlsen",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Taonere_Banda",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Mackay_Yanagisawa",
+      "count": "10"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Lloyd_Percival",
+      "count": "10"
+    }
+  ],
+  "http://yago-knowledge.org/resource/Way": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Chemin_du_Roy",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Strada_Sforii",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Palace_Embankment",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/West_Side_Highway",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Yiwu_u2013_Madrid_railway_line",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Cours-la-Reine",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Lexington_Avenue",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Tsing_Yi_North_Coastal_Road",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Union_Turnpike__u0028_New_York_u0029_",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Strelasund_Crossing",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Queens_Boulevard",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Via_dei_Fori_Imperiali",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Via_del_Corso",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Via_Veneto",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Queen_Street_Mall",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Utopia_Parkway__u0028_Queens_u0029_",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/York_Avenue_and_Sutton_Place",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Van_Ness_Avenue",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Webster_Avenue",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Tsuen_Wan_Road",
+      "count": "11"
+    }
+  ],
+  "http://yago-knowledge.org/resource/Worker": [
+    {
+      "subject": "http://yago-knowledge.org/resource/Lee_Harvey_Oswald",
+      "count": "18"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Leopold_Socha",
+      "count": "15"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Gavril_Myasnikov",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Adrian_Pennino",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/William_Moore__u0028_loyalist_u0029_",
+      "count": "14"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Pieter_De_Rudder",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Marijan_\u010cavi\u0107",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Antonio_Ram\u00f3n",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Erich_Heins",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Konstantin_Ivanovich_Makarov",
+      "count": "13"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Robert_Williams__u0028_robot_fatality_u0029_",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Delphini",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/OMAC__u0028_Buddy_Blank_u0029_",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Kristoff__u0028_Frozen_u0029_",
+      "count": "12"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Jean_Lanfray",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Mansour_Osanlou",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Israel_Breslow",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/James_Scott__u0028_criminal_u0029_",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/Shorpy_Higginbotham",
+      "count": "11"
+    },
+    {
+      "subject": "http://yago-knowledge.org/resource/John_Taylor__u0028_criminal_u0029_",
+      "count": "9"
+    }
+  ]
+}

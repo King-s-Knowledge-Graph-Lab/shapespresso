@@ -1,0 +1,109 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Embassy>
+
+<Embassy> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q3917681 ] ;                     # instance of
+  wdt:P17   @<Country> ;                          # country
+  wdt:P137  @<Country> ;                          # operator
+  wdt:P1001 @<Country> + ;                        # applies to jurisdiction
+  wdt:P131  @<AdministrativeTerritorialEntity> ;  # located in the administrative territorial entity
+  wdt:P2388 @<Position> ? ;                       # office held by head of the organization
+  wdt:P749  @<ParentOrganization> ? ;             # parent organization
+  wdt:P276  @<Location> ? ;                       # location
+  wdt:P1454 @<LegalForm> ? ;                      # legal form
+  wdt:P452  @<Industry> ? ;                       # industry
+  wdt:P1037 @<Human> ? ;                          # director / manager
+  wdt:P461  @<Embassy> ? ;                        # opposite of
+  wdt:P488  @<Human> * ;                          # chairperson
+  wdt:P361  IRI ? ;                               # part of
+  wdt:P101  @<BilateralRelation> ? ;              # field of work
+  wdt:P2541 @<OperatingArea> * ;                  # operating area
+  wdt:P5008 @<WikiProject> ? ;                    # on focus list of Wikimedia project
+  wdt:P1889 IRI * ;                               # different from
+  wdt:P355  @<Subsidiary> * ;                     # has subsidiary
+  wdt:P1365 @<DiplomaticMission> ? ;              # replaces
+  wdt:P1366 @<Embassy> * ;                        # replaced by
+  wdt:P527  IRI * ;                               # has part(s)
+  wdt:P793  @<SignificantEvent> * ;               # significant event
+  wdt:P910  @<WikimediaCategory> ? ;              # topic's main category
+  wdt:P1269 @<BilateralRelation> ? ;              # facet of
+
+  # URL, String, Quantity, Time property
+  wdt:P856  IRI ? ;             # official website
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P571  xsd:dateTime ? ;    # inception
+  wdt:P968  IRI ? ;             # email address
+  wdt:P1329 xsd:string * ;      # phone number
+  wdt:P2900 xsd:string ? ;      # fax number
+  wdt:P8687 xsd:decimal ? ;     # social media followers
+  wdt:P1448 rdf:langString * ;  # official name
+  wdt:P576  xsd:dateTime ? ;    # dissolved, abolished or demolished date
+  wdt:P973  IRI ? ;             # described at URL
+  wdt:P1705 rdf:langString *    # native label
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56061 ]  # administrative territorial entity
+}
+
+<BilateralRelation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q15221623 ]  # bilateral relation
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<DiplomaticMission> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q213283 ]  # diplomatic mission
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]
+}
+
+<Industry> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q8187769 ]  # economic activity
+}
+
+<LegalForm> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q10541491 ]  # legal form
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 ]  # city
+}
+
+<OperatingArea> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<ParentOrganization> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q20901295 wd:Q14037025 ]  # foreign affairs ministry, ministry
+}
+
+<Position> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4164871 ]  # position
+}
+
+<SignificantEvent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1914636 wd:Q1190554 ]  # activity, occurrence
+}
+
+<Subsidiary> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

@@ -1,0 +1,59 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Protein>
+
+<Protein> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q8054 ] ;                  # instance of
+  wdt:P703  @<Taxon> ;                      # found in taxon
+  wdt:P702  @<Gene> ;                       # encoded by
+  wdt:P684  @<Gene> * ;                     # ortholog
+  wdt:P4844 IRI * ;                         # research intervention
+  wdt:P681  @<CellularComponent> * ;        # cell component
+  wdt:P680  @<MolecularFunction> * ;        # molecular function
+  wdt:P1343 @<Source> ? ;                   # described by source
+  wdt:P682  @<BiologicalProcess> * ;        # biological process
+  wdt:P361  IRI * ;                         # part of
+  wdt:P527  IRI * ;                         # has part(s)
+  wdt:P129  @<PhysicallyInteractsWith> * ;  # physically interacts with
+
+  # URL, String, Quantity, Time property
+  wdt:P1325 IRI * ;             # external data available at URL
+  wdt:P4945 IRI * ;             # download URL
+  wdt:P2888 IRI * ;             # exact match
+  wdt:P591  xsd:string ? ;      # EC enzyme number
+  wdt:P1813 rdf:langString ? ;  # short name
+  wdt:P373  xsd:string ? ;      # Commons category
+}
+
+<BiologicalProcess> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q2996394 ]  # biological process
+}
+
+<CellularComponent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5058355 ]  # cellular component
+}
+
+<Gene> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7187 ]  # gene
+}
+
+<MolecularFunction> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q14860489 ]  # molecular function
+}
+
+<PhysicallyInteractsWith> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q113145171 ]  # type of chemical entity
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q13442814 ]  # scholarly article
+}
+
+<Taxon> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q16521 ]  # taxon
+}

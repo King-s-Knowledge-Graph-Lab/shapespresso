@@ -1,0 +1,70 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Hackathon>
+
+<Hackathon> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q46855 ] ;     # instance of
+  wdt:P664  @<Organizer> * ;    # organizer
+  wdt:P17   @<Country> ? ;      # country
+  wdt:P921  IRI * ;             # main subject
+  wdt:P155  @<Hackathon> ? ;    # follows
+  wdt:P156  @<Hackathon> ? ;    # followed by
+  wdt:P361  IRI ? ;             # part of
+  wdt:P179  @<Series> ? ;       # part of the series
+  wdt:P276  @<Location> * ;     # location
+  wdt:P710  @<Participant> * ;  # participant
+  wdt:P6104 @<WikiProject> ? ;  # maintained by WikiProject
+  wdt:P859  @<Sponsor> * ;      # sponsor
+  wdt:P1346 @<Winner> * ;       # winner
+  wdt:P2283 IRI * ;             # uses
+
+  # URL, String, Quantity, Time property
+  wdt:P580  xsd:dateTime ? ;    # start time
+  wdt:P582  xsd:dateTime ? ;    # end time
+  wdt:P856  IRI ? ;             # official website
+  wdt:P973  IRI ? ;             # described at URL
+  wdt:P1132 xsd:decimal * ;     # number of participants
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P2572 xsd:string * ;      # hashtag
+  wdt:P393  xsd:string ? ;      # edition number
+  wdt:P585  xsd:dateTime ? ;    # point in time
+  wdt:P1324 IRI ? ;             # source code repository URL
+  wdt:P2121 xsd:decimal ?       # prize money
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 ]  # city
+}
+
+<Organizer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q16334295 wd:Q43229 ]  # group of humans, organization
+}
+
+<Participant> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q43229 ]  # human, organization
+}
+
+<Series> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q15275719 ]  # recurring event
+}
+
+<Sponsor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}
+
+<Winner> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q43229 ]  # human, organization
+}

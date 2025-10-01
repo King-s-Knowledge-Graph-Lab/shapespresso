@@ -1,0 +1,181 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<PodcastShow>
+
+<PodcastShow> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q24634210 ] ;           # instance of
+  wdt:P437  @<DistributionFormat> ;      # distribution format
+  wdt:P407  @<Language> ? ;              # language of work or name
+  wdt:P136  @<PodcastGenre> * ;          # genre
+  wdt:P371  @<Human> * ;                 # presenter
+  wdt:P495  @<Country> ? ;               # country of origin
+  wdt:P921  IRI * ;                      # main subject
+  wdt:P750  @<Distributor> ? ;           # distributed by
+  wdt:P6216 [ wd:Q50423863 ] ? ;         # copyright status, 'copyrighted'
+  wdt:P272  @<ProductionCompany> * ;     # production company
+  wdt:P6437 @<DayOfRegularRelease> * ;   # day of regular release
+  wdt:P161  @<Human> * ;                 # cast member
+  wdt:P123  @<Publisher> ? ;             # publisher
+  wdt:P3301 @<Broadcaster> ? ;           # broadcast by
+  wdt:P527  @<HasParts> * ;              # has part(s)
+  wdt:P710  @<Human> * ;                 # participant
+  wdt:P138  IRI ? ;                      # named after
+  wdt:P361  IRI ? ;                      # part of
+  wdt:P162  @<Human> * ;                 # producer
+  wdt:P166  @<Award> * ;                 # award received
+  wdt:P275  @<CopyrightLicense> ? ;      # copyright license
+  wdt:P170  @<Human> * ;                 # creator
+  wdt:P449  @<OriginalBroadcaster> ? ;   # original broadcaster
+  wdt:P1889 IRI * ;                      # different from
+  wdt:P112  @<Founder> * ;               # founded by
+  wdt:P1552 [ wd:Q106588463 wd:Q106677578 ] ? ;  # has characteristic, 'explicit podcast', 'non-explicit podcast'
+  wdt:P144  IRI ? ;                      # based on
+  wdt:P127  @<Human> * ;                 # owned by
+  wdt:P1411 @<Award> * ;                 # nominated for
+  wdt:P674  @<Characters> * ;            # characters
+  wdt:P1811 @<WikimediaListArticle> ? ;  # list of episodes
+  wdt:P58   @<Human> * ;                 # screenwriter
+  wdt:P840  @<NarrativeLocation> * ;     # narrative location
+  wdt:P553  @<Website> * ;               # website account on
+  wdt:P942  @<ThemeMusic> * ;            # theme music
+  wdt:P859  @<Sponsor> * ;               # sponsor
+  wdt:P156  @<PodcastShow> ? ;           # followed by
+  wdt:P5008 @<WikiProject> ? ;           # on focus list of Wikimedia project
+  wdt:P155  @<PodcastShow> ? ;           # follows
+  wdt:P1142 @<PoliticalIdeology> * ;     # political ideology
+  wdt:P179  @<SeriesOfPodcasts> ? ;      # part of the series
+  wdt:P135  @<Movement> ? ;              # movement
+  wdt:P1434 @<FictionalUniverse> ? ;     # takes place in fictional universe
+
+  # URL, String, Quantity, Time property
+  wdt:P1113 xsd:decimal * ;     # number of episodes
+  wdt:P1019 IRI ? ;             # web feed URL
+  wdt:P444  xsd:string ? ;      # review score
+  wdt:P856  IRI ? ;             # official website
+  wdt:P1476 rdf:langString ? ;  # title
+  wdt:P580  xsd:dateTime ? ;    # start time
+  wdt:P10286 IRI ? ;            # podcast logo URL
+  wdt:P8687 xsd:decimal * ;     # social media followers
+  wdt:P2896 xsd:decimal ? ;     # publication interval
+  wdt:P582  xsd:dateTime ? ;    # end time
+  wdt:P973  IRI * ;             # described at URL
+  wdt:P1680 rdf:langString ? ;  # subtitle
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P953  IRI ? ;             # full work available at URL
+  wdt:P2437 xsd:decimal ? ;     # number of seasons
+  wdt:P2047 xsd:decimal ? ;     # duration
+  wdt:P968  IRI ? ;             # email address
+  wdt:P2572 xsd:string ? ;      # hashtag
+  wdt:P1581 IRI ? ;             # official blog URL
+  wdt:P1329 xsd:string ? ;      # phone number
+  wdt:P7101 IRI ?               # privacy policy URL
+}
+
+<Award> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q618779 ]  # award
+}
+
+<Broadcaster> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q14350 wd:Q4830453 wd:Q61715186 ]  # radio station, business, podcast hosting service
+}
+
+<Characters> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q15632617 wd:Q106921001 ]  # fictional human, podcast character
+}
+
+<CopyrightLicense> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q77205602 ]  # copyright license
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<DayOfRegularRelease> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q41825 ]  # day of the week
+}
+
+<DistributionFormat> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q81941037 ]  # product distribution method
+}
+
+<Distributor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q61715186 ]  # podcast hosting service
+}
+
+<FictionalUniverse> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q559618 ]  # fictional universe
+}
+
+<Founder> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q43229 ]  # human, organization
+}
+
+<HasParts> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q61855877 wd:Q69154911 ]  # podcast episode, podcast series season
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<Language> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q34770 ]  # language
+}
+
+<Movement> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q49773 ]  # social movement,
+}
+
+<NarrativeLocation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q17334923 wd:Q3895768 ]  # physical location, fictional location
+}
+
+<OriginalBroadcaster> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q14350 wd:Q24581379 ]  # radio station, podcast network
+}
+
+<PodcastGenre> {
+  wdt:P31 [ wd:Q104822033 ]  # podcast genre
+}
+
+<PoliticalIdeology> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q12909644 ]  # political ideology
+}
+
+<ProductionCompany> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q11396960 wd:Q4830453 ]  # production company, business
+}
+
+<Publisher> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q24581379 wd:Q4830453 wd:Q5 wd:Q43229 ]  # podcast network, business, human, organization
+}
+
+<SeriesOfPodcasts> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q110571913 ]  # series of podcasts
+}
+
+<Sponsor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 wd:Q43229 ]  # business, organization
+}
+
+<ThemeMusic> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q105543609 ]  # musical work/composition
+}
+
+<Website> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q35127 ]  # website
+}
+
+<WikimediaListArticle> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q13406463 ]  # Wikimedia list article
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

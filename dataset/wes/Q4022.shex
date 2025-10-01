@@ -1,0 +1,140 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<River>
+
+<River> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q4022 ] ;                          # instance of
+  wdt:P17   @<Country> ;                            # country
+  wdt:P403  @<BodyOfWater> ? ;                      # mouth of the watercourse
+  wdt:P131  @<AdministrativeTerritorialEntity> ? ;  # located in the administrative territorial entity
+  wdt:P4614 @<DrainageBasin> ? ;                    # drainage basin
+  wdt:P974  @<Tributary> * ;                        # tributary
+  wdt:P885  @<OriginOfTheWatercourse> ? ;           # origin of the watercourse
+  wdt:P5008 @<WikiProject> ? ;                      # on focus list of Wikimedia project
+  wdt:P1343 @<Source> * ;                           # described by source
+  wdt:P1200 @<WikimediaCategory> ? ;                # category for the water basin
+  wdt:P30   @<Continent> ? ;                        # continent
+  wdt:P1889 IRI * ;                                 # different from
+  wdt:P469  @<LakeOnWatercourse> * ;                # lake on watercourse
+  wdt:P910  @<WikimediaCategory> ? ;                # topic's main category
+  wdt:P205  @<Country> * ;                          # basin country
+  wdt:P7959 @<HistoricCounty> ? ;                   # historic county
+  wdt:P421  @<TimeZone> * ;                         # located in time zone
+  wdt:P3018 @<ProtectedArea> * ;                    # located in protected area
+  wdt:P706  @<PhysicalFeature> ? ;                  # located in/on physical feature
+  wdt:P276  @<Location> ? ;                         # location
+  wdt:P138  IRI ? ;                                 # named after
+  wdt:P3871 @<TributaryOrientation> ? ;             # tributary orientation
+  wdt:P361  IRI * ;                                 # part of
+  wdt:P527  IRI * ;                                 # has part(s)
+  wdt:P460  IRI ? ;                                 # said to be the same as
+  wdt:P1435 @<HeritageDesignation> ? ;              # heritage designation
+  wdt:P126  @<Maintainer> * ;                       # maintained by
+  wdt:P4792 @<Dam> * ;                              # dam
+  wdt:P4552 @<MountainRange> ? ;                    # mountain range
+  wdt:P2789 IRI * ;                                 # connects with
+  wdt:P366  IRI * ;                                 # has use
+
+  # URL, String, Quantity, Time property
+  wdt:P2043 xsd:decimal ? ;     # length
+  wdt:P2053 xsd:decimal ? ;     # watershed area
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P2044 xsd:decimal ? ;     # elevation above sea level
+  wdt:P2225 xsd:decimal ? ;     # discharge
+  wdt:P1705 rdf:langString * ;  # native label
+  wdt:P1183 xsd:string ? ;      # Gewässerkennzahl
+  wdt:P935  xsd:string ? ;      # Commons gallery
+  wdt:P4184 xsd:decimal ? ;     # slope
+  wdt:P2046 xsd:decimal * ;     # area
+  wdt:P1448 rdf:langString * ;  # official name
+  wdt:P1548 xsd:decimal ?       # maximum Strahler number
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56061 wd:Q7930989 ]  # administrative territorial entity, city or town
+}
+
+<BodyOfWater> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q15324 ]  # body of water
+}
+
+<Continent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5107 ]  # continent
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Dam> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q12323 wd:Q105190 ]  # dam, levee
+}
+
+<DrainageBasin> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q166620 ]  # drainage basin
+}
+
+<HeritageDesignation> EXTRA wdt:P279 {
+  wdt:P279 [ wd:Q210272 wd:Q386426 ]  # cultural heritage, natural heritage
+}
+
+<HistoricCounty> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q67376938 ]  # historic county of the United Kingdom
+}
+
+<LakeOnWatercourse> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q23397 ]  # lake
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q82794 wd:Q618123 wd:Q2221906 wd:Q17334923 ]  # geographic region, geographical feature, geographic location, physical location
+}
+
+<Maintainer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<MountainRange> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1061151 wd:Q8502 wd:Q46831 ]  # massif, mountain, mountain system
+}
+
+<OriginOfTheWatercourse> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q271669 wd:Q15324 ]  # landform, body of water
+}
+
+<PhysicalFeature> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q82794 wd:Q618123 wd:Q2221906 ]  # geographic region, geographical feature, geographic location
+}
+
+<ProtectedArea> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q473972 ]  # protected area
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3331189 wd:Q47461344 ]  # version, edition or translation, written work
+}
+
+<TimeZone> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q12143 ]  # time zone
+}
+
+<Tributary> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4022 wd:Q355304 ]  # river, watercourse
+}
+
+<TributaryOrientation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q89210005 ]  # hydrographic direction
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

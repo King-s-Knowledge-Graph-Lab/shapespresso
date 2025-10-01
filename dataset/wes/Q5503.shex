@@ -1,0 +1,138 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<RapidTransit>
+
+<RapidTransit> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q5503 ] ;                          # instance of
+  wdt:P17   @<Country> ;                            # country
+  wdt:P5817 @<StateOfUse> ;                         # state of use
+  wdt:P131  @<AdministrativeTerritorialEntity> ? ;  # located in the administrative territorial entity
+  wdt:P527  IRI * ;                                 # has part(s)
+  wdt:P910  @<WikimediaCategory> ? ;                # topic's main category
+  wdt:P1064 @<TrackGauge> ? ;                       # track gauge
+  wdt:P137  @<Operator> * ;                         # operator
+  wdt:P361  IRI * ;                                 # part of
+  wdt:P127  @<Owner> * ;                            # owned by
+  wdt:P930  @<Electrification> ? ;                  # type of electrification
+  wdt:P7867 @<WikimediaCategory> ? ;                # category for maps
+  wdt:P1424 @<WikimediaTemplate> * ;                # topic's main template
+  wdt:P3858 @<RouteDiagramTemplate> ? ;             # route diagram template
+  wdt:P3438 @<VehicleNormallyUsed> * ;              # vehicle normally used
+  wdt:P1889 IRI ? ;                                 # different from
+  wdt:P463  @<MemberOf> * ;                         # member of
+  wdt:P793  @<SignificantEvent> * ;                 # significant event
+  wdt:P3096 @<WikimediaKMLFile> ? ;                 # KML file
+  wdt:P5658 [ wd:Q13196750 wd:Q14565199 ] ? ;       # railway traffic side, 'left', 'right'
+  wdt:P1343 @<Source> * ;                           # described by source
+  wdt:P121  @<ItemOperated> * ;                     # item operated
+  wdt:P138  IRI * ;                                 # named after
+  wdt:P2184 @<HistoryOfTopic> ? ;                   # history of topic
+  wdt:P2354 @<WikimediaListArticle> ? ;             # has list
+  wdt:P5008 @<WikiProject> ? ;                      # on focus list of Wikimedia project
+  wdt:P559  @<Terminus> * ;                         # terminus
+  wdt:P2283 IRI ? ;                                 # uses
+
+  # URL, String, Quantity, Time property
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P1619 xsd:dateTime ? ;    # date of official opening
+  wdt:P856  IRI * ;             # official website
+  wdt:P3872 xsd:decimal * ;     # patronage
+  wdt:P2043 xsd:decimal ? ;     # length
+  wdt:P1448 rdf:langString * ;  # official name
+  wdt:P1373 xsd:decimal ? ;     # daily patronage
+  wdt:P935  xsd:string ? ;      # Commons gallery
+  wdt:P8687 xsd:decimal * ;     # social media followers
+  wdt:P973  IRI * ;             # described at URL
+  wdt:P1705 rdf:langString ? ;  # native label
+  wdt:P2555 xsd:decimal * ;     # fee
+  wdt:P3086 xsd:decimal ?       # speed limit
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 wd:Q7930989 wd:Q56061 ]  # city, city or town, administrative territorial entity
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Electrification> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q388201 ]  # railway electrification system
+}
+
+<HeadquartersLocation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 ]  # city
+}
+
+<HistoryOfTopic> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q309 wd:Q17524420 ]  # history, aspect of history
+}
+
+<ItemOperated> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q728937 wd:Q7406919 ]  # railway line, service
+}
+
+<MemberOf> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<Operator> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 ]  # business
+}
+
+<Owner> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<RouteDiagramTemplate> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q17146139 ]  # Wikimedia route diagram
+}
+
+<SignificantEvent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1914636 wd:Q171558 wd:Q1656682 wd:Q1190554 ]  # activity, accident, event, occurrence
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q35127 ]  # website
+}
+
+<StateOfUse> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56557118 ]  # use status
+}
+
+<Terminus> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q12819564 ]  # station
+}
+
+<TrackGauge> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q214519 ]  # track gauge
+}
+
+<VehicleNormallyUsed> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q811704 ]  # rolling stock class
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikimediaKMLFile> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q26267864 ]  # Wikimedia KML file
+}
+
+<WikimediaListArticle> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q13406463 ]  # Wikimedia list article
+}
+
+<WikimediaTemplate> {
+  wdt:P31 [ wd:Q11266439 ]  # Wikimedia template
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

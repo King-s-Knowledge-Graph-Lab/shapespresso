@@ -1,0 +1,100 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<TypeOfMusicalInstrument>
+
+<TypeOfMusicalInstrument> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q110295396 ] ;                      # instance of
+  wdt:P1343 @<Source> * ;                            # described by source
+  wdt:P1889 IRI * ;                                  # different from
+  wdt:P910  @<WikimediaCategory> ? ;                 # topic's main category
+  wdt:P1535 @<User> ? ;                              # used by
+  wdt:P495  @<Country> * ;                           # country of origin
+  wdt:P5008 @<WikiProject> * ;                       # on focus list of Wikimedia project
+  wdt:P3259 @<IntangibleCulturalHeritageStatus> * ;  # intangible cultural heritage status
+  wdt:P2341 @<IndigenousTo> * ;                      # indigenous to
+  wdt:P61   @<DiscovererOrInventor> * ;              # discoverer or inventor
+  wdt:P460  @<TypeOfMusicalInstrument> ? ;           # said to be the same as
+  wdt:P166  @<Award> ? ;                             # award received
+  wdt:P361  IRI * ;                                  # part of
+  wdt:P186  @<Material> * ;                          # made from material
+  wdt:P527  IRI * ;                                  # has part(s)
+  wdt:P3095 @<PracticedBy> ? ;                       # practiced by
+  wdt:P6104 @<WikiProject> ? ;                       # maintained by WikiProject
+  wdt:P2354 @<List> ? ;                              # has list
+  wdt:P2670 IRI * ;                                  # has part(s) of the class
+  wdt:P138  IRI * ;                                  # named after
+  wdt:P366  IRI * ;                                  # has use
+  wdt:P176  @<Manufacturer> ? ;                      # manufacturer
+  wdt:P2596 @<Culture> * ;                           # culture
+
+  # URL, String, Quantity, Time property
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P1762 xsd:string ? ;      # Hornbostel-Sachs classification
+  wdt:P935  xsd:string ? ;      # Commons gallery
+  wdt:P973  IRI * ;             # described at URL
+  wdt:P2888 IRI * ;             # exact match
+  wdt:P487  xsd:string ? ;      # Unicode character
+  wdt:P575  xsd:dateTime ? ;    # time of discovery or invention
+  wdt:P1448 rdf:langString *    # official name
+}
+
+<Award> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q618779 ]  # award
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Culture> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q11042 wd:Q19958368 ]  # culture, culture of an area
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3331189 wd:Q47461344 ]  # version, edition or translation, written work
+}
+
+<DiscovererOrInventor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q43229 wd:Q16334295 ]  # human, organization, group of humans
+}
+
+<IndigenousTo> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q82794 wd:Q56061 ]  # geographic region, administrative territorial entity
+}
+
+<IntangibleCulturalHeritageStatus> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q113040113 wd:Q116056897 ]  # national inventory of intangible cultural heritage, heritage register of intangible cultural heritage
+}
+
+<List> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q98645843 ]  # Wikimedia music-related list
+}
+
+<Material> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q214609 ]  # material
+}
+
+<Manufacturer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q55190325 ]  # musical instrument manufacturing company
+}
+
+<PracticedBy> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q66715801 ]  # musical profession
+}
+
+<User> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q66715801 ]  # musical profession
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

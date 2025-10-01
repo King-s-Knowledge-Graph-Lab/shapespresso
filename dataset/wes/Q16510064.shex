@@ -1,0 +1,125 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<SportingEvent>
+
+<SportingEvent> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q16510064 ] ;                      # instance of
+  wdt:P641  @<Sport> ? ;                            # sport
+  wdt:P361  IRI ? ;                                 # part of
+  wdt:P276  @<Location> * ;                         # location
+  wdt:P17   @<Country> ? ;                          # country
+  wdt:P1346 @<Winner> * ;                           # winner
+  wdt:P155  @<SportingEvent> ? ;                    # follows
+  wdt:P2094 @<CompetitionClass> ? ;                 # competition class
+  wdt:P156  @<SportingEvent> ? ;                    # followed by
+  wdt:P710  @<Participant> * ;                      # participant
+  wdt:P664  @<Organizer> * ;                        # organizer
+  wdt:P2348 @<TimePeriod> ? ;                       # time period
+  wdt:P527  IRI * ;                                 # has part(s)
+  wdt:P2283 IRI ? ;                                 # uses
+  wdt:P8127 @<TournamentFormat> ? ;                 # tournament format
+  wdt:P131  @<AdministrativeTerritorialEntity> ? ;  # located in the administrative territorial entity
+  wdt:P910  @<WikimediaCategory> ? ;                # topic's main category
+  wdt:P115  @<HomeVenue> ? ;                        # home venue
+  wdt:P1424 @<WikimediaTemplate> ? ;                # topic's main template
+  wdt:P3764 @<Human> ? ;                            # pole position
+  wdt:P5053 @<Human> ? ;                            # fastest lap
+  wdt:P1923 @<ParticipatingTeam> * ;                # participating team
+  wdt:P461  @<SportingEvent> ? ;                    # opposite of
+  wdt:P1269 IRI ? ;                                 # facet of
+  wdt:P859  @<Sponsor> ? ;                          # sponsor
+  wdt:P179  @<SportingEvent> ? ;                    # part of the series
+  wdt:P1889 IRI * ;                                 # different from
+  wdt:P1652 @<Human> * ;                            # referee
+  wdt:P138  IRI * ;                                 # named after
+  wdt:P3342 @<Human> * ;                            # significant person
+
+  # URL, String, Quantity, Time property
+  wdt:P585  xsd:dateTime ? ;    # point in time
+  wdt:P1132 xsd:decimal ? ;     # number of participants
+  wdt:P582  xsd:dateTime ? ;    # end time
+  wdt:P580  xsd:dateTime ? ;    # start time
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P856  IRI ? ;             # official website
+  wdt:P393  xsd:string ? ;      # edition number
+  wdt:P1110 xsd:decimal ? ;     # attendance
+  wdt:P1350 xsd:decimal ? ;     # number of matches played/races/starts
+  wdt:P2139 xsd:decimal ? ;     # total revenue
+  wdt:P3157 xsd:decimal ? ;     # event distance
+  wdt:P2572 xsd:string * ;      # hashtag
+  wdt:P1448 rdf:langString ? ;  # official name
+  wdt:P1705 rdf:langString ? ;  # native label
+  wdt:P2257 xsd:decimal ? ;     # event interval
+  wdt:P973  IRI * ;             # described at URL
+  wdt:P1351 xsd:decimal ? ;     # number of points/goals/set scored
+  wdt:P1813 rdf:langString ?    # short name
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56061 ]  # administrative territorial entity
+}
+
+<CompetitionClass> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1744559 wd:Q10708051 ]  # classification in sports, competition class
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<HomeVenue> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1076486 ]  # sports venue
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 wd:Q1076486 ]  # city, sports venue
+}
+
+<Organizer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 wd:Q4438121 ]  # organization, sports organization
+}
+
+<Participant> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q4438121 ]  # human, sports organization
+}
+
+<ParticipatingTeam> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q847017 wd:Q12973014 ]  # sports club, sports team
+}
+
+<Sponsor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 wd:Q431289 ]  # organization, brand
+}
+
+<Sport> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q31629 wd:Q349 ]  # type of sport, sport
+}
+
+<TimePeriod> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q30227593 ]  # one-year-period overlapping two calendar years
+}
+
+<TournamentFormat> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q61685689 ]  # tournament system
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikimediaTemplate> {
+  wdt:P31 [ wd:Q11266439 ]  # Wikimedia template
+}
+
+<Winner> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q4438121 ]  # human, sports organization
+}

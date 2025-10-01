@@ -1,0 +1,101 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<SkiResort>
+
+<SkiResort> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q130003 ] ;                        # instance of
+  wdt:P17   @<Country> ;                            # country
+  wdt:P131  @<AdministrativeTerritorialEntity> * ;  # located in the administrative territorial entity
+  wdt:P276  @<Location> ? ;                         # location
+  wdt:P4552 @<MountainRange> ? ;                    # mountain range
+  wdt:P706  @<PhysicalFeature> ? ;                  # located in/on physical feature
+  wdt:P361  @<SkiArea> * ;                          # part of
+  wdt:P421  @<TimeZone> * ;                         # located in time zone
+  wdt:P137  @<Operator> ? ;                         # operator
+  wdt:P1454 @<LegalForm> ? ;                        # legal form
+  wdt:P910  @<WikimediaCategory> ? ;                # topic's main category
+  wdt:P30   @<Continent> ? ;                        # continent
+  wdt:P1465 @<WikimediaCategory> ? ;                # category for people who died here
+  wdt:P7959 @<HistoricCounty> ? ;                   # historic county
+  wdt:P1366 IRI ? ;                                 # replaced by
+  wdt:P5008 @<WikiProject> ? ;                      # on focus list of Wikimedia project
+  wdt:P84   @<Architect> ? ;                        # architect
+
+  # URL, String, Quantity, Time property
+  wdt:P856  IRI * ;             # official website
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P2044 xsd:decimal * ;     # elevation above sea level
+  wdt:P571  xsd:dateTime ? ;    # inception
+  wdt:P1619 xsd:dateTime ? ;    # date of official opening
+  wdt:P6375 rdf:langString ? ;  # street address
+  wdt:P281  xsd:string ? ;      # postal code
+  wdt:P1448 rdf:langString ? ;  # official name
+  wdt:P2046 xsd:decimal ? ;     # area
+  wdt:P4238 IRI ? ;             # webcam page URL
+  wdt:P1705 rdf:langString ? ;  # native label
+  wdt:P935  xsd:string ? ;      # Commons gallery
+  wdt:P576  xsd:dateTime ? ;    # dissolved, abolished or demolished date
+  wdt:P473  xsd:string ? ;      # local dialing code
+  wdt:P968  IRI ? ;             # email address
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56061 ]  # administrative territorial entity
+}
+
+<Architect> {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<Continent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5107 ]  # continent
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<HistoricCounty> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q67376938 ]  # historic county of the United Kingdom
+}
+
+<LegalForm> {
+  wdt:P31 [ wd:Q10541491 ]  # legal form
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 wd:Q3957 wd:Q532 ]  # city, town, village
+}
+
+<MountainRange> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q46831 ]  # mountain system
+}
+
+<Operator> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 wd:Q6881511 ]  # business, enterprise
+}
+
+<PhysicalFeature> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q8502 wd:Q8072 wd:Q39816 ]  # mountain, volcano, valley
+}
+
+<SkiArea> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3034650 ]  # ski area
+}
+
+<TimeZone> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q12143 wd:Q17272482 ]  # time zone, time zone named for a UTC offset
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

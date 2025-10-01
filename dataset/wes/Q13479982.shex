@@ -1,0 +1,89 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Cryptocurrency>
+
+<Cryptocurrency> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q13479982 ] ;          # instance of
+  wdt:P275  @<CopyrightLicense> ? ;     # copyright license
+  wdt:P6216 [ wd:Q50423863 ] ? ;        # copyright status, 'copyrighted'
+  wdt:P2283 IRI * ;                     # uses
+  wdt:P277  @<ProgrammingLanguage> * ;  # programmed in
+  wdt:P306  @<OperatingSystem> * ;      # operating system
+  wdt:P414  @<StockExchange> * ;        # stock exchange
+  wdt:P144  @<Cryptocurrency> * ;       # based on
+  wdt:P1889 IRI * ;                     # different from
+  wdt:P112  @<Founder> * ;              # founded by
+  wdt:P138  IRI * ;                     # named after
+  wdt:P366  @<HasUse> * ;               # has use
+  wdt:P495  @<Country> ? ;              # country of origin
+  wdt:P170  @<Creator> * ;              # creator
+  wdt:P941  @<Cryptocurrency> * ;       # inspired by
+  wdt:P178  @<Developer> * ;            # developer
+  wdt:P1535 IRI * ;                     # used by
+  wdt:P489  @<CurrencySign> ? ;         # currency symbol description
+  wdt:P910  @<WikimediaCategory> ? ;    # topic's main category
+
+  # URL, String, Quantity, Time property
+  wdt:P856  IRI * ;             # official website
+  wdt:P571  xsd:dateTime ? ;    # inception
+  wdt:P1324 IRI ? ;             # source code repository URL
+  wdt:P348  xsd:string * ;      # software version identifier
+  wdt:P973  IRI * ;             # described at URL
+  wdt:P5810 xsd:string * ;      # cryptocurrency code
+  wdt:P8687 xsd:decimal * ;     # social media followers
+  wdt:P2284 xsd:decimal * ;     # price
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P2226 xsd:decimal ? ;     # market capitalization
+  wdt:P5061 rdf:langString ? ;  # unit symbol
+  wdt:P6363 [ <http://data.thenextweb.com/tnw/entity/>~ ] ? ;  # WordLift URL
+  wdt:P6541 IRI ?               # Stack Exchange site URL
+}
+
+<CopyrightLicense> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q77205602 ]  # copyright license
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Creator> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q4830453 ]  # human, business
+}
+
+<CurrencySign> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q308229 ]  # currency sign
+}
+
+<Developer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 ]  # business
+}
+
+<Founder> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q4830453 ]  # human, business
+}
+
+<HasUse> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1047113 wd:Q11862829 ]  # field of study, academic discipline
+}
+
+<OperatingSystem> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q9135 ]  # operating system
+}
+
+<ProgrammingLanguage> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q9143 ]  # programming language
+}
+
+<StockExchange> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q25401607 ]  # cryptocurrency exchange
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}

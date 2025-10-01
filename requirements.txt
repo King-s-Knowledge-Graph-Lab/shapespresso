@@ -22,5 +22,9 @@ instructor==1.7.2
 pydantic==2.10.5
 # metrics
 zss==1.2.0
+# interface
+gradio==5.47.2
 # utils
 tqdm==4.66.3
+loguru==0.7.2
+matplotlib==3.9.2

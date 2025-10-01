@@ -1,0 +1,59 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<ClinicalTrial>
+
+<ClinicalTrial> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q30612 ] ;            # instance of
+  wdt:P8363 @<StudyType> ;             # study type
+  wdt:P17   @<Country> * ;             # country
+  wdt:P1050 @<MedicalCondition> * ;    # medical condition
+  wdt:P6099 @<ClinicalTrialPhase> * ;  # clinical trial phase
+  wdt:P4844 IRI * ;                    # research intervention
+  wdt:P921  IRI * ;                    # main subject
+  wdt:P859  @<Sponsor> ? ;             # sponsor
+  wdt:P767  @<Contributor> * ;         # contributor to the creative work or subject
+  wdt:P8329 @<Human> ? ;               # principal investigator
+  wdt:P2283 IRI ? ;                    # uses
+
+  # URL, String, Quantity, Time property
+  wdt:P580  xsd:dateTime ;    # start time
+  wdt:P1476 rdf:langString ;  # title
+  wdt:P1132 xsd:decimal ;     # number of participants
+  wdt:P582  xsd:dateTime ? ;  # end time
+  wdt:P2899 xsd:decimal ? ;   # minimum age
+  wdt:P4135 xsd:decimal ? ;   # maximum age
+  wdt:P1813 rdf:langString ?  # short name
+}
+
+<ClinicalTrialPhase> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7180990 ]  #  phase of clinical research
+}
+
+<Contributor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q16917 wd:Q43229 wd:Q4830453 ]  # hospital, organization, business
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<MedicalCondition> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q12136 wd:Q7189713 ]  # disease, physiological condition
+}
+
+<Sponsor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 wd:Q4830453 wd:Q16917 ]  # organization, business, hospital
+}
+
+<StudyType> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q78088984 ]  # study type
+}

@@ -1,0 +1,92 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Ontology>
+
+<Ontology> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q324254 ] ;             # instance of
+  wdt:P2283 @<Ontology> * ;              # uses
+  wdt:P361  IRI ? ;                      # part of
+  wdt:P275  @<CopyrightLicense> ? ;      # copyright license
+  wdt:P126  @<Maintainer> ? ;            # maintained by
+  wdt:P767  @<Contributor> * ;           # contributor to the creative work or subject
+  wdt:P1343 @<Source> * ;                # described by source
+  wdt:P921  IRI * ;                      # main subject
+  wdt:P6216 @<CopyrightStatus> ? ;       # copyright status
+  wdt:P1640 @<Human> ? ;                 # curator
+  wdt:P407  @<LanguageOfWorkOrName> * ;  # language of work or name
+  wdt:P178  @<Developer> * ;             # developer
+  wdt:P1365 @<Ontology> * ;              # replaces
+  wdt:P50   @<Author> * ;                # author
+  wdt:P747  @<EditionOrTranslation> * ;  # has edition or translation
+  wdt:P123  @<Publisher> ? ;             # publisher
+  wdt:P144  IRI * ;                      # based on
+  wdt:P17   @<Country> ? ;               # country
+  wdt:P527  IRI * ;                      # has part(s)
+
+  # URL, String, Quantity, Time property
+  wdt:P856  IRI ? ;             # official website
+  wdt:P1813 rdf:langString ? ;  # short name
+  wdt:P2888 IRI ? ;             # exact match
+  wdt:P1324 IRI ? ;             # source code repository URL
+  wdt:P973  IRI * ;             # described at URL
+  wdt:P571  xsd:dateTime ? ;    # inception
+  wdt:P2699 IRI ? ;             # URL
+  wdt:P7510 IRI ? ;             # XML namespace URL
+  wdt:P348  xsd:string ? ;      # software version identifier
+  wdt:P577  xsd:dateTime ? ;    # publication date
+  wdt:P953  IRI * ;             # full work available at URL
+  wdt:P1476 rdf:langString ?    # title
+}
+
+<Author> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q16334295 wd:Q5 wd:Q43229 ]  # group of humans, human, organization
+}
+
+<Contributor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q16334295 wd:Q5 wd:Q43229 ]  # group of humans, human, organization
+}
+
+<CopyrightLicense> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q77205602 ]  # copyright license
+}
+
+<CopyrightStatus> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q50424085 ]  # copyright status
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Developer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q43229 ]  # human, organization
+}
+
+<EditionOrTranslation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3331189 ]  # version, edition or translation
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<LanguageOfWorkOrName> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q33742 ]  # natural language
+}
+
+<Maintainer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q170584 wd:Q5 wd:Q43229 ]  # project, human, organization
+}
+
+<Publisher> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q2085381 wd:Q43229 ]  # publisher, organization
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q2668072 wd:Q13442814 ]  # collection, scholarly article
+}

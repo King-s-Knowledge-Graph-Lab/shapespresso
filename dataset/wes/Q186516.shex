@@ -1,0 +1,76 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<NationalFlag>
+
+<NationalFlag> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q186516 ] ;                 # instance of
+  wdt:P180  IRI * ;                          # depicts
+  wdt:P462  @<Color> * ;                     # color
+  wdt:P1001 @<Country> ;                     # applies to jurisdiction
+  wdt:P2061 @<WidthToHeightAspectRatio> ? ;  # aspect ratio
+  wdt:P136  [ wd:wd:Q24577232 wd:Q208324 wd:Q2029729 wd:Q23777467 wd:Q203161 wd:Q24577249 ] * ;  # genre, (horizontal triband, Nordic cross flag, Pan-African flag, Pan-Arab colors flag, tricolor, vertical triband)
+  wdt:P17   @<Country> ? ;                   # country
+  wdt:P287  @<Human> * ;                     # designed by
+  wdt:P910  @<WikimediaCategory> ? ;         # topic's main category
+  wdt:P1365 @<NationalFlag> ? ;              # replaces
+  wdt:P1366 @<NationalFlag> ? ;              # replaced by
+  wdt:P2670 IRI * ;                          # has part(s) of the class
+  wdt:P1343 @<Source> * ;                    # described by source
+  wdt:P1889 IRI ? ;                          # different from
+  wdt:P1268 @<Country> ? ;                   # represents
+  wdt:P144  @<NationalFlag> ? ;              # based on
+  wdt:P460  @<Flag> ? ;                      # said to be the same as
+  wdt:P1419 @<Shape> ? ;                     # shape
+  wdt:P5008 @<WikiProject> ? ;               # on focus list of Wikimedia project
+  wdt:P4969 @<Flag> ? ;                      # derivative work
+
+  # URL, String, Quantity, Time property
+  wdt:P571  xsd:dateTime ? ;    # inception
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P487  xsd:string ? ;      # Unicode character
+  wdt:P576  xsd:dateTime ? ;    # dissolved, abolished or demolished date
+  wdt:P1448 rdf:langString * ;  # official name
+  wdt:P1449 rdf:langString * ;  # nickname
+  wdt:P1684 rdf:langString ?    # inscription
+}
+
+<WidthToHeightAspectRatio> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q20970434 wd:Q1441762 ]  # width to height aspect ratio, aspect ratio
+}
+
+<Color> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1075 ]
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]
+}
+
+<Flag> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q14660 ]
+}
+
+<Human> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 ]
+}
+
+<Shape> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q815741 ]  # geometric shape
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3331189 ]  # version, edition or translation
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikiProject> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

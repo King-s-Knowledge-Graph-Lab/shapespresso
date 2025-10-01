@@ -1,0 +1,155 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<OperatingSystem>
+
+<OperatingSystem> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q9135 ] ;                # instance of
+  wdt:P178  @<Developer> * ;              # developer
+  wdt:P400  @<Platform> * ;               # platform
+  wdt:P275  @<CopyrightLicense> * ;       # copyright license
+  wdt:P6216 [ wd:Q50423863 ] ? ;          # copyright status, 'copyrighted'
+  wdt:P144  IRI * ;                       # based on
+  wdt:P155  @<OperatingSystem> * ;        # follows
+  wdt:P156  @<OperatingSystem> * ;        # followed by
+  wdt:P277  @<ProgrammedIn> * ;           # programmed in
+  wdt:P407  @<LanguageOfWorkOrName> * ;   # language of work or name
+  wdt:P179  @<OperatingSystem> ? ;        # part of the series
+  wdt:P1414 @<GUIToolkitOrFramework> * ;  # GUI toolkit or framework
+  wdt:P629  @<OperatingSystem> ? ;        # edition or translation of
+  wdt:P1889 IRI * ;                       # different from
+  wdt:P138  IRI * ;                       # named after
+  wdt:P910  @<WikimediaCategory> ? ;      # topic's main category
+  wdt:P361  IRI ? ;                       # part of
+  wdt:P3033 @<PackageManager> * ;         # package management system
+  wdt:P4387 @<UpdateMethod> * ;           # update method
+  wdt:P3931 @<CopyrightHolder> ? ;        # copyright holder
+  wdt:P176  @<Manufacturer> * ;           # manufacturer
+  wdt:P1366 @<OperatingSystem> * ;        # replaced by
+  wdt:P1365 @<OperatingSystem> * ;        # replaces
+  wdt:P527  IRI * ;                       # has part(s)
+  wdt:P1535 IRI * ;                       # used by
+  wdt:P4969 @<OperatingSystem> * ;        # derivative work
+  wdt:P1072 @<ReadableFileFormat> * ;     # readable file format
+  wdt:P495  @<Country> ? ;                # country of origin
+  wdt:P1389 @<ProductCertification> ? ;   # product certification
+  wdt:P366  IRI * ;                       # has use
+  wdt:P306  @<OperatingSystem> * ;        # operating system
+  wdt:P437  @<DistributionFormat> * ;     # distribution format
+  wdt:P737  IRI * ;                       # influenced by
+  wdt:P751  @<IntroducedFeature> * ;      # introduced feature
+  wdt:P123  @<Publisher> ? ;              # publisher
+  wdt:P2283 IRI * ;                       # uses
+  wdt:P112  @<Human> ? ;                  # founded by
+  wdt:P822  @<Mascot> * ;                 # mascot
+  wdt:P1552 IRI * ;                       # has characteristic
+  wdt:P5008 @<WikiProject> ? ;            # on focus list of Wikimedia project
+
+  # URL, String, Quantity, Time property
+  wdt:P856  IRI ? ;             # official website
+  wdt:P571  xsd:dateTime ? ;    # inception
+  wdt:P348  xsd:string * ;      # software version identifier
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P577  xsd:dateTime ? ;    # publication date
+  wdt:P1324 IRI * ;             # source code repository URL
+  wdt:P1482 IRI * ;             # Stack Exchange tag
+  wdt:P2078 IRI * ;             # user manual URL
+  wdt:P1638 rdf:langString ? ;  # working title
+  wdt:P1401 IRI ? ;             # issue tracker URL
+  wdt:P2669 xsd:dateTime * ;    # discontinued date
+  wdt:P973  IRI * ;             # described at URL
+  wdt:P1813 rdf:langString * ;  # short name
+  wdt:P1581 IRI ? ;             # official blog URL
+  wdt:P8687 xsd:decimal * ;     # social media followers
+  wdt:P1613 IRI * ;             # IRC channel URL
+  wdt:P6949 xsd:dateTime ? ;    # announcement date
+  wdt:P935  xsd:string ? ;      # Commons gallery
+  wdt:P2572 xsd:string ? ;      # hashtag
+  wdt:P1019 IRI ? ;             # web feed URL
+  wdt:P729  xsd:dateTime ? ;    # service entry
+  wdt:P1448 rdf:langString *    # official name
+}
+
+<CopyrightHolder> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 wd:Q4830453 ]  # organization, business
+}
+
+<CopyrightLicense> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q77205602 ]  # copyright license
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Developer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q43229 ]  # human, organization
+}
+
+<DistributionFormat> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q82036085 wd:Q81941037 ]  # physical media format, product distribution method
+}
+
+<GUIToolkitOrFramework> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1193246 wd:Q47146 ]  # widget toolkit, user interface
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<IntroducedFeature> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4485156 ]  # software feature
+}
+
+<LanguageOfWorkOrName> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1288568 ]  # modern language
+}
+
+<Manufacturer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 wd:Q43229 ]  # business, organization
+}
+
+<Mascot> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q18670161 wd:Q386208 ]  # mascot, mascot character
+}
+
+<PackageManager> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q891055 ]  # package manager
+}
+
+<Platform> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q241317 ]  # computing platform
+}
+
+<ProductCertification> EXTRA wdt:P279 {
+  wdt:P279 [ wd:Q317623 wd:Q20819677 ]  # technical standard, technical specification
+}
+
+<ProgrammedIn> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q188860 wd:Q9143 ]  # software library, programming language
+}
+
+<Publisher> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 wd:Q43229 ]  # business, organization
+}
+
+<ReadableFileFormat> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q235557 ]  # file format
+}
+
+<UpdateMethod> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1220872 wd:Q7397 ]  # service, software
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

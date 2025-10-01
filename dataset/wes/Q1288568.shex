@@ -1,0 +1,178 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<ModernLanguage>
+
+<ModernLanguage> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q1288568 ] ;                       # instance of
+  wdt:P17   @<Country> * ;                          # country
+  wdt:P3823 @<EthnologueLanguageStatus> ;           # Ethnologue language status
+  wdt:P2341 @<IndigenousTo> * ;                     # indigenous to
+  wdt:P910  @<WikimediaCategory> ? ;                # topic's main category
+  wdt:P1999 @<UNESCOLanguageStatus> ? ;             # UNESCO language status
+  wdt:P282  @<WritingSystem> * ;                    # writing system
+  wdt:P4132 @<LinguisticTypology> * ;               # linguistic typology
+  wdt:P1889 IRI * ;                                 # different from
+  wdt:P5996 @<WikimediaCategory> ? ;                # category for films in this language
+  wdt:P361  IRI * ;                                 # part of
+  wdt:P4913 @<Language> ? ;                         # dialect of
+  wdt:P7084 @<WikimediaCategory> ? ;                # related category
+  wdt:P1018 @<LanguageRegulatoryBody> * ;           # language regulatory body
+  wdt:P1343 @<Source> * ;                           # described by source
+  wdt:P276  @<Location> * ;                         # location
+  wdt:P5008 @<WikiProject> * ;                      # on focus list of Wikimedia project
+  wdt:P2989 @<GrammaticalCase> * ;                  # has grammatical case
+  wdt:P460  IRI * ;                                 # said to be the same as
+  wdt:P527  IRI * ;                                 # has part(s)
+  wdt:P2579 @<StudiedIn> * ;                        # studied in
+  wdt:P6104 @<WikiProject> ? ;                      # maintained by WikiProject
+  wdt:P5109 @<GrammaticalGender> * ;                # has grammatical gender
+  wdt:P1424 @<WikimediaTemplate> * ;                # topic's main template
+  wdt:P3103 @<GrammaticalTense> * ;                 # has tense
+  wdt:P2959 @<WikimediaPermanentDuplicateItem> * ;  # permanent duplicated item
+  wdt:P3161 @<GrammaticalMood> * ;                  # has grammatical mood
+  wdt:P138  IRI * ;                                 # named after
+  wdt:P172  @<EthnicGroup> ? ;                      # ethnic group
+  wdt:P2184 @<HistoryOfTopic> ? ;                   # history of topic
+  wdt:P1365 @<Language> * ;                         # replaces
+  wdt:P6106 IRI * ;                                 # uses capitalization for
+  wdt:P155  @<Language> ? ;                         # follows
+  wdt:P5110 @<GrammaticalPerson> * ;                # has grammatical person
+  wdt:P1151 @<WikimediaPortal> ? ;                  # topic's main Wikimedia portal
+  wdt:P144  @<Language> * ;                         # based on
+  wdt:P1535 @<User> * ;                             # used by
+  wdt:P737  @<Language> * ;                         # influenced by
+  wdt:P5206 @<ConjugationClass> * ;                 # has conjugation class
+  wdt:P1382 @<ModernLanguage> * ;                   # partially coincident with
+  wdt:P2587 @<Phoneme> * ;                          # has phoneme
+  wdt:P2283 IRI * ;                                 # uses
+  wdt:P495  @<Country> * ;                          # country of origin
+  wdt:P1552 IRI * ;                                 # has characteristic
+
+  # URL, String, Quantity, Time property
+  wdt:P2888 IRI ? ;             # exact match
+  wdt:P1098 xsd:decimal * ;     # number of speakers, writers, or signers
+  wdt:P1705 rdf:langString * ;  # native label
+  wdt:P424  xsd:string ? ;      # Wikimedia language code
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P1813 rdf:langString * ;  # short name
+  wdt:P973  IRI ? ;             # described at URL
+  wdt:P8703 xsd:string * ;      # entry in abbreviations table
+  wdt:P9748 IRI * ;             # Wikimedia Incubator URL
+  wdt:P1482 IRI * ;             # Stack Exchange tag
+  wdt:P1448 rdf:langString * ;  # official name
+  wdt:P1282 xsd:string * ;      # OpenStreetMap tag or key
+  wdt:P6541 IRI * ;             # Stack Exchange site URL
+  wdt:P935  xsd:string ? ;      # Commons gallery
+  wdt:P571  xsd:dateTime ? ;    # inception
+  wdt:P2561 rdf:langString * ;  # name
+  wdt:P2572 xsd:string ?        # hashtag
+}
+
+<ConjugationClass> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q53996674 ]  # conjugation class
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<EthnicGroup> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q41710 wd:Q2472587 wd:Q133311 ]  # ethnic group, people, tribe
+}
+
+<EthnologueLanguageStatus> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q29051545 ]  # Ethnologue language status
+}
+
+<GrammaticalCase> {
+  wdt:P31 [ wd:Q128234 ]  # case
+}
+
+<GrammaticalGender> {
+  wdt:P31 [ wd:Q162378 ]  # grammatical gender
+}
+
+<GrammaticalMood> {
+  wdt:P31 [ wd:Q184932 ]  # grammatical mood
+}
+
+<GrammaticalPerson> {
+  wdt:P31 [ wd:Q690940 ]  # grammatical person
+}
+
+<GrammaticalTense> {
+  wdt:P31 [ wd:Q177691 ]  # grammatical tense
+}
+
+<Phoneme> {
+  wdt:P31 [ wd:Q8183 ]  # phoneme
+}
+
+<HistoryOfTopic> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q17524420 ]  # aspect of history
+}
+
+<IndigenousTo> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56061 wd:Q82794 wd:Q41710 wd:Q3502482 wd:Q851990 wd:Q6266 ]  # administrative territorial entity, geographic region, ethnic group, cultural region, population group, nation
+}
+
+<Language> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q34770 ]  # language
+}
+
+<LanguageRegulatoryBody> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q2093358 wd:Q43229 ]  # language regulator, organization
+}
+
+<LinguisticTypology> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q72775801 ]  # linguistic typology
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q2221906 wd:Q82794 wd:Q17334923 ]  # geographic location, geographic region, physical location
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3331189 wd:Q47461344 ]  # version, edition or translation, written work
+}
+
+<StudiedIn> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q11862829 wd:Q1047113 ]  # academic discipline, field of study
+}
+
+<UNESCOLanguageStatus> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q21993397 ]  # UNESCO language status
+}
+
+<User> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q41710 ]  # ethnic group
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikimediaPermanentDuplicateItem> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q21286738 ]  # Wikimedia permanent duplicate item
+}
+
+<WikimediaPortal> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4663903 ]  # Wikimedia portal
+}
+
+<WikimediaTemplate> {
+  wdt:P31 [ wd:Q11266439 ]  # Wikimedia template
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}
+
+<WritingSystem> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q8192 wd:Q9779 ]  # writing system, alphabet
+}

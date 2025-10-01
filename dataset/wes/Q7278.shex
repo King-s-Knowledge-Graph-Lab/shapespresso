@@ -1,0 +1,221 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<PoliticalParty>
+
+<PoliticalParty> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q7278 ] ;                            # instance of
+  wdt:P17   @<Country> ? ;                            # country
+  wdt:P1142 @<PoliticalIdeology> * ;                  # political ideology
+  wdt:P159  @<HeadquartersLocation> ? ;               # headquarters location
+  wdt:P1387 @<PoliticalAlignment> * ;                 # political alignment
+  wdt:P488  @<Human> * ;                              # chairperson
+  wdt:P112  @<Human> * ;                              # founded by
+  wdt:P6365 @<WikimediaCategory> ? ;                  # member category
+  wdt:P910  @<WikimediaCategory> ? ;                  # topic's main category
+  wdt:P463  @<MemberOf> * ;                           # member of
+  wdt:P155  @<PoliticalParty> * ;                     # follows
+  wdt:P156  @<PoliticalParty> * ;                     # followed by
+  wdt:P1889 IRI * ;                                   # different from
+  wdt:P361  IRI * ;                                   # part of
+  wdt:P3975 @<Human> * ;                              # general secretary
+  wdt:P1366 @<PoliticalParty> * ;                     # replaced by
+  wdt:P740  @<LocationOfFormation> ? ;                # location of formation
+  wdt:P2541 @<OperatingArea> ? ;                      # operating area
+  wdt:P1365 @<PoliticalParty> * ;                     # replaces
+  wdt:P1344 @<ParticipantIn> * ;                      # participant in
+  wdt:P131  @<AdministrativeTerritorialEntity> ? ;    # located in the administrative territorial entity
+  wdt:P1454 @<LegalForm> ? ;                          # legal form
+  wdt:P5008 @<WikiProject> ? ;                        # on focus list of Wikimedia project
+  wdt:P807  @<PoliticalParty> ? ;                     # separated from
+  wdt:P7888 @<PoliticalParty> ? ;                     # merged into
+  wdt:P1343 @<Source> * ;                             # described by source
+  wdt:P4379 @<YouthWing> ? ;                          # youth wing
+  wdt:P1416 @<Affiliation> * ;                        # affiliation
+  wdt:P527  IRI * ;                                   # has part(s)
+  wdt:P1001 @<AppliesToJurisdiction> ? ;              # applies to jurisdiction
+  wdt:P2388 @<OfficeHeldByHeadOfTheOrganization> ? ;  # office held by head of the organization
+  wdt:P138  IRI * ;                                   # named after
+  wdt:P749  @<ParentOrganization> ? ;                 # parent organization
+  wdt:P485  @<ArchivesAt> ? ;                         # archives at
+  wdt:P210  @<Human> * ;                              # party chief representative
+  wdt:P140  @<ReligionOrWorldview> ? ;                # religion or worldview
+  wdt:P2813 @<HousePublication> * ;                   # house publication
+  wdt:P452  @<Industry> ? ;                           # industry
+  wdt:P355  @<Subsidiary> * ;                         # has subsidiary
+  wdt:P6364 @<OfficialColor> * ;                      # official color
+  wdt:P5832 @<PoliticalCoalition> * ;                 # political coalition
+  wdt:P793  @<SignificantEvent> * ;                   # significant event
+  wdt:P6104 @<WikiProject> ? ;                        # maintained by WikiProject
+  wdt:P135  @<Movement> * ;                           # movement
+  wdt:P495  @<Country> * ;                            # country of origin
+  wdt:P3342 @<Human> * ;                              # significant person
+  wdt:P1424 @<WikimediaTemplate> ? ;                  # topic's main template
+  wdt:P2348 IRI ? ;                                   # time period
+  wdt:P607  @<Conflict> * ;                           # conflict
+  wdt:P1269 IRI ? ;                                   # facet of
+  wdt:P2184 @<HistoryOfTopic> ? ;                     # history of topic
+  wdt:P3602 @<Election> * ;                           # candidacy in election
+  wdt:P85   @<Anthem> ? ;                             # anthem
+  wdt:P163  @<Flag> ? ;                               # flag
+
+  # URL, String, Quantity, Time property
+  wdt:P571  xsd:dateTime ? ;    # inception
+  wdt:P856  IRI ? ;             # official website
+  wdt:P465  xsd:string ? ;      # sRGB color hex triplet
+  wdt:P576  xsd:dateTime ? ;    # dissolved, abolished or demolished date
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P1813 rdf:langString * ;  # short name
+  wdt:P1705 rdf:langString * ;  # native label
+  wdt:P2124 xsd:decimal * ;     # member count
+  wdt:P8687 xsd:decimal * ;     # social media followers
+  wdt:P1448 rdf:langString * ;  # official name
+  wdt:P1410 xsd:decimal * ;     # number of seats in assembly
+  wdt:P1019 IRI ? ;             # web feed URL
+  wdt:P973  IRI * ;             # described at URL
+  wdt:P1451 rdf:langString * ;  # motto text
+  wdt:P1581 IRI ? ;             # official blog URL
+  wdt:P6378 IRI ? ;             # charter URL
+  wdt:P2572 xsd:string * ;      # hashtag
+  wdt:P8093 xsd:decimal ?       # donations
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7930989 wd:Q56061 wd:Q7275 ]  # city or town, administrative territorial entity, state
+}
+
+<Affiliation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7278 wd:Q7210356 ]  # political party, political organization
+}
+
+<Anthem> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q207628 wd:Q105543609 ]  # composed musical work, musical work/composition
+}
+
+<AppliesToJurisdiction> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 wd:Q82794 ]  # country, geographic region
+}
+
+<ArchivesAt> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q166118 wd:Q43229 wd:Q178706 ]  # archive, organization, institution
+}
+
+<Conflict> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q198 wd:Q180684 wd:Q645883 ]  # war, conflict, military operation
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Election> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q40231 ]  # public election
+}
+
+<Flag> {
+  wdt:P31 [ wd:Q14660 ]  # flag
+}
+
+<HeadquartersLocation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 ]  # city
+}
+
+<HistoryOfTopic> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q17524420 wd:Q309 ]  # aspect of history, history
+}
+
+<HousePublication> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q340169 wd:Q1002697 ]  # medium, periodical
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<Industry> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q8187769 ]  # economic activity
+}
+
+<LegalForm> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q10541491 ]  # legal form
+}
+
+<LocationOfFormation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7930989 wd:Q515 ]  # city or town, city
+}
+
+<MemberOf> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<Movement> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q49773 wd:Q2738074 wd:Q2198855 wd:Q1826286 ]  # social movement, political movement, cultural movement, religious movement
+}
+
+<OfficeHeldByHeadOfTheOrganization> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4164871 ]  # position
+}
+
+<OfficialColor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1075 wd:Q166902 ]  # color, primary color
+}
+
+<OperatingArea> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q82794 wd:Q2221906 wd:Q6256 wd:Q515 ]  # geographic region, geographic location, country, city
+}
+
+<ParentOrganization> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<ParticipantIn> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1190554 wd:Q1914636 wd:Q1656682 wd:Q386724 ]  # occurrence, activity, event, work
+}
+
+<PoliticalAlignment> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q28819924 ]  # political alignment
+}
+
+<PoliticalCoalition> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6138528 ]  # political coalition
+}
+
+<PoliticalIdeology> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5891 wd:Q12909644 wd:Q117850 ]  # philosophy, political ideology, doctrine
+}
+
+<ReligionOrWorldview> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q71966963 ]  # religion or world view
+}
+
+<SignificantEvent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1190554 wd:Q30111082 wd:Q1914636 ]  # occurrence, political event, activity
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q571 wd:Q386724 wd:Q3331189 ]  # book, work, version, edition or translation
+}
+
+<Subsidiary> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikimediaTemplate> {
+  wdt:P31 [ wd:Q11266439 ]  # Wikimedia template
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}
+
+<YouthWing> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1572070 wd:Q2493450 ]  # youth organisation, juvenile political organization
+}

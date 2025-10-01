@@ -1,0 +1,91 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<MotorsportRacingTrack>
+
+<MotorsportRacingTrack> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q2338524 ] ;                       # instance of
+  wdt:P17   @<Country> ;                            # country
+  wdt:P131  @<AdministrativeTerritorialEntity> ? ;  # located in the administrative territorial entity
+  wdt:P641  [ wd:Q5367 wd:Q5386 ] ? ;               # sport, 'motorsport', 'auto racing'
+  wdt:P276  @<Location> ? ;                         # location
+  wdt:P910  @<WikimediaCategory> ? ;                # topic's main category
+  wdt:P793  @<SignificantEvent> * ;                 # significant event
+  wdt:P1535 IRI ? ;                                 # used by
+  wdt:P7959 @<HistoricCounty> ? ;                   # historic county
+  wdt:P138  IRI * ;                                 # named after
+  wdt:P1435 @<HeritageDesignation> * ;              # heritage designation
+  wdt:P127  @<Owner> * ;                            # owned by
+  wdt:P137  @<Operator> ? ;                         # operator
+  wdt:P527  IRI * ;                                 # has part(s)
+  wdt:P1889 IRI * ;                                 # different from
+  wdt:P361  IRI ? ;                                 # part of
+  wdt:P421  @<TimeZone> ? ;                         # located in time zone
+  wdt:P706  @<PhysicalFeature> ? ;                  # located in/on physical feature
+
+  # URL, String, Quantity, Time property
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P856  IRI ? ;             # official website
+  wdt:P2043 xsd:decimal * ;     # length
+  wdt:P571  xsd:dateTime ? ;    # inception
+  wdt:P1813 rdf:langString ? ;  # short name
+  wdt:P1350 xsd:decimal ? ;     # number of matches played/races/starts
+  wdt:P6375 rdf:langString ? ;  # street address
+  wdt:P8687 xsd:decimal * ;     # social media followers
+  wdt:P576  xsd:dateTime ? ;    # dissolved, abolished or demolished date
+  wdt:P4184 xsd:decimal * ;     # slope
+  wdt:P935  xsd:string ? ;      # Commons gallery
+  wdt:P1448 rdf:langString * ;  # official name
+  wdt:P1449 rdf:langString ? ;  # nickname
+  wdt:P2044 xsd:decimal ? ;     # elevation above sea level
+  wdt:P281  xsd:string ? ;      # postal code
+  wdt:P1705 rdf:langString ?    # native label
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7930989 wd:Q56061 wd:Q515 ]  # city or town, administrative territorial entity, city
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<HeritageDesignation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q210272 wd:Q386426 ]  # cultural heritage, natural heritage
+}
+
+<HistoricCounty> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q67376938 ]  # historic county of the United Kingdom
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q17334923 wd:Q2221906 ]  # physical location, geographic location
+}
+
+<Operator> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6881511 wd:Q4830453 wd:Q15911314 wd:Q43229 ]  # enterprise, business, association, organization
+}
+
+<Owner> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<PhysicalFeature> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q618123 wd:Q2221906 wd:Q82794 ]  # geographical feature, geographic location, geographic region
+}
+
+<SignificantEvent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1656682 wd:Q1914636 ]  # event, activity
+}
+
+<TimeZone> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q12143 ]  # time zone
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}

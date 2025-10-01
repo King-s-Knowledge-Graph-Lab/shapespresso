@@ -1,0 +1,110 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<War>
+
+<War> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q198 ] ;                           # instance of
+  wdt:P710  @<Participant> * ;                      # participant
+  wdt:P276  @<Location> * ;                         # location
+  wdt:P361  IRI * ;                                 # part of
+  wdt:P910  @<WikimediaCategory> ? ;                # topic's main category
+  wdt:P17   @<Country> * ;                          # country
+  wdt:P1343 @<Source> * ;                           # described by source
+  wdt:P527  IRI * ;                                 # has part(s)
+  wdt:P5008 @<WikiProject> * ;                      # on focus list of Wikimedia project
+  wdt:P155  IRI ? ;                                 # follows
+  wdt:P156  IRI * ;                                 # followed by
+  wdt:P1889 IRI * ;                                 # different from
+  wdt:P793  @<SignificantEvent> * ;                 # significant event
+  wdt:P138  IRI * ;                                 # named after
+  wdt:P1542 IRI * ;                                 # has effect
+  wdt:P1424 @<WikimediaTemplate> * ;                # topic's main template
+  wdt:P828  IRI * ;                                 # has cause
+  wdt:P2348 @<TimePeriod> ? ;                       # time period
+  wdt:P4220 @<OrderOfBattle> * ;                    # order of battle
+  wdt:P131  @<AdministrativeTerritorialEntity> * ;  # located in the administrative territorial entity
+  wdt:P1269 IRI * ;                                 # facet of
+  wdt:P460  IRI * ;                                 # said to be the same as
+  wdt:P7867 @<WikimediaCategory> ? ;                # category for maps
+  wdt:P1299 @<Work> * ;                             # depicted by
+  wdt:P1534 @<EndCause> ? ;                         # end cause
+  wdt:P1441 @<Work> ? ;                             # present in work
+  wdt:P1478 IRI * ;                                 # has immediate cause
+  wdt:P2354 @<WikimediaListArticle> * ;             # has list
+  wdt:P3342 @<Human> * ;                            # significant person
+
+  # URL, String, Quantity, Time property
+  wdt:P580  xsd:dateTime ? ;    # start time
+  wdt:P582  xsd:dateTime ? ;    # end time
+  wdt:P585  xsd:dateTime ? ;    # point in time
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P935  xsd:string ? ;      # Commons gallery
+  wdt:P1120 xsd:decimal * ;     # number of deaths
+  wdt:P1705 rdf:langString * ;  # native label
+  wdt:P1132 xsd:decimal *       # number of participants
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56061 ]  # administrative territorial entity
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3331189 wd:Q47461344 ]  # version, edition or translation, written work
+}
+
+<EndCause> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q131569 ]  # treaty
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q82794 ]  # geographic region
+}
+
+<OrderOfBattle> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q11167066 ]  # order of battle
+}
+
+<Participant> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q16334295 ]  # group of humans
+}
+
+<SignificantEvent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1190554 wd:Q1914636 ]  # occurrence, activity
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikimediaListArticle> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q13406463 ]  # Wikimedia list article
+}
+
+<WikimediaTemplate> {
+  wdt:P31 [ wd:Q11266439 ]  # Wikimedia template
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}
+
+<Work> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q386724 ]  # work
+}
+
+<TimePeriod> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q11514315 ]  # historical period
+}

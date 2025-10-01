@@ -1,0 +1,157 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Airline>
+
+<Airline> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q46970 ] ;                         # instance of
+  wdt:P17   @<Country> ? ;                          # country
+  wdt:P159  @<City> ? ;                             # headquarters location
+  wdt:P113  @<Airport> * ;                          # airline hub
+  wdt:P121  @<OperatedItem> * ;                     # item operated
+  wdt:P749  @<ParentOrganization> ? ;               # parent organization
+  wdt:P910  @<WikimediaCategory> ? ;                # topic's main category
+  wdt:P1454 @<LegalForm> ? ;                        # legal form
+  wdt:P740  @<City> ? ;                             # location of formation
+  wdt:P355  @<Airline> * ;                          # has subsidiary
+  wdt:P1889 IRI * ;                                 # different from
+  wdt:P114  @<AirlineAlliance> ? ;                  # airline alliance
+  wdt:P4446 @<RewardProgram> ? ;                    # reward program
+  wdt:P793  @<AviationAccidentOrIncident> * ;       # significant event
+  wdt:P127  @<Organization> ? ;                     # owned by
+  wdt:P452  @<Industry> ? ;                         # industry
+  wdt:P156  @<Airline> ? ;                          # followed by
+  wdt:P199  @<Airline> * ;                          # organizational divisions
+  wdt:P2283 [ wd:Q38911792 ] ? ;                    # uses (AMOS)
+  wdt:P112  @<Founder> * ;                          # founded by
+  wdt:P1343 @<Source> ? ;                           # described by source
+  wdt:P169  @<Human> ? ;                            # chief executive officer
+  wdt:P414  @<StockExchange> ? ;                    # stock exchange
+  wdt:P1366 @<Airline> ? ;                          # replaced by
+  wdt:P463  @<TradeAssociation> * ;                 # member of
+  wdt:P1830 @<Airline> * ;                          # owner of
+  wdt:P131  @<AdministrativeTerritorialEntity> ? ;  # located in the administrative territorial entity
+  wdt:P5008 @<WikiProject> ? ;                      # on focus list of Wikimedia project
+  wdt:P407  @<NaturalLanguage> * ;                  # language of work or name
+  wdt:P2813 @<HousePublication> ? ;                 # house publication
+  wdt:P7888 @<Airline> ? ;                          # merged into
+  wdt:P138  IRI ? ;                                 # named after
+  wdt:P166  @<Award> * ;                            # award received
+  wdt:P488  @<Human> ? ;                            # chairperson
+  wdt:P1037 @<Human> ? ;                            # director / manager
+
+  # URL, String, Quantity, Time property
+  wdt:P571  xsd:dateTime ? ;  # inception
+  wdt:P373  xsd:string ? ;    # Commons category
+  wdt:P230  xsd:string ? ;    # ICAO airline designator
+  wdt:P229  xsd:string ? ;    # IATA airline designator
+  wdt:P576  xsd:dateTime ? ;  # dissolved, abolished or demolished date
+  wdt:P856  IRI ? ;           # official website
+  wdt:P5703 xsd:string ? ;    # airline accounting code
+  wdt:P8687 xsd:decimal ? ;   # social media followers
+  wdt:P2031 xsd:dateTime ? ;  # work period (start)
+  wdt:P2032 xsd:dateTime ? ;  # work period (end)
+  wdt:P935  xsd:string ? ;    # Commons gallery
+  wdt:P4573 xsd:string ? ;    # Merchant Category Code
+  wdt:P1128 xsd:decimal ? ;   # employees
+  wdt:P968  [ <mailto:>~ ] ;  # email address
+  wdt:P2139 xsd:decimal * ;   # total revenue
+  wdt:P1451 xsd:string ? ;    # motto text
+  wdt:P2295 xsd:decimal * ;   # net profit
+  wdt:P2226 xsd:decimal * ;   # market capitalization
+  wdt:P2403 xsd:decimal ? ;   # total assets
+  wdt:P3362 xsd:decimal ? ;   # operating income
+  wdt:P606  xsd:dateTime ?    # first flight
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 ]  # city
+}
+
+<AirlineAlliance> {
+  wdt:P31 [ wd:Q465909 ]  # airline alliance
+}
+
+<Airport> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1248784 ]  # airport
+}
+
+<AviationAccidentOrIncident> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q744913 wd:Q3149875 ]  # aviation accident, aviation incident
+}
+
+<Award> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q618779 ]  # award
+}
+
+<City> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 ]  # city
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Founder> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q43229 ]  # human, organization
+}
+
+<HousePublication> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q2784039 ]  # inflight magazine
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<Industry> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q765633 wd:Q1757562 ]  # aviation, air transport
+}
+
+<LegalForm> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q10541491 ]  # legal form
+}
+
+<NaturalLanguage> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q33742 ]  # natural language
+}
+
+<OperatedItem> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q15056993 wd:Q15056995 ]  # aircraft family, aircraft model
+}
+
+<Organization> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<ParentOrganization> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 wd:Q891723 ]  # business, public company
+}
+
+<RewardProgram> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q892901 wd:Q1062332 ]  # reward program, frequent-flyer program
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3331189 wd:Q35127 ]  # version, edition or translation, website
+}
+
+<StockExchange> {
+  wdt:P31 [ wd:Q11691 ]  # stock exchange
+}
+
+<TradeAssociation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q2178147 ]  # trade association
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

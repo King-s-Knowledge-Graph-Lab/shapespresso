@@ -1,0 +1,52 @@
+class_uri,class_label,dataset,count
+http://www.wikidata.org/entity/Q110295396,type of musical instrument,wes,429
+http://www.wikidata.org/entity/Q115305900,large language model,wes,25
+http://www.wikidata.org/entity/Q1172284,data set,wes,2541
+http://www.wikidata.org/entity/Q12136,disease,wes,2801
+http://www.wikidata.org/entity/Q1248784,airport,wes,24512
+http://www.wikidata.org/entity/Q1288568,modern language,wes,6988
+http://www.wikidata.org/entity/Q12973014,sports team,wes,3492
+http://www.wikidata.org/entity/Q130003,ski resort,wes,1659
+http://www.wikidata.org/entity/Q13479982,cryptocurrency,wes,172
+http://www.wikidata.org/entity/Q1348589,lunar crater,wes,1150
+http://www.wikidata.org/entity/Q15079786,ballet,wes,1030
+http://www.wikidata.org/entity/Q15836568,computer network protocol,wes,763
+http://www.wikidata.org/entity/Q16510064,sporting event,wes,30780
+http://www.wikidata.org/entity/Q174989,file system,wes,138
+http://www.wikidata.org/entity/Q175263,data structure,wes,74
+http://www.wikidata.org/entity/Q186516,national flag,wes,419
+http://www.wikidata.org/entity/Q193424,web service,wes,229
+http://www.wikidata.org/entity/Q194188,spaceport,wes,91
+http://www.wikidata.org/entity/Q198,war,wes,1333
+http://www.wikidata.org/entity/Q2020153,academic conference,wes,8781
+http://www.wikidata.org/entity/Q219239,recipe,wes,2022
+http://www.wikidata.org/entity/Q2338524,motorsport racing track,wes,1142
+http://www.wikidata.org/entity/Q24634210,podcast show,wes,7337
+http://www.wikidata.org/entity/Q253623,patent,wes,1312
+http://www.wikidata.org/entity/Q30612,clinical trial,wes,391916
+http://www.wikidata.org/entity/Q3239681,scientific theory,wes,192
+http://www.wikidata.org/entity/Q324254,ontology,wes,521
+http://www.wikidata.org/entity/Q3314483,fruit,wes,201
+http://www.wikidata.org/entity/Q33506,museum,wes,43304
+http://www.wikidata.org/entity/Q35666,glacier,wes,9084
+http://www.wikidata.org/entity/Q37748,chromosome,wes,9225
+http://www.wikidata.org/entity/Q3917681,embassy,wes,8371
+http://www.wikidata.org/entity/Q4022,river,wes,418553
+http://www.wikidata.org/entity/Q40231,public election,wes,20555
+http://www.wikidata.org/entity/Q4182287,search engine,wes,131
+http://www.wikidata.org/entity/Q46855,hackathon,wes,114
+http://www.wikidata.org/entity/Q46970,airline,wes,5490
+http://www.wikidata.org/entity/Q483110,stadium,wes,7868
+http://www.wikidata.org/entity/Q5503,rapid transit,wes,312
+http://www.wikidata.org/entity/Q55990535,computer model,wes,664
+http://www.wikidata.org/entity/Q628179,trail,wes,2463
+http://www.wikidata.org/entity/Q7278,political party,wes,21245
+http://www.wikidata.org/entity/Q7889,video game,wes,79852
+http://www.wikidata.org/entity/Q7944,earthquake,wes,2398
+http://www.wikidata.org/entity/Q8054,protein,wes,1001389
+http://www.wikidata.org/entity/Q8070,tsunami,wes,30
+http://www.wikidata.org/entity/Q8072,volcano,wes,1888
+http://www.wikidata.org/entity/Q8081,tornado,wes,162
+http://www.wikidata.org/entity/Q8366,algorithm,wes,699
+http://www.wikidata.org/entity/Q9135,operating system,wes,1143
+http://www.wikidata.org/entity/Q9143,programming language,wes,1469

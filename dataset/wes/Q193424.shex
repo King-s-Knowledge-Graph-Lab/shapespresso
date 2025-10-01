@@ -1,0 +1,126 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<WebService>
+
+<WebService> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q193424 ] ;             # instance of
+  wdt:P137  @<Operator> * ;              # operator
+  wdt:P17   @<Country> ? ;               # country
+  wdt:P178  @<Developer> ? ;             # developer
+  wdt:P400  @<Platform> * ;              # platform
+  wdt:P750  @<Distributor> * ;           # distributed by
+  wdt:P127  @<Owner> ? ;                 # owned by
+  wdt:P306  @<OperatingSystem> * ;       # operating system
+  wdt:P275  @<CopyrightLicense> ? ;      # copyright license
+  wdt:P361  IRI * ;                      # part of
+  wdt:P437  @<DistributionFormat> * ;    # distribution format
+  wdt:P479  @<InputDevice> * ;           # input device
+  wdt:P6216 [ wd:Q50423863 ] ? ;         # copyright status, 'copyrighted'
+  wdt:P123  @<Publisher> ? ;             # publisher
+  wdt:P407  @<LanguageOfWorkOrName> * ;  # language of work or name
+  wdt:P366  IRI * ;                      # has use
+  wdt:P277  @<ProgrammingLanguage> * ;   # programmed in
+  wdt:P2283 IRI * ;                      # uses
+  wdt:P1889 IRI * ;                      # different from
+  wdt:P1343 IRI * ;                      # described by source
+  wdt:P2700 @<Protocol> * ;              # protocol
+  wdt:P112  @<Founder> * ;               # founded by
+  wdt:P452  @<Industry> * ;              # industry
+  wdt:P1547 @<Software> * ;              # depends on software
+  wdt:P4290 @<OfficialApp> ? ;           # official app
+  wdt:P138  IRI ? ;                      # named after
+  wdt:P921  IRI * ;                      # main subject
+
+  # URL, String, Quantity, Time property
+  wdt:P856  IRI * ;             # official website
+  wdt:P571  xsd:dateTime ? ;    # inception
+  wdt:P8687 xsd:decimal * ;     # social media followers
+  wdt:P1324 IRI ? ;             # source code repository URL
+  wdt:P2572 xsd:string * ;      # hashtag
+  wdt:P348  xsd:string * ;      # software version identifier
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P1581 IRI * ;             # official blog URL
+  wdt:P973  IRI * ;             # described at URL
+  wdt:P1401 IRI ? ;             # issue tracker URL
+  wdt:P1476 rdf:langString ? ;  # title
+  wdt:P6269 IRI ? ;             # API endpoint URL
+  wdt:P2078 IRI ? ;             # user manual URL
+  wdt:P4354 xsd:string ?        # search formatter URL
+}
+
+<CopyrightLicense> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q77205602 ]  # copyright license
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Developer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 wd:Q43229 ]  # business, organization
+}
+
+<DistributionFormat> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q81941037 ]  # product distribution method
+}
+
+<Distributor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3814081 ]  # app marketplace
+}
+
+<Founder> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q4830453 wd:Q43229 ]  # human, business, organization
+}
+
+<Industry> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q268592 wd:Q8187769 ]  # industry, economic activity
+}
+
+<InputDevice> EXTRA wdt:P279 {
+  wdt:P279 [ wd:Q864114 ]  # input device
+}
+
+<LanguageOfWorkOrName> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1288568 ]  # modern language
+}
+
+<OfficialApp> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q620615 ]  # mobile app
+}
+
+<OperatingSystem> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q9135 ]  # operating system
+}
+
+<Operator> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 wd:Q43229 ]  # business, organization
+}
+
+<Owner> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 wd:Q43229 ]  # business, organization
+}
+
+<Platform> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6368 wd:Q241317 ]  # web browser, computing platform
+}
+
+<ProgrammingLanguage> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q9143 ]  # programming language
+}
+
+<Protocol> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q15836568 ]  # computer network protocol
+}
+
+<Publisher> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 wd:Q43229 ]  # business, organization
+}
+
+<Software> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7397 ]  # software
+}

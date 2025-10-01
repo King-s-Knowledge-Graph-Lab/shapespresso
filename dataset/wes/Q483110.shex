@@ -1,0 +1,170 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Stadium>
+
+<Stadium> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q483110 ] ;                        # instance of
+  wdt:P17   @<Country> ;                            # country
+  wdt:P131  @<AdministrativeTerritorialEntity> ? ;  # located in the administrative territorial entity
+  wdt:P466  @<Occupant> * ;                         # occupant
+  wdt:P641  @<Sport> * ;                            # sport
+  wdt:P127  @<Owner> ? ;                            # owned by
+  wdt:P276  @<Location> ? ;                         # location
+  wdt:P137  @<Operator> ? ;                         # operator
+  wdt:P138  IRI ? ;                                 # named after
+  wdt:P84   @<Architect> ? ;                        # architect
+  wdt:P793  @<SignificantEvent> * ;                 # significant event
+  wdt:P7959 @<HistoricCounty> ? ;                   # historic county
+  wdt:P765  IRI ? ;                                 # surface played on
+  wdt:P5008 @<WikiProject> ? ;                      # on focus list of Wikimedia project
+  wdt:P669  @<Street> ? ;                           # located on street
+  wdt:P1889 IRI ? ;                                 # different from
+  wdt:P193  @<MainBuildingContractor> ? ;           # main building contractor
+  wdt:P361  @<SportsVenue> ? ;                      # part of
+  wdt:P910  @<WikimediaCategory> ? ;                # topic's main category
+  wdt:P421  @<TimeZone> ? ;                         # located in time zone
+  wdt:P631  @<StructuralEngineer> ? ;               # structural engineer
+  wdt:P5816 @<ConservationState> ? ;                # state of conservation
+  wdt:P9803 @<UEFAStadiumCategory> ? ;              # UEFA stadium category
+  wdt:P149  @<ArchitecturalStyle> ? ;               # architectural style
+  wdt:P859  @<Sponsor> ? ;                          # sponsor
+  wdt:P706  @<PhysicalFeature> ? ;                  # located in/on physical feature
+  wdt:P167  @<Stadium> ? ;                          # structure replaced by
+  wdt:P1398 @<Stadium> ? ;                          # structure replaces
+  wdt:P8596 @<WikimediaCategory> ? ;                # category for the exterior of the item
+  wdt:P5817 @<UseStatus> ? ;                        # state of use
+  wdt:P7561 @<WikimediaCategory> ? ;                # category for the interior of the item
+  wdt:P30   @<Continent> ? ;                        # continent
+  wdt:P2817 @<WikimediaListArticle> ? ;             # appears in the heritage monument list
+  wdt:P8453 @<Station> ? ;                          # public transport stop
+
+  # URL, String, Quantity, Time property
+  wdt:P1083 xsd:decimal ? ;     # maximum capacity
+  wdt:P1619 xsd:dateTime ? ;    # date of official opening
+  wdt:P571  xsd:dateTime ? ;    # inception
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P856  IRI ? ;             # official website
+  wdt:P576  xsd:dateTime ? ;    # dissolved, abolished or demolished date
+  wdt:P3999 xsd:dateTime ? ;    # date of official closure
+  wdt:P6375 rdf:langString ? ;  # street address
+  wdt:P2795 rdf:langString ? ;  # directions
+  wdt:P1448 rdf:langString ? ;  # official name
+  wdt:P281  xsd:string ? ;      # postal code
+  wdt:P8687 xsd:decimal ? ;     # social media followers
+  wdt:P2044 xsd:decimal ? ;     # elevation above sea level
+  wdt:P2130 xsd:decimal ? ;     # capital cost
+  wdt:P935  xsd:string ? ;      # Commons gallery
+  wdt:P2043 xsd:decimal ? ;     # length
+  wdt:P2046 xsd:decimal ? ;     # area
+  wdt:P2049 xsd:decimal ? ;     # width
+  wdt:P1174 xsd:decimal *       # visitors per year
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1549591 wd:Q515 ]  # big city, city
+}
+
+<Architect> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4387609 wd:Q5 ]  # architectural firm, human
+}
+
+<ArchitecturalStyle> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q32880 ]  # architectural style
+}
+
+<ConservationState> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q55553838 ]  # conservation state
+}
+
+<Continent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5107 ]  # continent
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3624078 wd:Q6256 ]  # sovereign state, country
+}
+
+<HistoricCounty> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q67376938 ]  # historic county of the United Kingdom
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7930989 ]  # city or town
+}
+
+<MainBuildingContractor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q43229 ]  # human, organization
+}
+
+<Occupant> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q847017 wd:Q12973014 ]  # sports club, sports team
+}
+
+<Operator> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<Owner> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 wd:Q515 ]  # organization, city
+}
+
+<PhysicalFeature> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q618123 ]  # geographical feature
+}
+
+<SignificantEvent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q27020041 wd:Q1190554 wd:Q8187769 ]  # season, occurrence, economic activity
+}
+
+<Sponsor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 ]  # business
+}
+
+<Sport> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q31629 wd:Q349 ]  # type of sport, sport
+}
+
+<SportsVenue> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1076486 wd:Q7579839 ]  # sports venue, sports complex
+}
+
+<Station> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q12819564 ]  # station
+}
+
+<Street> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q79007 ]  # street
+}
+
+<StructuralEngineer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 wd:Q5 ]  # business, human
+}
+
+<TimeZone> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q17272482 ]  # time zone named for a UTC offset
+}
+
+<UEFAStadiumCategory> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q108162830 ]  # UEFA stadium category
+}
+
+<UseStatus> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56557118 ]  # use status
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikimediaListArticle> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q13406463 ]  # Wikimedia list article
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

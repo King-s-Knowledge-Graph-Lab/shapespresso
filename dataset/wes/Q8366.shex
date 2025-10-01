@@ -1,0 +1,68 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Algorithm>
+
+<Algorithm> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q8366 ] + ;          # instance of
+  wdt:P138  @<Human> * ;              # named after
+  wdt:P61   @<Human> * ;              # discoverer or inventor
+  wdt:P366  IRI * ;                   # has use
+  wdt:P1343 @<Source> * ;             # described by source
+  wdt:P6104 @<WikiProject> ? ;        # maintained by WikiProject
+  wdt:P2283 IRI * ;                   # uses
+  wdt:P1889 IRI ? ;                   # different from
+  wdt:P2159 @<Problem> * ;            # computes solution to
+  wdt:P361  IRI ? ;                   # part of
+  wdt:P1535 IRI * ;                   # used by
+  wdt:P144  @<Algorithm> ? ;          # based on, inverse property: derivative work
+  wdt:P2579 @<FieldOfStudy> * ;       # studied by
+  wdt:P910  @<WikimediaCategory> ? ;  # topic's main category
+  wdt:P275  @<CopyrightLicense> ? ;   # copyright license
+  wdt:P6216 @<CopyrightStatus> ? ;    # copyright status
+  wdt:P4969 @<Algorithm> * ;          # derivative work, inverse property: based on
+
+  # URL, String, Quantity, Time property
+  wdt:P575  xsd:dateTime ? ;  # time of discovery or invention
+  wdt:P373  xsd:string ? ;    # Commons category
+  wdt:P2179 xsd:string ? ;    # ACM Classification Code (2012)
+  wdt:P856  IRI ? ;           # official website
+  wdt:P1324 IRI ? ;           # source code repository URL
+  wdt:P1482 IRI ?             # Stack Exchange tag
+}
+
+<CopyrightLicense> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q77205602 ]  # copyright license
+}
+
+<CopyrightStatus> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q50424085 ]  # copyright status
+}
+
+<FieldOfStudy> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1047113 ]  # field of study
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<Problem> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3435924 wd:Q1166625 ]  # computational problem, mathematical problem
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q13442814 wd:Q3099732 ]  # scholarly article, technical report
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}

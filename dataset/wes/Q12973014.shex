@@ -1,0 +1,138 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<SportsTeam>
+
+<SportsTeam> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q12973014 ] ;                      # instance of
+  wdt:P641  @<Sport> ? ;                            # sport
+  wdt:P17   @<Country> ? ;                          # country
+  wdt:P131  @<AdministrativeTerritorialEntity> ? ;  # located in the administrative territorial entity
+  wdt:P910  @<WikimediaCategory> ? ;                # topic's main category
+  wdt:P118  @<SportsLeague> * ;                     # league or competition
+  wdt:P1344 @<SportingCompetition> * ;              # participant in
+  wdt:P115  @<HomeVenue> ? ;                        # home venue
+  wdt:P361  IRI ? ;                                 # part of
+  wdt:P6112 @<WikimediaCategory> ? ;                # category for members of a team
+  wdt:P2094 @<CompetitionClass> ? ;                 # competition class
+  wdt:P127  @<Owner> ? ;                            # owned by
+  wdt:P1424 @<WikimediaTemplate> ? ;                # topic's main template
+  wdt:P286  @<Human> ? ;                            # head coach
+  wdt:P276  @<Location> ? ;                         # location
+  wdt:P831  @<ParentClub> ? ;                       # parent club
+  wdt:P1532 @<Country> ? ;                          # country for sport
+  wdt:P1889 IRI * ;                                 # different from
+  wdt:P463  @<MemberOf> ? ;                         # member of
+  wdt:P112  @<Founder> * ;                          # founded by
+  wdt:P749  @<Organization> ? ;                     # parent organization
+  wdt:P138  IRI ? ;                                 # named after
+  wdt:P5008 @<WikiProject> ? ;                      # on focus list of Wikimedia project
+  wdt:P1454 @<LegalForm> ? ;                        # legal form
+  wdt:P634  @<Human> ? ;                            # team captain
+  wdt:P1416 @<Organization> ? ;                     # affiliation
+  wdt:P859  @<Sponsor> * ;                          # sponsor
+  wdt:P166  @<Award> * ;                            # award received
+  wdt:P740  IRI ? ;                                 # location of formation
+  wdt:P1037 @<Human> ? ;                            # director / manager
+  wdt:P488  @<Human> ? ;                            # chairperson
+  wdt:P505  @<Human> ? ;                            # general manager
+
+  # URL, String, Quantity, Time property
+  wdt:P571  xsd:dateTime ? ;    # inception
+  wdt:P856  IRI ? ;             # official website
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P8687 xsd:decimal ? ;     # social media followers
+  wdt:P576  xsd:dateTime ? ;    # dissolved, abolished or demolished date
+  wdt:P1448 rdf:langString ? ;  # official name
+  wdt:P1449 rdf:langString ? ;  # nickname
+  wdt:P968  IRI ? ;             # email address
+  wdt:P3441 xsd:string ?        # FIFA country code
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 wd:Q3957 ]  # city, town
+}
+
+<Award> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q618779 ]  # award
+}
+
+<CompetitionClass> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q10708051 ]  # competition class
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Founder> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<HomeVenue> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1076486 ]  # sports venue
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<LegalForm> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q10541491 ]  # legal form
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 ]  # city
+}
+
+<MemberOf> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 wd:Q623109 ]  # organization, sports league
+}
+
+<Owner> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q43229 ]  # person, organization
+}
+
+<ParentClub> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q12973014 wd:Q847017 ]  # sports team, sports club
+}
+
+<Organization> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<Sponsor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 wd:Q891723 ]  # business, public company
+}
+
+<Sport> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q31629 ]  # type of sport
+}
+
+<SportingCompetition> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q13406554 ]  # sports competition
+}
+
+<SportingEvent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q18608583 wd:Q27020041 wd:Q13406554 ]  # recurring sporting event, season, sports competition
+}
+
+<SportsLeague> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q623109 ]  # sports league
+}
+
+<WikimediaCategory> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikimediaTemplate> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q11266439 ]  # Wikimedia template
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

@@ -1,0 +1,106 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<CardGame>
+
+<CardGame> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q142714 ] ;          # instance of
+  wdt:P123  @<Publisher> * ;          # publisher
+  wdt:P495  @<Country> ? ;            # country of origin
+  wdt:P178  @<Developer> * ;          # developer
+  wdt:P1889 IRI ? ;                   # different from
+  wdt:P1411 @<Award> * ;              # nominated for
+  wdt:P166  @<Award> * ;              # award received
+  wdt:P1343 @<Source> * ;             # described by source
+  wdt:P136  @<Genre> ? ;              # genre
+  wdt:P910  @<WikimediaCategory> ? ;  # topic's main category
+  wdt:P287  @<Designer> ? ;           # designed by
+  wdt:P2283 IRI ? ;                   # uses
+  wdt:P144  @<Game> * ;               # based on
+  wdt:P138  IRI * ;                   # named after
+  wdt:P407  @<Language> ? ;           # language of work or name
+  wdt:P1382 @<CardGame> * ;           # partially coincident with
+  wdt:P460  @<CardGame> * ;           # said to be the same as
+  wdt:P6104 @<WikiProject> ? ;        # maintained by WikiProject
+  wdt:P1434 @<FictionalUniverse> ? ;  # takes place in fictional universe
+  wdt:P6216 @<CopyrightStatus> ? ;    # copyright status
+  wdt:P195  @<Collection> ? ;         # collection
+  wdt:P2341 @<IndigenousTo> ? ;       # indigenous to
+
+  # URL, String, Quantity, Time property
+  wdt:P1872 xsd:decimal ? ;     # minimum number of players
+  wdt:P1873 xsd:decimal ? ;     # maximum number of players
+  wdt:P577 xsd:dateTime ? ;     # publication date
+  wdt:P373 xsd:string ? ;       # Commons category
+  wdt:P856 IRI ? ;              # official website
+  wdt:P1476 rdf:langString * ;  # title
+  wdt:P571 xsd:dateTime ? ;     # inception
+  wdt:P973 IRI * ;              # described at URL
+  wdt:P2899 xsd:decimal ? ;     # minimum age
+  wdt:P1705 rdf:langString * ;  # native label
+  wdt:P2093 xsd:string *        # author name string
+}
+
+<Award> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q30505248 wd:Q38033430 wd:Q618779 ]  # game award, class of award, award
+}
+
+<Collection> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q2668072 wd:Q33506 ]  # collection, museum
+}
+
+<CopyrightStatus> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q50424085 ]  # copyright status
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Designer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<Developer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<FictionalUniverse> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q559618 ]  # fictional universe
+}
+
+<Game> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q11410 ]  # game
+}
+
+<Genre> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q483394 ]  # genre
+}
+
+<IndigenousTo> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56061 ]  # administrative territorial entity
+}
+
+<Language> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1288568 ]  # modern language
+}
+
+<Publisher> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3579158 wd:Q2085381 wd:Q4830453 ]  # publisher, business, board game publishing company
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3331189 wd:Q386724 ]  # version, edition or translation, work
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

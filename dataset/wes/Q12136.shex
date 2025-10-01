@@ -1,0 +1,113 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Disease>
+
+<Disease> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q12136 ] ;                    # instance of
+  wdt:P1995 @<HealthSpecialty> * ;             # health specialty
+  wdt:P2176 @<DrugOrTherapy> * ;               # drug or therapy used for treatment
+  wdt:P2293 @<Gene> ? ;                        # genetic association
+  wdt:P780  @<SymptomAndSigns> * ;             # symptoms and signs
+  wdt:P828  IRI * ;                            # has cause
+  wdt:P1343 @<Source> * ;                      # described by source
+  wdt:P5008 @<WikiProject> ? ;                 # on focus list of Wikimedia project
+  wdt:P1889 IRI * ;                            # different from
+  wdt:P910  @<WikimediaCategory> ? ;           # topic's main category
+  wdt:P927  @<AnatomicalLocation> ? ;          # anatomical location
+  wdt:P924  @<PossibleTreatment> * ;           # possible treatment
+  wdt:P923  @<MedicalExamination> * ;          # medical examination
+  wdt:P689  @<TypeOfOrganism> * ;              # afflicts
+  wdt:P460  IRI ? ;                            # said to be the same as
+  wdt:P138  IRI ? ;                            # named after
+  wdt:P1542 @<Effect> * ;                      # has effect
+  wdt:P527  @<Disease> * ;                     # has part(s)
+  wdt:P5642 IRI * ;                            # risk factor
+  wdt:P61   @<Human> * ;                       # discoverer or inventor
+  wdt:P5131 @<MedicalFindings> * ;             # possible medical findings
+  wdt:P361  IRI ? ;                            # part of
+  wdt:P461  @<Disease> ? ;                     # opposite of
+  wdt:P1060 @<DiseaseTransmissionProcess> * ;  # disease transmission process
+  wdt:P1269 IRI ? ;                            # facet of
+  wdt:P2579 @<StudiedIn> ? ;                   # studied in
+
+  # URL, String, Quantity, Time property
+  wdt:P1748 xsd:string ? ;    # NCI Thesaurus ID
+  wdt:P373  xsd:string ? ;    # Commons category
+  wdt:P2888 IRI * ;           # exact match
+  wdt:P1692 xsd:string ? ;    # ICD-9-CM
+  wdt:P667  xsd:string ? ;    # ICPC 2 ID
+  wdt:P6363 IRI ? ;           # WordLift URL
+  wdt:P973  IRI * ;           # described at URL
+  wdt:P1193 xsd:decimal ? ;   # prevalence
+  wdt:P1325 IRI ? ;           # external data available at URL
+  wdt:P575  xsd:dateTime ?    # time of discovery or invention
+}
+
+<AnatomicalLocation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q112826905 wd:Q103812529 ]  # class of anatomical entity, organ type
+}
+
+<DiseaseTransmissionProcess> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1662340 ]  # mode of transmission
+}
+
+<DrugOrTherapy> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q113145171 ]  # type of chemical entity
+}
+
+<Effect> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q112965645 wd:Q12136 ]  # symptom or sign, disease
+}
+
+<Gene> {
+  wdt:P31 [ wd:Q7187 ]  # gene
+}
+
+<HealthSpecialty> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q930752 wd:Q44597158 ]  # medical specialty, health specialty
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<MedicalExamination> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q177719 wd:Q2671652 ]  # medical diagnosis, medical test
+}
+
+<MedicalFindings> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q639907 ]  # medical finding
+}
+
+<PossibleTreatment> EXTRA wdt:P31 {
+  wdt:P31 [ wdt:Q130705900 wd:Q179661 ]  # type of medical treatment, medical treatment
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3331189 ]  # version, edition or translation
+}
+
+<StudiedIn> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q11862829 wd:Q1047113 ]  # academic discipline, field of study
+}
+
+<SymptomAndSigns> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q112965645 wd:Q112826905 ]  # symptom or sign, class of anatomical entity
+}
+
+<TypeOfOrganism> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q103812529 ]  # organ type,
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

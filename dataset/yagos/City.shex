@@ -1,0 +1,72 @@
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX yago: <http://yago-knowledge.org/resource/>
+
+start = @<City>
+
+<City> EXTRA rdf:type {
+  # schema:Thing property
+  rdf:type [ schema:City ] ;
+  rdfs:comment rdf:langString * ;
+  rdfs:label rdf:langString + ;
+  schema:alternateName rdf:langString * ;
+  schema:image xsd:anyURI * ;
+  schema:mainEntityOfPage xsd:anyURI ;
+  schema:sameAs xsd:anyURI * ;
+  schema:url xsd:anyURI * ;
+
+  # schema.org property
+  schema:geo geo:wktLiteral ? ;        # From YAGO Schema design document, inherit from @<Place>
+  schema:location @<Place> * ;         # From YAGO Schema design document, inherit from @<Place>
+  schema:dateCreated xsd:dateTime ? ;  # From YAGO Schema design document, inherit from @<AdministrativeArea>
+  schema:memberOf @<Organization> ? ;  # From YAGO Schema design document, inherit from @<AdministrativeArea>
+  schema:postalCode xsd:string * ;     # From YAGO Schema design document, inherit from @<AdministrativeArea>
+  schema:slogan xsd:string ? ;         # From YAGO Schema design document, inherit from @<AdministrativeArea>
+  schema:logo xsd:anyURI ? ;
+  schema:award @<Award> * ;
+  schema:founder @<Person> ? ;
+  
+  # yago property
+  yago:area xsd:decimal * ;                # From YAGO Schema design document, inherit from @<Place>
+  yago:elevation xsd:decimal * ;           # From YAGO Schema design document, inherit from @<Place>
+  yago:highestPoint @<Place> ? ;           # From YAGO Schema design document, inherit from @<Place>
+  yago:neighbors @<Place> * ;              # From YAGO Schema design document, inherit from @<Place>
+  yago:demonym xsd:string * ;              # From YAGO Schema design document, inherit from @<AdministrativeArea>
+  yago:leader @<Person> * ;                # From YAGO Schema design document, inherit from @<AdministrativeArea>
+  yago:populationNumber xsd:decimal * ;    # From YAGO Schema design document, inherit from @<AdministrativeArea>
+  yago:replaces @<AdministrativeArea> * ;  # From YAGO Schema design document, inherit from @<AdministrativeArea>
+
+  # owl:sameAs
+  owl:sameAs [ <http://www.wikidata.org/entity>~ ]
+}
+
+<AdministrativeArea> EXTRA rdf:type {
+  rdf:type [ schema:AdministrativeArea ]
+}
+
+<Award> EXTRA rdf:type {
+  rdf:type [ yago:Award ]
+}
+
+<Organization> EXTRA rdf:type {
+  rdf:type [ schema:Organization ]
+}
+
+<Person> EXTRA rdf:type {
+  rdf:type [ schema:Person ]
+}
+
+<Place> EXTRA rdf:type {
+  rdf:type [ schema:Place ]
+}
+
+# <Mountain> EXTRA rdf:type {
+#   rdf:type [ yago:Mountain ]
+# }

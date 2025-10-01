@@ -1,0 +1,96 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Earthquake>
+
+<Earthquake> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q7944 ] ;                          # instance of
+  wdt:P17   @<Country> ? ;                          # country
+  wdt:P131  @<AdministrativeTerritorialEntity> ? ;  # located in the administrative territorial entity
+  wdt:P276  @<Location> * ;                         # location
+  wdt:P2784 @<Magnitude> ? ;                        # modified Mercalli intensity scale
+  wdt:P5386 @<Magnitude> ? ;                        # JMA Seismic Intensity Scale
+  wdt:P138  IRI * ;                                 # named after
+  wdt:P706  @<PhysicalFeature> ? ;                  # located in/on physical feature
+  wdt:P5095 @<Fault> * ;                            # fault
+  wdt:P910  @<WikimediaCategory> ? ;                # topic's main category
+  wdt:P1542 IRI * ;                                 # has effect
+  wdt:P361  IRI * ;                                 # part of
+  wdt:P1299 @<Work> * ;                             # depicted by
+  wdt:P2348 IRI ? ;                                 # time period
+  wdt:P3082 IRI * ;                                 # destroyed
+  wdt:P3081 IRI * ;                                 # damaged
+  wdt:P1343 @<Work> * ;                             # described by source
+  wdt:P7153 @<SignificantPlace> ? ;                 # significant place
+  wdt:P8032 @<Human> * ;                            # victim(s)
+  wdt:P1889 IRI ? ;                                 # different from
+  wdt:P5008 @<WikiProject> ? ;                      # on focus list of Wikimedia project
+  wdt:P828  @<Fault> ? ;                            # has cause
+
+  # URL, String, Quantity, Time property
+  wdt:P585  xsd:dateTime ? ;    # point in time
+  wdt:P2528 xsd:decimal ? ;     # earthquake magnitude on the Richter magnitude scale
+  wdt:P4511 xsd:decimal ? ;     # vertical depth
+  wdt:P2527 xsd:decimal ? ;     # earthquake magnitude on the moment magnitude scale
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P1120 xsd:decimal * ;     # number of deaths
+  wdt:P1339 xsd:decimal * ;     # number of injured
+  wdt:P5900 xsd:decimal ? ;     # JMA Magnitude
+  wdt:P580  xsd:dateTime ? ;    # start time
+  wdt:P2320 xsd:decimal ? ;     # aftershocks
+  wdt:P2047 xsd:decimal ? ;     # duration
+  wdt:P1446 xsd:decimal * ;     # number of missing
+  wdt:P2630 xsd:decimal * ;     # cost of damage
+  wdt:P973  IRI * ;             # described at URL
+  wdt:P582  xsd:dateTime ? ;    # end time
+  wdt:P1705 rdf:langString * ;  # native label
+  wdt:P2044 xsd:decimal ?       # elevation above sea level
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56061 wd:Q7930989 ]  # administrative territorial entity, city or town
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Fault> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q215680 wd:Q875399 wd:Q112627894 wd:Q47089 ]  # tectonic plate, boundary, fault zone, fault
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q17334923 wd:Q82794 wd:Q2221906 wd:Q618123 ]  # physical location, geographic region, geographic location
+}
+
+<Magnitude> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q500062 ]  # magnitude
+}
+
+<PhysicalFeature> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q82794 wd:Q618123 wd:Q2221906 ]  # geographic region, geographical feature, geographic location
+}
+
+<SignificantPlace> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q618123 ]  # geographical feature
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}
+
+<Work> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q386724 ]  # work
+}

@@ -1,0 +1,49 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<ScientificTheory>
+
+<ScientificTheory> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q3239681 ] ;         # instance of
+  wdt:P138  IRI * ;                   # named after
+  wdt:P61   @<Human> * ;              # discoverer or inventor
+  wdt:P361  IRI * ;                   # part of
+  wdt:P6104 @<WikiProject> ? ;        # maintained by WikiProject
+  wdt:P1343 @<Source> * ;             # described by source
+  wdt:P910  @<WikimediaCategory> ? ;  # topic's main category
+  wdt:P1889 IRI ? ;                   # different from
+  wdt:P1269 IRI * ;                   # facet of
+  wdt:P921  IRI * ;                   # main subject
+  wdt:P5008 @<WikiProject> * ;        # on focus list of Wikimedia project
+  wdt:P2579 @<StudiedIn> * ;          # studied in
+  wdt:P1552 IRI * ;                   # has characteristic
+
+  # URL, String, Quantity, Time property
+  wdt:P373  xsd:string ? ;    # Commons category
+  wdt:P575  xsd:dateTime ? ;  # time of discovery or invention
+  wdt:P1482 IRI ?             # Stack Exchange tag
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3331189 wd:Q13442814 ]  # version, edition or translation, scholarly article
+}
+
+<StudiedIn> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q336 wd:Q11862829 wd:Q1047113 wd:Q2465832 ]  # science, academic discipline, field of study, branch of science
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

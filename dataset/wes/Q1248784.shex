@@ -1,0 +1,156 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Airport>
+
+<Airport> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q1248784 ] ;                       # instance of
+  wdt:P17   @<Country> ;                            # country
+  wdt:P131  @<AdministrativeTerritorialEntity> ? ;  # located in the administrative territorial entity
+  wdt:P931  @<Place> * ;                            # place served by transport hub
+  wdt:P1889 IRI * ;                                 # different from
+  wdt:P138  IRI * ;                                 # named after
+  wdt:P137  @<Operator> ? ;                         # operator
+  wdt:P5817 @<StateOfUse> ? ;                       # state of use
+  wdt:P521  @<Airport> * ;                          # scheduled service destination
+  wdt:P276  @<Location> ? ;                         # location
+  wdt:P127  @<Owner> ? ;                            # owned by
+  wdt:P7959 @<HistoricCounty> ? ;                   # historic county
+  wdt:P1365 @<Aerodrome> ? ;                        # replaces
+  wdt:P366  [ wd:Q1571929 ] ? ;                     # has use, 'general aviation'
+  wdt:P706  @<PhysicalFeature> ? ;                  # located in/on physical feature
+  wdt:P421  @<TimeZone> ? ;                         # located in time zone
+  wdt:P912  @<AirportInfrastructure> * ;            # has facility
+  wdt:P910  @<WikimediaCategory> ? ;                # topic's main category
+  wdt:P833  @<Station> * ;                          # interchange station
+  wdt:P1366 @<Aerodrome> ? ;                        # replaced by
+  wdt:P1435 @<HeritageDesignation> ? ;              # heritage designation
+  wdt:P5008 @<WikiProject> ? ;                      # on focus list of Wikimedia project
+  wdt:P793  @<AviationAccidentOrIncident> * ;       # significant event
+  wdt:P3032 @<Building> ? ;                         # adjacent building
+  wdt:P2848 [ wd:Q6452715 wd:Q1543615 ] ? ;         # Wi-Fi access
+  wdt:P1454 @<LegalForm> ? ;                        # legal form
+  wdt:P84   @<Architect> ? ;                        # architect
+  wdt:P30   @<Continent> ? ;                        # continent
+  wdt:P8453 @<PublicTransportStop> ? ;              # public transport stop
+
+  # URL, String, Quantity, Time property
+  wdt:P3872 xsd:decimal * ;     # patronage
+  wdt:P2044 xsd:decimal ? ;     # elevation above sea level
+  wdt:P240  xsd:string ? ;      # FAA airport code
+  wdt:P239  xsd:string ? ;      # ICAO airport code
+  wdt:P238  xsd:string ? ;      # IATA airport code
+  wdt:P529  xsd:string * ;      # runway
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P856  IRI ? ;             # official website
+  wdt:P1619 xsd:dateTime ? ;    # date of official opening
+  wdt:P576  xsd:dateTime ? ;    # dissolved, abolished or demolished date
+  wdt:P1448 rdf:langString ? ;  # official name
+  wdt:P2795 rdf:langString ? ;  # directions
+  wdt:P8687 xsd:decimal ? ;     # social media followers
+  wdt:P1329 xsd:string ? ;      # phone number
+  wdt:P968  IRI ? ;             # email address
+  wdt:P6375 rdf:langString ? ;  # street address
+  wdt:P2046 xsd:decimal ? ;     # area
+  wdt:P281  xsd:string ?        # postal code
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56061 ]  # administrative territorial entity
+}
+
+<Aerodrome> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q62447 ]  # aerodrome
+}
+
+<AirportInfrastructure> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1433344 ]  # airport infrastructure
+}
+
+<Architect> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q783794 ]   # human, company
+}
+
+<AviationAccidentOrIncident> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q108284447 ]  # aviation accident or incident
+}
+
+<Building> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q41176 ]  # building
+}
+
+<Continent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5107 ]  # continent
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<HeritageDesignation> EXTRA wdt:P31 {
+  wdt:P279 [ wd:Q30634609 ]  # heritage designation
+}
+
+<HistoricCounty> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q67770276 ]  # historic county
+}
+
+<LegalForm> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q10541491 ]  # legal form
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 wd:Q3957 ]  # city, town
+}
+
+<Operator> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<Owner> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 wd:Q515 wd:Q6256 ]  # business, city, country
+}
+
+<PhysicalFeature> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q2221906 ]  # geographic location
+}
+
+<Place> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 wd:Q3957 wd:Q486972 ]  # city, town, human settlement
+}
+
+<PublicTransportStop> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q548662 wd:Q55488 ]  # public transport stop, railway station
+}
+
+<Replaces> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q695850 wd:Q1248784 ]  # air base, airport
+}
+
+<StateOfUse> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56557118 wd:Q11639308 ]  # use status, decommissioned
+}
+
+<Station> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q12819564 ]  # station
+}
+
+<TimeZone> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q12143 ]  # time zone
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikimediaListArticle> {
+  wdt:P31 [ wd:Q13406463 ]  # Wikimedia list article
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

@@ -1,0 +1,229 @@
+example_0.class_uri = "http://yago-knowledge.org/resource/Scientist"
+example_0.predicate_uri = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+example_0.triple_examples = [
+    "yago:Anatoly_Kitov rdf:type yago:Engineer .",
+    "yago:Anatoly_Kitov rdf:type yago:Officer__u0028_armed_forces_u0029 .",
+    "yago:Anatoly_Kitov rdf:type yago:Scientist .",
+    "yago:Anatoly_Kitov rdf:type yago:University_Teacher_Q1622272 .",
+    "yago:Leo_Kanner rdf:type yago:Scientist .",
+    "yago:Leo_Kanner rdf:type yago:Child_Psychiatrist_Q28136886 .",
+    "yago:Dmitri_Mendeleev rdf:type yago:Economist .",
+    "yago:Dmitri_Mendeleev rdf:type yago:Physicist .",
+    "yago:Dmitri_Mendeleev rdf:type yago:University_Teacher_Q1622272 .",
+    "yago:Dmitri_Mendeleev rdf:type yago:Chemist ."
+]
+example_0.frequency = "100.00% instance(s) in the class use the predicate"
+example_0.cardinality_distribution = """\
+  63.49% instances in the class have 1 object(s) when using the property, \
+  20.81% instances in the class have 2 object(s) when using the property, \
+  9.40% instances in the class have 3 object(s) when using the property, \
+  3.35% instances in the class have 4 object(s) when using the property, \
+  1.51% instances in the class have 5 object(s) when using the property\
+  """
+example_0.datatype_of_objects = "IRI"
+answer_0.shexj = """
+{
+  "triple_constraint": {
+    "type": "TripleConstraint",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "valueExpr": {
+      "type": "NodeConstraint",
+      "values": [
+        "http://yago-knowledge.org/resource/Scientist"
+      ]
+    }
+  }
+}
+"""
+example_1.class_uri = "http://yago-knowledge.org/resource/Scientist"
+example_1.predicate_uri = "http://schema.org/mainEntityOfPage"
+example_1.triple_examples = [
+    "yago:Anatoly_Kitov schema:mainEntityOfPage https://de.wikipedia.org/wiki/Anatoli_Iwanowitsch_Kitow .",
+    "yago:Anatoly_Kitov schema:mainEntityOfPage https://en.wikipedia.org/wiki/Anatoly_Kitov .",
+    "yago:Anatoly_Kitov schema:mainEntityOfPage https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D1%82%D0%BE%D0%B2,_%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D0%B8%D0%B9_%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87 .",
+    "yago:Anatoly_Kitov schema:mainEntityOfPage https://arz.wikipedia.org/wiki/%D8%A7%D9%86%D8%A7%D8%AA%D9%88%D9%84%D9%89_%D9%83%D9%8A%D8%AA%D9%88%D9%81 .",
+    "yago:Leo_Kanner schema:mainEntityOfPage https://commons.wikimedia.org/wiki/Category:Leo_Kanner .",
+    "yago:Leo_Kanner schema:mainEntityOfPage https://cs.wikipedia.org/wiki/Leo_Kanner .",
+    "yago:Leo_Kanner schema:mainEntityOfPage https://da.wikipedia.org/wiki/Leo_Kanner .",
+    "yago:Leo_Kanner schema:mainEntityOfPage https://de.wikipedia.org/wiki/Leo_Kanner .",
+    "yago:Leo_Kanner schema:mainEntityOfPage https://en.wikipedia.org/wiki/Leo_Kanner .",
+    "yago:Dmitri_Mendeleev schema:mainEntityOfPage https://ast.wikipedia.org/wiki/Dmitri_Mendel%C3%A9yev .",
+    "yago:Dmitri_Mendeleev schema:mainEntityOfPage https://az.wikipedia.org/wiki/Dmitri_Mendeleyev .",
+    "yago:Dmitri_Mendeleev schema:mainEntityOfPage https://az.wikiquote.org/wiki/Dmitri_Mendeleyev .",
+    "yago:Dmitri_Mendeleev schema:mainEntityOfPage https://ban.wikipedia.org/wiki/Dmitri_Mendeleev .",
+    "yago:Dmitri_Mendeleev schema:mainEntityOfPage https://af.wikipedia.org/wiki/Dmitri_Mendelejef ."
+]
+example_1.frequency = "99.98% instance(s) in the class use the predicate"
+example_1.cardinality_distribution = """\
+  39.31% instances in the class have 1 object(s) when using the property, \
+  24.88% instances in the class have 2 object(s) when using the property, \
+  12.66% instances in the class have 3 object(s) when using the property, \
+  6.41% instances in the class have 4 object(s) when using the property, \
+  4.16% instances in the class have 5 object(s) when using the property\
+  """
+example_1.datatype_of_objects = "xsd:anyURI"
+answer_1.shexj = """
+{
+  "triple_constraint": {
+    "type": "TripleConstraint",
+    "predicate": "http://schema.org/mainEntityOfPage",
+    "valueExpr": {
+      "type": "NodeConstraint",
+      "datatype": "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "min": 1,
+    "max": -1
+  }
+}
+"""
+example_2.class_uri = "http://yago-knowledge.org/resource/Scientist"
+example_2.predicate_uri = "http://schema.org/worksFor"
+example_2.triple_examples = [
+  "yago:Anatoly_Kitov schema:worksFor yago:Plekhanov_Russian_University_of_Economics .",
+  "yago:Anatoly_Kitov schema:worksFor yago:Moscow_Power_Engineering_Institute .",
+  "yago:Leo_Kanner schema:worksFor yago:Johns_Hopkins_University .",
+  "yago:Dmitri_Mendeleev schema:worksFor yago:Saint_Petersburg_Imperial_University .",
+  "yago:Dmitri_Mendeleev schema:worksFor yago:Saint_Petersburg_State_University .",
+  "yago:Dmitri_Mendeleev schema:worksFor yago:Richelieu_Lyceum ."
+]
+example_2.frequency = "41.75% instance(s) in the class use the predicate"
+example_2.cardinality_distribution = """\
+  32.12% instances in the class have 1 object(s) when using the property, \
+  6.49% instances in the class have 2 object(s) when using the property, \
+  2.08% instances in the class have 3 object(s) when using the property, \
+  0.68% instances in the class have 4 object(s) when using the property\
+  """
+example_2.datatype_of_objects = "IRI"
+example_2.object_class_distribution = """\
+  12.09% of subjects have objects in class yago:University (university), \
+  10.38% of subjects have objects in class yago:Public_Research_University_Q62078547, \
+  10.27% of subjects have objects in class yago:Open-Access_Publisher_Q45400320\
+  """
+answer_2.shexj = """
+{
+  "triple_constraint": {
+    "type": "TripleConstraint",
+    "predicate": "http://schema.org/worksFor",
+    "valueExpr": "Organization",
+    "min": 0,
+    "max": -1
+  },
+  "value_shape": {
+     "type": "Shape",
+     "id": "Organization",
+     "extra": [
+       "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+     ],
+     "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+     "values": [
+       "http://schema.org/Organization"
+     ]
+  }
+}
+"""
+example_3.class_uri = "http://yago-knowledge.org/resource/Scientist"
+example_3.predicate_uri = "http://yago-knowledge.org/resource/sportNumber"
+example_3.triple_examples = ["yago:Mihály_Szeróvay yago:sportNumber 1 ."]
+example_3.frequency = "0.02% instance(s) in the class use the predicate"
+example_3.cardinality_distribution = "0.02% instances in the class have 1 object(s) when using the property"
+example_3.datatype_of_objects = "xsd:string"
+answer_3.shexj = """
+{}
+"""
+example_4.class_uri = "http://yago-knowledge.org/resource/Scientist"
+example_4.predicate_uri = "http://schema.org/birthDate"
+example_4.triple_examples = [
+    "yago:Anatoly_Kitov schema:birthDate 2005-10-14T00:00:00.000Z .",
+    "yago:Leo_Kanner schema:birthDate 1894-06-13T00:00:00.000Z .",
+    "yago:Dmitri_Mendeleev schema:birthDate 1834-02-08T00:00:00.000Z ."
+]
+example_4.frequency = "71.38% instances in the class use the predicate"
+example_4.cardinality_distribution = "71.38% instances in the class have 1 object(s) when using the property"
+example_4.datatype_of_objects = "xsd:dateTime"
+answer_4.shexj = """
+{
+  "triple_constraint": {
+    "type": "TripleConstraint",
+    "predicate": "http://schema.org/birthDate",
+    "valueExpr": {
+      "type": "NodeConstraint",
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "min": 0,
+    "max": 1
+  }
+}
+"""
+example_5.class_uri = "http://yago-knowledge.org/resource/Scientist"
+example_5.predicate_uri = "http://schema.org/knowsLanguage"
+example_5.triple_examples = [
+    "yago:Anatoly_Kitov schema:knowsLanguage yago:Russian_language_generic_instance .",
+    "yago:Leo_Kanner schema:knowsLanguage yago:English_language_generic_instance .",
+    "yago:Leo_Kanner schema:knowsLanguage yago:German_language_generic_instance .",
+    "yago:Dmitri_Mendeleev schema:knowsLanguage yago:French_language_generic_instance .",
+    "yago:Dmitri_Mendeleev schema:knowsLanguage yago:German_language_generic_instance .",
+    "yago:Dmitri_Mendeleev schema:knowsLanguage yago:Russian_language_generic_instance ."
+]
+example_5.frequency = "27.39% instances in the class use the predicate"
+example_5.cardinality_distribution = """\
+  23.97% instances in the class have 1 object(s) when using the property, \
+  2.89% instances in the class have 2 object(s) when using the property, \
+  0.42% instances in the class have 3 object(s) when using the property, \
+  0.08% instances in the class have 4 object(s) when using the property\
+  """
+example_5.datatype_of_objects = "IRI"
+example_5.object_class_distribution = """\
+  53.23% of subjects have objects in class yago:English_language (English), \
+  8.49% of subjects have objects in class yago:Russian_language (Russian), \
+  4.38% of subjects have objects in class yago:German_language (German)\
+  """
+answer_5.shexj = """
+{
+  "triple_constraint": {
+    "type": "TripleConstraint",
+    "predicate": "http://schema.org/knowsLanguage",
+    "valueExpr": "Language",
+    "min": 0,
+    "max": -1
+  },
+  "value_shape": {
+     "type": "Shape",
+     "id": "Language",
+     "extra": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+     ],
+     "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+     "values": [
+       "http://schema.org/Language"
+     ]
+  }
+}
+"""
+example_6.class_uri = "http://yago-knowledge.org/resource/Scientist"
+example_6.predicate_uri = "http://www.w3.org/2002/07/owl#sameAs"
+example_6.triple_examples = [
+  "yago:Anatoly_Kitov owl:sameAs wd:Q4222480 .",
+  "yago:Leo_Kanner owl:sameAs wd:Q93592 ."
+]
+example_6.frequency = "99.26% instances in the class use the predicate"
+example_6.cardinality_distribution = """
+  99.26% instances in the class have 1 object(s) when using the property
+"""
+example_6.datatype_of_objects = "IRI"
+answer_6.shexj = """
+{
+  "triple_constraint": {
+    "type": "TripleConstraint",
+    "predicate": "http://www.w3.org/2002/07/owl#sameAs",
+    "valueExpr": {
+      "type": "NodeConstraint",
+      "values": [
+        {
+          "type": "IriStem",
+          "stem": "http://www.wikidata.org/entity"
+        }
+      ]
+    }
+  }
+}
+"""

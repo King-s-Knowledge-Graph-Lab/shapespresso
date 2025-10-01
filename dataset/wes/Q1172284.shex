@@ -1,0 +1,158 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<DataSet>
+
+<DataSet> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q1172284 ] ;            # instance of
+  wdt:P50   @<Author> * ;                # author
+  wdt:P126  @<Maintainer> ? ;            # maintained by
+  wdt:P859  @<Sponsor> * ;               # sponsor
+  wdt:P407  @<Language> * ;              # language of work or name
+  wdt:P921  IRI * ;                      # main subject
+  wdt:P275  @<CopyrightLicense> * ;      # copyright license
+  wdt:P1433 @<PublishedIn> ? ;           # published in
+  wdt:P6216 @<CopyrightStatus> * ;       # copyright status
+  wdt:P123  @<Publisher> * ;             # publisher
+  wdt:P361  IRI ? ;                      # part of
+  wdt:P1535 IRI ? ;                      # used by
+  wdt:P2670 IRI * ;                      # has part(s) of the class
+  wdt:P5008 @<WikiProject> ? ;           # on focus list of Wikimedia project
+  wdt:P1343 @<Source> * ;                # described by source
+  wdt:P127  @<Owner> ? ;                 # owned by
+  wdt:P2283 IRI * ;                      # uses
+  wdt:P1889 IRI * ;                      # different from
+  wdt:P138  IRI * ;                      # named after
+  wdt:P144  IRI * ;                      # based on
+  wdt:P2860 @<CitesWork> * ;             # cites work
+  wdt:P495  @<Country> ? ;               # country of origin
+  wdt:P6241 @<Human> ? ;                 # collection creator
+  wdt:P366  IRI * ;                      # has use
+  wdt:P2701 @<FileFormat> * ;            # file format
+  wdt:P437  @<DistributionFormat> * ;    # distribution format
+  wdt:P910  @<WikimediaCategory> ? ;     # topic's main category
+  wdt:P179  @<Series> ? ;                # part of the series
+  wdt:P1269 IRI ? ;                      # facet of
+  wdt:P178  @<Developer> ? ;             # developer
+  wdt:P2354 @<WikimediaListArticle> ? ;  # has list
+  wdt:P8324 @<Funder> * ;                # funder
+  wdt:P767  @<Contributor> * ;           # contributor to the creative work or subject
+  wdt:P6104 @<WikiProject> ? ;           # maintained by WikiProject
+
+  # URL, String, Quantity, Time property
+  wdt:P577  xsd:dateTime ? ;    # publication date
+  wdt:P953  IRI ? ;             # full work available at URL
+  wdt:P2093 xsd:string * ;      # author name string
+  wdt:P856  IRI ? ;             # official website
+  wdt:P1476 rdf:langString ? ;  # title
+  wdt:P973  IRI * ;             # described at URL
+  wdt:P7535 rdf:langString ? ;  # scope and content
+  wdt:P4945 IRI * ;             # download URL
+  wdt:P2699 IRI ? ;             # URL
+  wdt:P6269 IRI * ;             # API endpoint URL
+  wdt:P1813 rdf:langString ? ;  # short name
+  wdt:P4876 xsd:decimal ? ;     # number of records
+  wdt:P348  xsd:string ? ;      # software version identifier
+  wdt:P5195 IRI ? ;             # Wikidata Dataset Imports URL
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P1324 IRI ? ;             # source code repository URL
+  wdt:P7103 xsd:dateTime * ;    # start of covered period
+  wdt:P5305 IRI ? ;             # SPARQL endpoint URL
+  wdt:P7104 xsd:dateTime ? ;    # end of covered period
+  wdt:P1325 IRI * ;             # external data available at URL
+  wdt:P2572 xsd:string ? ;      # hashtag
+  wdt:P2888 IRI ? ;             # exact match
+  wdt:P1448 rdf:langString ?    # official name
+}
+
+<Author> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q31855 wd:Q43229 ]  # human, research institute, organization
+}
+
+<CitesWork> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q13442814 wd:Q3331189 ]  # scholarly article, version, edition or translation
+}
+
+<Contributor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q16334295 wd:Q43229 ]  # human, group of humans, organization
+}
+
+<CopyrightLicense> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q77205602 ]  # copyright license
+}
+
+<CopyrightStatus> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q50424085 wd:Q73568642 ]  # copyright status, copyright status of set
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Developer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q43229 ]  # human, organization
+}
+
+<DistributionFormat> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q81941037 ]  # product distribution method
+}
+
+<FileFormat> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q235557 ]  # file format
+}
+
+<Funder> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<Language> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1288568 ]  # modern language
+}
+
+<Maintainer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q170584 wd:Q43229 wd:Q5 ]  # project, organization, human
+}
+
+<Owner> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<PublishedIn> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7096323 wd:Q5227240 wd:Q737498 ]  # open-access repository, data library, academic journal
+}
+
+<Publisher> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<Series> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1172284 wd:Q7725310 ]  # data set, series of creative works
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q10383930 wd:Q7216866 ]  # academic work, post
+}
+
+<Sponsor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 wd:Q1298668 ]  # organization, research project
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikimediaListArticle> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q13406463 ]  # Wikimedia list article
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

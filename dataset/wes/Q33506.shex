@@ -1,0 +1,306 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Museum>
+
+<Museum> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q33506 ] ;                         # instance of
+  wdt:P17   @<Country> ;                            # country
+  wdt:P131  @<AdministrativeTerritorialEntity> * ;  # located in the administrative territorial entity
+  wdt:P276  @<Location> ? ;                         # location
+  wdt:P1435 @<HeritageDesignation> * ;              # heritage designation
+  wdt:P421  @<TimeZone> * ;                         # located in time zone
+  wdt:P159  @<HeadquartersLocation> ? ;             # headquarters location
+  wdt:P361  IRI * ;                                 # part of
+  wdt:P921  IRI * ;                                 # main subject
+  wdt:P7959 @<HistoricCounty> ? ;                   # historic county
+  wdt:P669  @<Street> ? ;                           # located on street
+  wdt:P166  @<Award> * ;                            # award received
+  wdt:P527  IRI * ;                                 # has part(s)
+  wdt:P138  IRI ? ;                                 # named after
+  wdt:P463  @<MemberOf> * ;                         # member of
+  wdt:P2848 [ wd:Q1543615 ] ? ;                     # Wi-Fi access, 'gratis'
+  wdt:P84   @<Human> * ;                            # architect (facility)
+  wdt:P127  @<Owner> * ;                            # owned by
+  wdt:P1343 @<Source> * ;                           # described by source
+  wdt:P101  @<FieldOfWork> * ;                      # field of work
+  wdt:P749  @<Organization> ? ;                     # parent organization
+  wdt:P2817 @<HeritageMonumentList> ? ;             # appears in the heritage monument list
+  wdt:P149  @<ArchitecturalStyle> ? ;               # architectural style
+  wdt:P112  @<Founder> * ;                          # founded by
+  wdt:P137  @<Operator> ? ;                         # operator
+  wdt:P5008 @<WikiProject> ? ;                      # on focus list of Wikimedia project
+  wdt:P2846 [ wd:Q24192067 wd:Q24192069 ] ? ;       # disabled accessibility, 'wheelchair accessible', 'wheelchair inaccessible'
+  wdt:P3025 @<OpenDays> * ;                         # open days
+  wdt:P1454 @<LegalForm> ? ;                        # legal form
+  wdt:P1037 @<Human> * ;                            # director / manager
+  wdt:P2283 IRI ? ;                                 # uses
+  wdt:P910  @<WikimediaCategory> ? ;                # topic's main category
+  wdt:P7561 @<WikimediaCategory> ? ;                # category for the interior of the item
+  wdt:P2851 @<PaymentTypes> * ;                     # payment types accepted
+  wdt:P1889 IRI ? ;                                 # different from
+  wdt:P793  @<SignificantEvent> * ;                 # significant event
+  wdt:P706  @<PhysicalFeature> ? ;                  # located in/on physical feature
+  wdt:P8596 @<WikimediaCategory> ? ;                # category for the exterior of the item
+  wdt:P2652 @<Partner> * ;                          # partnership with
+  wdt:P126  @<Maintainer> ? ;                       # maintained by
+  wdt:P466  @<Occupant> * ;                         # occupant
+  wdt:P1830 @<OwnerOf> + ;                          # owner of
+  wdt:P3026 @<ClosedDays> * ;                       # closed on
+  wdt:P140  @<ReligionOrWorldview> * ;              # religion or worldview
+  wdt:P186  @<Material> * ;                         # made from material
+  wdt:P547  IRI * ;                                 # commemorates
+  wdt:P1366 @<Museum> ? ;                           # replaced by
+  wdt:P1365 @<Museum> ? ;                           # replaces
+  wdt:P1640 @<Human> * ;                            # curator
+  wdt:P2596 @<Culture> ? ;                          # culture
+  wdt:P5817 @<StateOfUse> ? ;                       # state of use
+  wdt:P206  @<BodyOfWater> ? ;                      # located in or next to body of water
+  wdt:P2614 @<WorldHeritageCriteria> ? ;            # World Heritage criteria
+  wdt:P6104 @<WikiProject> ? ;                      # maintained by WikiProject
+  wdt:P795  @<LinearFeature> ? ;                    # located on linear feature
+  wdt:P8933 @<WikimediaCategory> ? ;                # category for the view from the item
+  wdt:P488  @<Human> * ;                            # chairperson
+  wdt:P8464 @<WikimediaCategory> ? ;                # content partnership category
+  wdt:P5816 @<StateOfConservation> ? ;              # state of conservation
+  wdt:P3342 @<Human> * ;                            # significant person
+  wdt:P5023 @<ActivityPolicy> * ;                   # activity policy in this place
+  wdt:P3018 @<ProtectedArea> ? ;                    # located in protected area
+  wdt:P859  @<Sponsor> * ;                          # sponsor
+  wdt:P155  @<Museum> ? ;                           # follows
+  wdt:P740  @<LocationOfFormation> ? ;              # location of formation
+  wdt:P8989 @<WikimediaCategory> ? ;                # category for the view of the item
+  wdt:P156  @<Museum> ? ;                           # followed by
+  wdt:P135  @<Movement> ? ;                         # movement
+  wdt:P4195 @<WikimediaCategory> ? ;                # category for employees of the organization
+  wdt:P287  @<Human> ? ;                            # designed by
+  wdt:P1411 @<Award> ? ;                            # nominated for
+  wdt:P7867 @<WikimediaCategory> ? ;                # category for maps
+  wdt:P1299 @<Work> ? ;                             # depicted by
+  wdt:P1792 @<WikimediaCategory> ? ;                # category of associated people
+
+  # URL, String, Quantity, Time property
+  wdt:P856   IRI * ;             # official website
+  wdt:P6375  rdf:langString ? ;  # street address
+  wdt:P571   xsd:dateTime ? ;    # inception
+  wdt:P1174  xsd:decimal * ;     # visitors per year
+  wdt:P373   xsd:string ? ;      # Commons category
+  wdt:P281   xsd:string * ;      # postal code
+  wdt:P1329  xsd:string * ;      # phone number
+  wdt:P968   IRI ? ;             # email address
+  wdt:P1619  xsd:dateTime ? ;    # date of official opening
+  wdt:P1436  xsd:decimal ? ;     # collection or exhibition size
+  wdt:P2046  xsd:decimal ? ;     # area
+  wdt:P973   IRI ? ;             # described at URL
+  wdt:P1128  xsd:decimal ? ;     # employees
+  wdt:P1612  xsd:string ? ;      # Commons Institution page
+  wdt:P1705  rdf:langString ? ;  # native label
+  wdt:P2900  xsd:string ? ;      # fax number
+  wdt:P1448  rdf:langString * ;  # official name
+  wdt:P6125  xsd:decimal ? ;     # number of volunteers
+  wdt:P576   xsd:dateTime ? ;    # dissolved, abolished or demolished date
+  wdt:P2555  xsd:decimal ? ;     # fee
+  wdt:P8687  xsd:decimal ? ;     # social media followers
+  wdt:P2139  xsd:decimal * ;     # total revenue
+  wdt:P935   xsd:string ? ;      # Commons gallery
+  wdt:P2044  xsd:decimal ? ;     # elevation above sea level
+  wdt:P8093  xsd:decimal * ;     # donations
+  wdt:P3999  xsd:dateTime ? ;    # date of official closure
+  wdt:P1813  rdf:langString ? ;  # short name
+  wdt:P2561  rdf:langString ? ;  # name
+  wdt:P613   xsd:string ? ;      # OS grid reference
+  wdt:P10225 IRI ? ;             # official shop URL
+  wdt:P7014  IRI ? ;             # terms of service URL
+  wdt:P8768  IRI ? ;             # online catalog URL
+  wdt:P1581  IRI ? ;             # official blog URL
+  wdt:P5282  IRI ? ;             # ground level 360 degree view URL
+  wdt:P2918  xsd:string ? ;      # post office box
+  wdt:P729   xsd:dateTime ? ;    # service entry
+  wdt:P2699  IRI ? ;             # URL
+  wdt:P6269  IRI ? ;             # API endpoint URL
+  wdt:P1451  rdf:langString ?    # motto text
+}
+
+<ActivityPolicy> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q51728742 ]  # activity policy
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56061 ]  # administrative territorial entity
+}
+
+<ArchitecturalStyle> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q32880 ]  # architectural style
+}
+
+<Award> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q618779 ]  # award
+}
+
+<BodyOfWater> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q15324 ]  # body of water
+}
+
+<ClosedDays> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q41825 wd:Q14795564 wd:Q1197685 ]  # day of the week, point in time with respect to recurrent timeframe, public holiday
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Culture> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q11042 wd:Q19958368 wd:Q120870093 ]  # culture, culture of an area, culture by ethnic group
+}
+
+<FieldOfWork> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q11862829 wd:Q1047113 wd:Q627436 ]  # academic discipline, field of study, field of work
+}
+
+<Founder> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q43229 ]  # human, organization
+}
+
+<HeadquartersLocation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 wd:Q532 wd:Q3957 ]  # city, village, town
+}
+
+<HeritageDesignation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q210272 wd:Q30634609 ]  # cultural heritage, heritage designation
+}
+
+<HeritageMonumentList> {
+  wdt:P31 [ wd:Q13406463 ]  # Wikimedia list article
+}
+
+<HistoricCounty> {
+  wdt:P31 [ wd:Q67770276 ]  # historic county
+}
+
+<Human> {
+  wdt:P31 [ wd:Q5 ]
+}
+
+<LegalForm> {
+  wdt:P31 [ wd:Q10541491 ]  # legal form
+}
+
+<LinearFeature> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q628179 wd:Q728937 wd:Q34442 ]  # trail, railway line, road
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q515 ]  # city
+}
+
+<LocationOfFormation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7930989 wd:Q56061 ]  # city or town, administrative territorial entity
+}
+
+<Maintainer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<Material> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q214609 ]  # material
+}
+
+<MemberOf> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q88667167 wd:Q43229 ]  # museum network, organization
+}
+
+<Movement> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q2198855 ]  # cultural movement
+}
+
+<Occupant> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q43229 ]  # human, organization
+}
+
+<OpenDays> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q99731370 wd:Q41825 ]  # range of days of the week, day of the week
+}
+
+<Operator> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<Organization> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<Owner> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 wd:Q43229 ]  # human, organization
+}
+
+<OwnerOf> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q838948 wd:Q386724 ]  # work of art, work
+}
+
+<Partner> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 ]  # organization
+}
+
+<PaymentTypes> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1912682 wd:Q986008 ]  # payment method, payment system
+}
+
+<PhysicalFeature> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q2221906 ]  # geographic location
+}
+
+<ProtectedArea> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q473972 ]  # protected area
+}
+
+<ReligionOrWorldview> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q71966963 wd:Q9174 ]  # religion or world view, religion
+}
+
+<SignificantEvent> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1190554 wd:Q1656682 ]  # occurrence, event
+}
+
+<Source> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3331189 wd:Q35127 wd:Q47461344 ]  # version, edition or translation, website, written work
+}
+
+<Sponsor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 wd:Q5 wd:Q157031 ]  # organization, human, foundation
+}
+
+<StateOfConservation> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q55553838 ]  # conservation state
+}
+
+<StateOfUse> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56557118 wd:Q3505845 ]  # use status, state
+}
+
+<Street> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q79007 ]  # street
+}
+
+<TimeZone> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q12143 ]  # time zone
+}
+
+<WikimediaCategory> {
+  wdt:P31 [ wd:Q4167836 ]  # Wikimedia category
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}
+
+<Work> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q386724 ]  # work
+}
+
+<WorldHeritageCriteria> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q22809610 ]  # selection criterion for World Heritage
+}

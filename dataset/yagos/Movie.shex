@@ -1,0 +1,70 @@
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX yago: <http://yago-knowledge.org/resource/>
+
+start = @<Movie>
+
+<Movie> EXTRA rdf:type {
+  # schema:Thing property
+  rdf:type [ schema:Movie ] ;
+  rdfs:comment rdf:langString * ;
+  rdfs:label rdf:langString + ;
+  schema:alternateName rdf:langString * ;
+  schema:image xsd:anyURI * ;
+  schema:mainEntityOfPage xsd:anyURI + ;
+  schema:sameAs xsd:anyURI * ;
+  schema:url xsd:anyURI * ;
+
+  # schema.org property
+  schema:actor @<Person> * ;                    # From YAGO Schema design document
+  schema:director @<Person> * ;                 # From YAGO Schema design document
+  schema:duration xsd:decimal ? ;               # From YAGO Schema design document
+  schema:locationCreated @<Place> * ;           # From YAGO Schema design document
+  schema:musicBy @<MusicBy> * ;                 # From YAGO Schema design document
+  schema:productionCompany @<Organization> * ;  # From YAGO Schema design document
+  schema:about IRI * ;                          # From YAGO Schema design document, inherit from @<CreativeWork>
+  schema:author @<Author> * ;                   # From YAGO Schema design document, inherit from @<CreativeWork>
+  schema:award @<Award> * ;                     # From YAGO Schema design document, inherit from @<CreativeWork>
+  schema:contentLocation @<Place> * ;           # From YAGO Schema design document, inherit from @<CreativeWork>
+  schema:dateCreated xsd:dateTime ? ;           # From YAGO Schema design document, inherit from @<CreativeWork>
+  schema:inLanguage @<Language> * ;             # From YAGO Schema design document, inherit from @<CreativeWork>
+  schema:isbn xsd:string ? ;  # Sometimes movies have an ISBN-10 or ISBN-13, with ISBN-13s usually starting with "978".
+
+  # owl:sameAs
+  owl:sameAs [ <http://www.wikidata.org/entity>~ ]
+}
+
+<Author> EXTRA rdf:type {
+  rdf:type [ schema:Organization schema:Person ]
+}
+
+<Award> EXTRA rdf:type {
+  rdf:type [ yago:Award ]
+}
+
+<Language> EXTRA rdf:type {
+  rdf:type [ yago:Human_Language_Q20162172 ]
+}
+
+<MusicBy> EXTRA rdf:type {
+  rdf:type [ schema:MusicGroup schema:Person ]
+}
+
+<Organization> EXTRA rdf:type {
+  rdf:type [ schema:Organization ]
+}
+
+<Person> EXTRA rdf:type {
+  rdf:type [ schema:Person ]
+}
+
+<Place> EXTRA rdf:type {
+  rdf:type [ schema:Place ]
+}

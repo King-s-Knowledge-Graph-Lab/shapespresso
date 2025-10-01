@@ -1,0 +1,67 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Patent>
+
+<Patent> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q253623 ] ;             # instance of
+  wdt:P61   @<DiscovererOrInventor> * ;  # discoverer or inventor
+  wdt:P361  IRI ? ;                      # part of
+  wdt:P859  @<Sponsor> * ;               # sponsor
+  wdt:P5008 @<WikiProject> ? ;           # on focus list of Wikimedia project
+  wdt:P50   @<Author> * ;                # author
+  wdt:P921  IRI * ;                      # main subject
+  wdt:P17   @<Country> ? ;               # country
+  wdt:P407  @<LanguageOfWorkOrName> ? ;  # language of work or name
+  wdt:P2378 @<Issuer> ? ;                # issued by
+  wdt:P2860 @<CitesWork> * ;             # cites work
+  wdt:P127  @<Owner> ? ;                 # owned by
+
+  # URL, String, Quantity, Time property
+  wdt:P1476 rdf:langString ? ;  # title
+  wdt:P577  xsd:dateTime ? ;    # publication date
+  wdt:P953  IRI ? ;             # full work available at URL
+  wdt:P5778 xsd:string * ;      # Cooperative Patent Classification code
+  wdt:P2093 xsd:string * ;      # author name string
+  wdt:P373  xsd:string ?        # Commons category
+}
+
+<Author> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<CitesWork> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q13442814 wd:Q253623 ]  # scholarly article, patent
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<DiscovererOrInventor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q5 ]  # human
+}
+
+<Issuer> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q43229 wd:Q1148446 ]  # organization, patent office
+}
+
+<LanguageOfWorkOrName> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q1288568 ]  # modern language
+}
+
+<Owner> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4830453 wd:Q5 wd:Q43229 ]  # business, human, organization
+}
+
+<Sponsor> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q327333 wd:Q4830453 ]  # government agency, business
+}
+
+<WikiProject> {
+  wdt:P31 [ wd:Q16695773 ]  # WikiProject
+}

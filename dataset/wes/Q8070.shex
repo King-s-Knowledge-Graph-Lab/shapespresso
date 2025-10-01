@@ -1,0 +1,50 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<Tsunami>
+
+<Tsunami> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q8070 ] ;                          # instance of
+  wdt:P17   @<Country> * ;                          # country
+  wdt:P276  @<Location> * ;                         # location
+  wdt:P131  @<AdministrativeTerritorialEntity> * ;  # located in the administrative territorial entity
+  wdt:P828  @<Cause> * ;                            # has cause
+  wdt:P1542 @<Effect> * ;                           # has effect
+  wdt:P138  IRI ? ;                                 # named after
+
+  # URL, String, Quantity, Time property
+  wdt:P585  xsd:dateTime ? ;    # point in time
+  wdt:P1120 xsd:decimal ? ;     # number of deaths
+  wdt:P373  xsd:string ? ;      # Commons category
+  wdt:P4511 xsd:decimal ? ;     # vertical depth
+  wdt:P1339 xsd:decimal ? ;     # number of injured
+  wdt:P2047 xsd:decimal ? ;     # duration
+  wdt:P1446 xsd:decimal ? ;     # number of missing
+  wdt:P1448 rdf:langString ? ;  # official name
+  wdt:P2048 xsd:decimal ? ;     # height
+  wdt:P2630 xsd:decimal ?       # cost of damage
+}
+
+<AdministrativeTerritorialEntity> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q56061 ]  # administrative territorial entity
+}
+
+<Cause> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7944 wd:Q8065 ]  # earthquake, natural disaster
+}
+
+<Country> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q6256 ]  # country
+}
+
+<Effect> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q15725976 wd:Q8065 ]  # nuclear disaster, natural disaster
+}
+
+<Location> EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q165 wd:Q6256 ]  # sea, country
+}

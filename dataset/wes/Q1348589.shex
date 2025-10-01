@@ -1,0 +1,31 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<LunarCrater>
+
+<LunarCrater> EXTRA wdt:P31 {
+  # WikibaseItem property
+  wdt:P31   [ wd:Q1348589 ] ;  # instance of
+  wdt:P376  [ wd:Q405 ] ;      # located on astronomical body, 'Moon'
+  wdt:P276  @<Location> ;      # location
+  wdt:P138  IRI ? ;            # named after, 'human'
+  wdt:P706  @<LunarMare> ? ;   # located in/on physical feature
+
+  # URL, String, Quantity, Time property
+  wdt:P2386 xsd:decimal ;       # diameter
+  wdt:P373  xsd:string ;        # Commons category
+  wdt:P4511 xsd:decimal ;       # vertical depth
+  wdt:P1448 rdf:langString ? ;  # official name
+  wdt:P2046 xsd:decimal ?       # area
+}
+
+<Location> {
+  wdt:P31 [ wd:Q56551180 ]  # quadrangle on the Moon
+}
+
+<LunarMare> {
+  wdt:P31 [ wd:Q180874 ]  # lunar mare
+}

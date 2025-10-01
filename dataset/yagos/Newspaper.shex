@@ -1,0 +1,61 @@
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX yago: <http://yago-knowledge.org/resource/>
+
+start = @<Newspaper>
+
+<Newspaper> EXTRA rdf:type {
+  # schema:Thing property
+  rdf:type [ schema:Newspaper ] ;
+  rdfs:comment rdf:langString * ;
+  rdfs:label rdf:langString + ;
+  schema:alternateName rdf:langString * ;
+  schema:image xsd:anyURI * ;
+  schema:mainEntityOfPage xsd:anyURI + ;
+  schema:sameAs xsd:anyURI * ;
+  schema:url xsd:anyURI * ;
+
+  # schema.org property
+  schema:publisher @<Publisher> ? ;    # From YAGO Schema design document
+  schema:sponsor @<Sponsor> ? ;        # From YAGO Schema design document
+  schema:about IRI * ;                 # From YAGO Schema design document, inherit from @<CreativeWork>
+  schema:author @<Author> * ;          # From YAGO Schema design document, inherit from @<CreativeWork>
+  schema:award @<Award> * ;            # From YAGO Schema design document, inherit from @<CreativeWork>
+  schema:dateCreated xsd:dateTime ? ;  # From YAGO Schema design document, inherit from @<CreativeWork>
+  schema:inLanguage @<Language> * ;    # From YAGO Schema design document, inherit from @<CreativeWork>
+  schema:locationCreated @<Place> ? ;
+
+  # owl:sameAs
+  owl:sameAs [ <http://www.wikidata.org/entity>~ ]
+}
+
+<Award> EXTRA rdf:type {
+  rdf:type [ yago:Award ]
+}
+
+<Author> EXTRA rdf:type {
+  rdf:type [ schema:Organization schema:Person ]
+}
+
+<Language> EXTRA rdf:type {
+  rdf:type [ schema:Language ]
+}
+
+<Place> EXTRA rdf:type {
+  rdf:type [ schema:Place ]
+}
+
+<Publisher> EXTRA rdf:type {
+  rdf:type [ schema:Organization schema:Person ]
+}
+
+<Sponsor> EXTRA rdf:type {
+  rdf:type [ schema:Organization schema:Person ]
+}
